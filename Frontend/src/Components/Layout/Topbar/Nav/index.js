@@ -4,9 +4,9 @@ const Nav = () => {
   return (
     <NavContainer>
       <NavBox>
-        <NavButton>Home</NavButton>
-        <NavButton>Services</NavButton>
-        <NavButton>About</NavButton>
+        <NavButton to="/">Home</NavButton>
+        <NavButton to="/">Services</NavButton>
+        <NavButton to="/">About</NavButton>
       </NavBox>
     </NavContainer>
   );
