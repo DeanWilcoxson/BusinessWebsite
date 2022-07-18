@@ -13,6 +13,14 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  isAdmin: {
+    type: Boolean,
+    required: true
+  },
+  isCustomer: {
+    type: Boolean,
+    required: true
+  }
 });
 
 userSchema.pre("save", function (next) {
