@@ -1,5 +1,4 @@
-import styled from "styled-components;";
-import BusinessLogo from "../../../../images/BusinessLogo";
+import styled from "styled-components";
 export const LogoContainer = styled.div``;
-export const LogoImg = styled(BusinessLogo)``;
-export const BusinessName = styled.h1``
+export const LogoImg = styled.img``;
+export const BusinessName = styled.h1``;
