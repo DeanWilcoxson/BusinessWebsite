@@ -5,8 +5,8 @@ const Nav = () => {
     <NavContainer>
       <NavBox>
         <NavButton to="/">Home</NavButton>
-        <NavButton to="/">Services</NavButton>
-        <NavButton to="/">About</NavButton>
+        <NavButton to="/services">Services</NavButton>
+        <NavButton to="/about">About</NavButton>
       </NavBox>
     </NavContainer>
   );
