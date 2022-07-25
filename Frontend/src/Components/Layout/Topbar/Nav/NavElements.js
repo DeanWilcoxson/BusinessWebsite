@@ -9,4 +9,5 @@ export const NavButton = styled(Link)`
   font-size: 1.75rem;
   color: #43b1f8;
   text-shadow: 0.5px 0.5px 1px black;
+  text-decoration: none;
 `;

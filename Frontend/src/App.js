@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "./Components/Pages/Parent/LandingPage";
 import About from "./Components/Pages/Parent/About";
 import Services from "./Components/Pages/Parent/Services";
-import Auth from './Components/Auth'
-import NotFound from './Components/NotFound'
+import Auth from "./Components/Auth";
+import NotFound from "./Components/Pages/Error";
 
 const App = () => {
   return (
@@ -13,19 +13,14 @@ const App = () => {
         <Route path="/" element={<Landing />}>
           Home
         </Route>
-        <Route path="/About" element={<About />}>
+        <Route path="/about" element={<About />}>
           About
         </Route>
-        <Route path="/" element={<Services />}>
+        <Route path="/services" element={<Services />}>
           Services
         </Route>
-
-        <Route path ="*" element={<NotFound />}>
-
-        </Route>
-        
-        <Route path='/auth' element={<Auth />}>
-        </Route>
+        <Route path="/auth" element={<Auth />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
   );
