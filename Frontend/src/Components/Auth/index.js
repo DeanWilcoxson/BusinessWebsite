@@ -6,9 +6,11 @@ import {
   AuthButton,
   AuthInput,
 } from "./AuthElements";
-const Auth = () => {
+
+function Auth () {
   return (
     <AuthContainer>
+    AUTH
       <AuthBox>
         <AuthForm>
           <AuthInput></AuthInput>
