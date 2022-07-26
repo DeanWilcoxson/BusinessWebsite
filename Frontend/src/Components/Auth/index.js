@@ -5,46 +5,56 @@ import {
   AuthContainer,
   AuthButton,
   AuthInput,
+  AuthInputLabel,
+  AuthFormLabel,
 } from "./AuthElements";
-import axios from 'axios'
+import axios from "axios";
 
-function Auth () {
+function Auth() {
   const initInputs = {
     username: "",
-    password: ""
-  }
-  const [inputs, setInputs] = React.useState(initInputs)
+    password: "",
+  };
+  const [inputs, setInputs] = React.useState(initInputs);
 
-  function handleChange (e) {
-    e.preventDefault()
-    const {name, value} = e.target
-    setInputs( prev => ({
+  function handleChange(e) {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setInputs((prev) => ({
       ...prev,
-      [name]:value
-    }))
+      [name]: value,
+    }));
   }
 
-  function handleSubmit (e) {
-    
-  }
-
+  function handleSubmit(e) {}
 
   return (
     <AuthContainer>
       <AuthBox>
         <AuthForm>
-        <label style={{margin: "9px"}}>
-          Username: <AuthInput name='username' onChange={handleChange}></AuthInput>
-        </label>
-        
-        <label style={{margin: "9px"}}>
-          Password: <AuthInput type='password' name='password' onChange={handleChange}></AuthInput>
-        </label>
-          
+          <AuthFormLabel>Owner Login</AuthFormLabel>
+          <AuthInputLabel>
+            Username:
+            <AuthInput
+              type="username"
+              name="username"
+              onChange={handleChange}
+            ></AuthInput>
+          </AuthInputLabel>
+
+          <AuthInputLabel>
+            Password:
+            <AuthInput
+              type="password"
+              name="password"
+              onChange={handleChange}
+            ></AuthInput>
+          </AuthInputLabel>
+
           <AuthButton>Submit</AuthButton>
         </AuthForm>
       </AuthBox>
     </AuthContainer>
   );
-};
+}
 export default Auth;
