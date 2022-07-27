@@ -11,7 +11,9 @@ import axios from 'axios'
 function Auth () {
   const initInputs = {
     username: "",
-    password: ""
+    password: "",
+    isAdmin: true,
+    isCustomer: false
   }
   const [inputs, setInputs] = React.useState(initInputs)
 
@@ -25,7 +27,10 @@ function Auth () {
   }
 
   function handleSubmit (e) {
-    
+    e.preventDefault(e)
+    axios.post('/auth/signup', inputs)
+      .then(res=>console.log(res))
+      .catch(err => console.log(err))
   }
 
 
@@ -34,14 +39,14 @@ function Auth () {
       <AuthBox>
         <AuthForm>
         <label style={{margin: "9px"}}>
-          Username: <AuthInput name='username' onChange={handleChange}></AuthInput>
+          Username: <AuthInput name='username' value={inputs.username} onChange={handleChange}></AuthInput>
         </label>
         
         <label style={{margin: "9px"}}>
-          Password: <AuthInput type='password' name='password' onChange={handleChange}></AuthInput>
+          Password: <AuthInput type='password' value={inputs.password} name='password' onChange={handleChange}></AuthInput>
         </label>
           
-          <AuthButton>Submit</AuthButton>
+          <AuthButton onClick={handleSubmit}>Submit</AuthButton>
         </AuthForm>
       </AuthBox>
     </AuthContainer>

@@ -1,11 +1,27 @@
-const Express = require("express");
+const express = require("express");
 const app = express();
 const morgan = require("morgan");
-import dbConnect from "./helpers/dbConnect";
+const mongoose = require('mongoose')
 
 app.use(morgan("dev"));
 
-dbConnect();
+const connection = {};
+
+async function dbConnect() {
+  if (connection.isConnected) {
+    return;
+  }
+
+  const db = await mongoose.connect("mongodb+srv://bhuff8404:vectorkill581@cluster0.pqcmcze.mongodb.net/dbwebdev?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+  connection.isConnected = db.connections[0].readyState;
+  console.log(connection.isConnected);
+}
+
+dbConnect()
 
 app.use("/auth", require("./routes/authRouter.js"));
 
