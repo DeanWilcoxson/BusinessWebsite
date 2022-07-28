@@ -10,4 +10,5 @@ export const LogoContainer = styled.div`
 export const LogoImg = styled.img``;
 export const BusinessName = styled.h1`
   color: #43b1f8;
+  text-shadow: 1px 1px 2px #888888;
 `;

@@ -5,22 +5,25 @@ import {
   AuthContainer,
   AuthButton,
   AuthInput,
+  AuthInputLabel,
+  AuthFormLabel,
 } from "./AuthElements";
-import axios from 'axios'
+import axios from "axios";
 
-function Auth () {
+function Auth() {
   const initInputs = {
     username: "",
     password: "",
     isAdmin: true,
     isCustomer: false
-  }
+  };
   const [inputs, setInputs] = React.useState(initInputs)
 
-  function handleChange (e) {
-    e.preventDefault()
-    const {name, value} = e.target
-    setInputs( prev => ({
+
+  function handleChange(e) {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setInputs((prev) => ({
       ...prev,
       [name]:value
     }))
@@ -33,23 +36,38 @@ function Auth () {
       .catch(err => console.log(err))
   }
 
+  function handleSubmit(e) {}
 
   return (
     <AuthContainer>
       <AuthBox>
         <AuthForm>
-        <label style={{margin: "9px"}}>
-          Username: <AuthInput name='username' value={inputs.username} onChange={handleChange}></AuthInput>
-        </label>
-        
-        <label style={{margin: "9px"}}>
-          Password: <AuthInput type='password' value={inputs.password} name='password' onChange={handleChange}></AuthInput>
-        </label>
-          
-          <AuthButton onClick={handleSubmit}>Submit</AuthButton>
+
+          <AuthFormLabel>Owner Login</AuthFormLabel>
+          <AuthInputLabel>
+            Username:
+            <AuthInput
+              type="username"
+              name="username"
+              onChange={handleChange}
+              value={inputs.username}
+            ></AuthInput>
+          </AuthInputLabel>
+
+          <AuthInputLabel>
+            Password:
+            <AuthInput
+              type="password"
+              name="password"
+              onChange={handleChange}
+              value={inputs.password}
+            ></AuthInput>
+          </AuthInputLabel>
+
+          <AuthButton onCLick={handleSubmit}>Submit</AuthButton>
         </AuthForm>
       </AuthBox>
     </AuthContainer>
   );
-};
+}
 export default Auth;
