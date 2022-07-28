@@ -1,9 +1,16 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+} else {
+  require('dotenv').config({path: './.env'})
+}
+
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const mongoose = require('mongoose')
 
 app.use(morgan("dev"));
+app.use(express.json())
 
 const connection = {};
 
