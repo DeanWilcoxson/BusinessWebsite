@@ -13,7 +13,7 @@ import axios from "axios";
 function Auth() {
   const initInputs = {
     username: "",
-    password: ""
+    password: "",
   };
   const [inputs, setInputs] = React.useState(initInputs);
 
@@ -27,20 +27,21 @@ function Auth() {
   }
 
   function handleTokenAndStorage(token, user) {
-    localStorage.setItem('dbweb_token', token)
-    const userData = JSON.stringify(user)
-    localStorage.setItem('dbweb_user', userData)
+    localStorage.setItem("dbweb_token", token);
+    const userData = JSON.stringify(user);
+    localStorage.setItem("dbweb_user", userData);
     //To gain access to userData on frontend as an object, JSON.parse()
   }
 
   function handleSubmit(event) {
-    event.preventDefault()
-    axios.post('/auth/login', inputs)
-    .then(res=> {
-      console.log(res)
-      handleTokenAndStorage(res.data.token, res.data.user)
-    })
-    .catch(err => console.log(err))
+    event.preventDefault();
+    axios
+      .post("/auth/login", inputs)
+      .then((res) => {
+        console.log(res);
+        handleTokenAndStorage(res.data.token, res.data.user);
+      })
+      .catch((err) => console.log(err));
   }
 
   return (
