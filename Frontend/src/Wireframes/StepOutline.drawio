@@ -1,9 +1,12 @@
 <mxfile host="65bd71144e">
     <diagram id="TkW9D12AQJbugdKpUHua" name="Step Process Rough Draft 1">
-        <mxGraphModel dx="1657" dy="1910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1554" dy="1910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry y="-1030" width="850" height="750" as="geometry"/>
+                </mxCell>
                 <mxCell id="2" value="Step 1&lt;br&gt;Design &lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry y="-1001" width="201" height="201" as="geometry"/>
                 </mxCell>
