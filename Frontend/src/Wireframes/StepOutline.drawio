@@ -1,81 +1,82 @@
 <mxfile host="65bd71144e">
     <diagram id="TkW9D12AQJbugdKpUHua" name="Step Process Rough Draft 1">
-        <mxGraphModel dx="2508" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1657" dy="1910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Step 1&lt;br&gt;Design &lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry y="-1" width="201" height="201" as="geometry"/>
+                <mxCell id="2" value="Step 1&lt;br&gt;Design &lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry y="-1001" width="201" height="201" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Step 2&lt;br&gt;Initial Sprint &lt;br&gt;(5-6 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="1" width="199" height="199" as="geometry"/>
+                <mxCell id="4" value="Step 2&lt;br&gt;Initial Sprint &lt;br&gt;(5-6 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="321" y="-1000" width="199" height="199" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                <mxCell id="6" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="240" y="95.5" as="sourcePoint"/>
-                        <mxPoint x="290" y="95.5" as="targetPoint"/>
+                        <mxPoint x="230" y="-901.21" as="sourcePoint"/>
+                        <mxPoint x="280" y="-901.21" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="9" value="" style="shape=flexArrow;endArrow=classic;html=1;width=15;endSize=7.81;" edge="1" parent="1">
+                <mxCell id="9" value="" style="shape=flexArrow;endArrow=classic;html=1;width=15;endSize=7.81;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="560" y="99.5" as="sourcePoint"/>
-                        <mxPoint x="610" y="99" as="targetPoint"/>
+                        <mxPoint x="550" y="-900.71" as="sourcePoint"/>
+                        <mxPoint x="600" y="-901.21" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="590" y="99"/>
+                            <mxPoint x="580" y="-901.21"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="10" value="Step 3 &lt;br&gt;Redesign/ Redevelopment&lt;br&gt;(2-3 Weeks)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="640" y="1" width="200" height="199" as="geometry"/>
+                <mxCell id="10" value="Step 3 &lt;br&gt;Redesign/ Redevelopment&lt;br&gt;(2-3 Weeks)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="-1000" width="210" height="199" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;startWidth=19;startSize=4.86;" edge="1" parent="1">
+                <mxCell id="13" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;startWidth=19;startSize=4.86;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="120" y="260" as="sourcePoint"/>
-                        <mxPoint x="730" y="220" as="targetPoint"/>
+                        <mxPoint x="114.25" y="-730" as="sourcePoint"/>
+                        <mxPoint x="724.75" y="-790" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="120" y="230"/>
-                            <mxPoint x="730" y="250"/>
+                            <mxPoint x="114.25" y="-760"/>
+                            <mxPoint x="410" y="-760"/>
+                            <mxPoint x="724.75" y="-760"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="14" value="Step 4&lt;br&gt;Redesign Sprint&lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry y="280" width="200" height="200" as="geometry"/>
+                <mxCell id="14" value="Step 4&lt;br&gt;Redesign Sprint&lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry y="-720" width="200" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="" style="shape=flexArrow;endArrow=classic;html=1;width=10;endSize=7.43;" edge="1" parent="1">
+                <mxCell id="15" value="" style="shape=flexArrow;endArrow=classic;html=1;width=10;endSize=7.43;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="230" y="379.5" as="sourcePoint"/>
-                        <mxPoint x="280" y="379.5" as="targetPoint"/>
+                        <mxPoint x="230" y="-640" as="sourcePoint"/>
+                        <mxPoint x="280" y="-640" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" value="&lt;span&gt;Step 5&lt;/span&gt;&lt;br&gt;&lt;span&gt;Finalzation Of Design&lt;/span&gt;&lt;br&gt;&lt;span&gt;(1-2 Weeks)&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="280" width="200" height="200" as="geometry"/>
+                <mxCell id="16" value="&lt;span&gt;Step 5&lt;/span&gt;&lt;br&gt;&lt;span&gt;Finalzation Of Design&lt;/span&gt;&lt;br&gt;&lt;span&gt;(1-2 Weeks)&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="319" y="-720" width="200" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                <mxCell id="17" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="560" y="379.5" as="sourcePoint"/>
-                        <mxPoint x="600" y="379.5" as="targetPoint"/>
+                        <mxPoint x="560" y="-640" as="sourcePoint"/>
+                        <mxPoint x="600" y="-640" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="379.5"/>
+                            <mxPoint x="570" y="-640"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="18" value="Step 6&lt;br&gt;Final Sprint&lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry x="640" y="280" width="200" height="200" as="geometry"/>
+                <mxCell id="18" value="Step 6&lt;br&gt;Final Sprint&lt;br&gt;(1-2 Weeks)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="-730" width="210" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                <mxCell id="21" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="550" y="570" as="sourcePoint"/>
-                        <mxPoint x="790" y="500" as="targetPoint"/>
+                        <mxPoint x="570" y="-430" as="sourcePoint"/>
+                        <mxPoint x="700" y="-500" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="790" y="570"/>
+                            <mxPoint x="700" y="-430"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="22" value="Product Delivery" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="490" width="199" height="170" as="geometry"/>
+                <mxCell id="22" value="Product Delivery" style="rhombus;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+                    <mxGeometry x="321" y="-500" width="199" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="Step By Step Process" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-0.5" y="-90" width="840" height="70" as="geometry"/>
+                <mxCell id="23" value="Step By Step Process" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry y="-1100" width="850" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
