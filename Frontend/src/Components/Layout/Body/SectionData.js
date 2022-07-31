@@ -1,5 +1,5 @@
 export const HomeSections = [
-  { sectionOne: {} },
+  { sectionOne: { Heading: "Hello" } },
   { sectionTwo: {} },
   { sectionThree: {} },
 ];
