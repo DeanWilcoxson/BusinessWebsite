@@ -13,9 +13,11 @@ export const NavBox = styled.div`
 `;
 export const NavButton = styled(Link)`
   padding: 1rem;
-  font-size: 1.75rem;
+  font-size: 1rem;
+  font-family: Arial;
   color: #43b1f8;
   text-shadow: 1px 1px 2px black;
   text-decoration: none;
   z-index: 1000;
+  letter-spacing: .200em;
 `;

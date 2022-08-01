@@ -9,40 +9,36 @@ import {
   AuthFormLabel,
 } from "./AuthElements";
 import axios from "axios";
-
-function Auth() {
+const Auth = () => {
   const initInputs = {
     username: "",
-    password: ""
+    password: "",
   };
   const [inputs, setInputs] = React.useState(initInputs);
-
-  function handleChange(event) {
+  handleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
     setInputs((prev) => ({
       ...prev,
       [name]: value,
     }));
-  }
-
-  function handleTokenAndStorage(token, user) {
-    localStorage.setItem('dbweb_token', token)
-    const userData = JSON.stringify(user)
-    localStorage.setItem('dbweb_user', userData)
+  };
+  handleTokenAndStorage = (token, user) => {
+    localStorage.setItem("dbweb_token", token);
+    const userData = JSON.stringify(user);
+    localStorage.setItem("dbweb_user", userData);
     //To gain access to userData on frontend as an object, JSON.parse()
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault()
-    axios.post('/auth/login', inputs)
-    .then(res=> {
-      console.log(res)
-      handleTokenAndStorage(res.data.token, res.data.user)
-    })
-    .catch(err => console.log(err))
-  }
-
+  };
+  handleSubmit = (event) => {
+    event.preventDefault();
+    axios
+      .post("/auth/login", inputs)
+      .then((res) => {
+        console.log(res);
+        handleTokenAndStorage(res.data.token, res.data.user);
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <AuthContainer>
       <AuthBox>
@@ -73,5 +69,5 @@ function Auth() {
       </AuthBox>
     </AuthContainer>
   );
-}
+};
 export default Auth;

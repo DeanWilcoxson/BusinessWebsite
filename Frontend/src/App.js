@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./Components/Pages/Parent/LandingPage";
-import About from "./Components/Pages/Parent/About";
-import Packages from "./Components/Pages/Parent/Packages";
+import Landing from "./Components/Global/LandingPage";
+import About from "./Components/Global/About";
+import Packages from "./Components/Global/Packages";
 import Auth from "./Components/Auth";
-import NotFound from "./Components/Pages/Global/Error";
+import NotFound from "./Components/Global/Error";
 import Topbar from "./Components/Layout/Topbar";
 import Footer from "./Components/Layout/Footer";
-import Templates from "./Components/Pages/Parent/Templates";
+import Templates from "./Components/Global/Templates";
 const App = () => {
   return (
-    <div>
+    <div className="font-face-ab">
       <Router>
         <Topbar />
         <Routes>

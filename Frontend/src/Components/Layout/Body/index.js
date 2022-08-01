@@ -9,16 +9,17 @@ import {
   ArrowLogo,
   ArrowButton,
 } from "./BodyElements";
-import { HomeSections } from "./SectionData";
-import { VideoBg, VideoContainer } from "./../../../Videos/VideoElements";
-import video from "./../../../Videos/video.mp4";
-const BodySection = () => {
-  const heading = HomeSections[0].sectionOne.Heading;
-  const description = HomeSections[0].sectionOne.Description;
-  const button_one = HomeSections[0].sectionOne.ButtonTextOne;
-  const button_two = HomeSections[0].sectionOne.ButtonTextTwo;
+import { VideoBg, VideoContainer } from "../../../Assets/Videos/VideoElements";
+import video from "../../../Assets/Videos/video.mp4";
+const BodySection = ({
+  id,
+  heading,
+  description,
+  button_text_one,
+  button_text_two,
+}) => {
   return (
-    <BodyContainer>
+    <BodyContainer id={id}>
       <VideoContainer>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </VideoContainer>
@@ -26,11 +27,11 @@ const BodySection = () => {
         <BodyHeading>{heading}</BodyHeading>
         <BodyDesc>{description}</BodyDesc>
         <ButtonBox>
-          <BodyButton to="/about">{button_one}</BodyButton>
-          <BodyButton to="/contact">{button_two}</BodyButton>
+          <BodyButton to="/about">{button_text_one}</BodyButton>
+          <BodyButton to="/contact">{button_text_two}</BodyButton>
         </ButtonBox>
         <ArrowButton>
-          <ArrowLogo></ArrowLogo>
+          <ArrowLogo to="extended_landing"></ArrowLogo>
         </ArrowButton>
       </BodyBox>
     </BodyContainer>

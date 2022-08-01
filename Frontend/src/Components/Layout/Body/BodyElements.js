@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaArrowCircleDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link as LinkA } from "react-router-dom";
+import { Link as LinkB } from "react-scroll";
 export const BodyContainer = styled.div`
   padding: 5rem;
   z-index: 1000;
@@ -19,25 +20,22 @@ export const BodyHeading = styled.h1`
 `;
 export const BodyDesc = styled.p`
   z-index: 1000;
-  color: #888888;
+  color: #ffffffd6;
   text-shadow: 1px 1px 2px black;
   padding: 2rem;
-  font-size: 1.5rem;
-  width: 35%;
+  font-size: 1rem;
+  width: 40%;
   text-align: center;
-  /* background-color: #7875758a; */
-  border-radius: 5px;
 `;
 export const ButtonBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
   z-index: 1000;
 `;
-export const BodyButton = styled(Link)`
+export const BodyButton = styled(LinkA)`
   z-index: 1000;
   color: #43b1f8;
   margin: 1rem;
@@ -47,7 +45,7 @@ export const BodyButton = styled(Link)`
   cursor: hand;
   text-decoration: none;
 `;
-export const ArrowButton = styled.button`
+export const ArrowButton = styled(LinkB)`
   z-index: 1000;
   border: none;
   background: transparent;
