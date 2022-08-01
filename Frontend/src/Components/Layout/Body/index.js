@@ -19,15 +19,15 @@ const BodySection = () => {
   const button_two = HomeSections[0].sectionOne.ButtonTextTwo;
   return (
     <BodyContainer>
+      <VideoContainer>
+        <VideoBg autoPlay loop muted src={video} type="video/mp4" />
+      </VideoContainer>
       <BodyBox>
-        <VideoContainer>
-          <VideoBg autoPlay loop muted src={video} type="video/mp4" />
-        </VideoContainer>
         <BodyHeading>{heading}</BodyHeading>
         <BodyDesc>{description}</BodyDesc>
         <ButtonBox>
-          <BodyButton>{button_one}</BodyButton>
-          <BodyButton>{button_two}</BodyButton>
+          <BodyButton to="/about">{button_one}</BodyButton>
+          <BodyButton to="/contact">{button_two}</BodyButton>
         </ButtonBox>
         <ArrowButton>
           <ArrowLogo></ArrowLogo>
