@@ -1,5 +1,12 @@
 export const HomeSections = [
-  { sectionOne: { Heading: "Hello" } },
+  {
+    sectionOne: {
+      Heading: "Professional Web Design Services",
+      Description: "We provide expert design solutions for local Small Businesses and Entrepreneurs.",
+      ButtonTextOne: "Learn More",
+      ButtonTextTwo: "Contact Us",
+    },
+  },
   { sectionTwo: {} },
   { sectionThree: {} },
 ];

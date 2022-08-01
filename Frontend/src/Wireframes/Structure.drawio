@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram id="bTCmwgdYC0q8DJAq4dnc" name="Home">
-        <mxGraphModel dx="1980" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
+        <mxGraphModel dx="1091" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Db Web Development LLC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry width="320" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                <mxCell id="4" value="Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry x="320" width="530" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Landing Section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
@@ -26,7 +26,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="ihBt8XRc2Rb9ajfsJttO" name="Packages">
-        <mxGraphModel dx="2475" dy="1418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+        <mxGraphModel dx="2142" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
             <root>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-0"/>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-1" parent="ofmS-jYyCDlHkQRJSBBz-0"/>
@@ -70,7 +70,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="EUr-HinbY8WgnRbZaCOQ" name="Templates">
-        <mxGraphModel dx="1980" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1071" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="Q09Gshm9JHI5dkoqLLsO-0"/>
                 <mxCell id="Q09Gshm9JHI5dkoqLLsO-1" parent="Q09Gshm9JHI5dkoqLLsO-0"/>
