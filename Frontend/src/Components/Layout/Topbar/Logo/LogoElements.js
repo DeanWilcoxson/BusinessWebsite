@@ -10,10 +10,11 @@ export const LogoContainer = styled.div`
 `;
 export const LogoImg = styled.img`
   z-index: 1000;
+  background-blend-mode:multiply;
 `;
 export const BusinessName = styled.h1`
   color: #43b1f8;
-  text-shadow: 1px 1px 2px #888888;
+  text-shadow: 2px 2px 4px #000;
   z-index: 1000;
   letter-spacing: 0.1em;
   font-family: 'Times New Roman', Times, serif;

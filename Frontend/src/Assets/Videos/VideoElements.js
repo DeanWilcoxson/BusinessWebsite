@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const VideoContainer = styled.div`
   position: absolute;
-  top: 7.5rem;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;

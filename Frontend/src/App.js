@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./Components/Global/LandingPage";
-import About from "./Components/Global/About";
-import Packages from "./Components/Global/Packages";
-import Auth from "./Components/Auth";
-import NotFound from "./Components/Global/Error";
+import Landing from "./Components/Pages/LandingPage";
+import About from "./Components/Pages/About";
+import Packages from "./Components/Pages/Packages";
+import Auth from "./Components/Admin/Auth";
+import NotFound from "./Components/Pages/Error";
 import Topbar from "./Components/Layout/Topbar";
 import Footer from "./Components/Layout/Footer";
-import Templates from "./Components/Global/Templates";
+import Templates from "./Components/Pages/Templates";
 const App = () => {
   return (
     <div>
