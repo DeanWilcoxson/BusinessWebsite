@@ -4,6 +4,7 @@ export const TopbarContainer = styled.div`
   margin-top: -10px;
   margin: 0;
   padding: 0;
+  transition: background-color 0.8s all ease;
   background: ${({ scrollNav }) =>
     scrollNav
       ? "linear-gradient(to right, #070600 0%, #070600 40%, #888 100%)"
