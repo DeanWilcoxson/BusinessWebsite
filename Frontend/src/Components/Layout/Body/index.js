@@ -21,25 +21,22 @@ const BodySection = ({
   button_text_one,
   button_text_two,
 }) => {
+  console.log(id);
   return (
     <BodyContainer id={id}>
       <VideoContainer>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </VideoContainer>
       <BodyBox>
-        <BodyHeading>{heading}</BodyHeading>
         <BodyContentContainer>
+          <BodyHeading>{heading}</BodyHeading>
           <BodyDesc>{description}</BodyDesc>
-          <BodyImage src={img}></BodyImage>
+          <ButtonBox>
+            <BodyButton to="/packages">{button_text_one}</BodyButton>
+            <BodyButton to="/contact">{button_text_two}</BodyButton>
+          </ButtonBox>
         </BodyContentContainer>
-
-        <ButtonBox>
-          <BodyButton to="/about">{button_text_one}</BodyButton>
-          <BodyButton to="/contact">{button_text_two}</BodyButton>
-        </ButtonBox>
-        <ArrowButton>
-          <ArrowLogo to="extended_landing"></ArrowLogo>
-        </ArrowButton>
+        <BodyImage src={img}></BodyImage>
       </BodyBox>
     </BodyContainer>
   );
