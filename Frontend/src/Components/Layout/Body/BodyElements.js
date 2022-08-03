@@ -3,10 +3,11 @@ import { FaArrowCircleDown } from "react-icons/fa";
 import { Link as LinkA } from "react-router-dom";
 import { Link as LinkB } from "react-scroll";
 export const BodyContainer = styled.div`
-  padding: 5rem;
+  padding: 8rem;
   z-index: 1000;
 `;
 export const BodyBox = styled.div`
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,18 +15,33 @@ export const BodyBox = styled.div`
   z-index: 1000;
 `;
 export const BodyHeading = styled.h1`
+  font-family: "Times New Roman", Times, serif;
+  margin: 2rem;
   color: #ffffffd6;
   text-shadow: 1px 1px 2px black;
   z-index: 1000;
 `;
+export const BodyContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+`;
 export const BodyDesc = styled.p`
+  font-family: Arial;
+  letter-spacing: 0.1em;
   z-index: 1000;
   color: #ffffffd6;
   text-shadow: 1px 1px 2px black;
   padding: 2rem;
   font-size: 1rem;
   width: 40%;
-  text-align: center;
+  text-align: left;
+`;
+export const BodyImage = styled.img`
+  width: 15%;
+  z-index: 1000;
+  border-radius: 15%;
 `;
 export const ButtonBox = styled.div`
   display: flex;
@@ -41,7 +57,7 @@ export const BodyButton = styled(LinkA)`
   margin: 1rem;
   border: none;
   background: transparent;
-  font-size: x-large;
+  font-size: large;
   cursor: hand;
   text-decoration: none;
 `;

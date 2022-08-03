@@ -10,7 +10,7 @@ import Footer from "./Components/Layout/Footer";
 import Templates from "./Components/Global/Templates";
 const App = () => {
   return (
-    <div className="font-face-ab">
+    <div>
       <Router>
         <Topbar />
         <Routes>

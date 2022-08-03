@@ -5,7 +5,9 @@ import {
   ButtonBox,
   BodyButton,
   BodyHeading,
+  BodyContentContainer,
   BodyDesc,
+  BodyImage,
   ArrowLogo,
   ArrowButton,
 } from "./BodyElements";
@@ -15,6 +17,7 @@ const BodySection = ({
   id,
   heading,
   description,
+  img,
   button_text_one,
   button_text_two,
 }) => {
@@ -25,7 +28,11 @@ const BodySection = ({
       </VideoContainer>
       <BodyBox>
         <BodyHeading>{heading}</BodyHeading>
-        <BodyDesc>{description}</BodyDesc>
+        <BodyContentContainer>
+          <BodyDesc>{description}</BodyDesc>
+          <BodyImage src={img}></BodyImage>
+        </BodyContentContainer>
+
         <ButtonBox>
           <BodyButton to="/about">{button_text_one}</BodyButton>
           <BodyButton to="/contact">{button_text_two}</BodyButton>
