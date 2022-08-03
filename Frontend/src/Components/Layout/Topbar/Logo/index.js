@@ -1,7 +1,6 @@
 import React from "react";
 import { LogoContainer, LogoImg, BusinessName } from "./LogoElements";
-import BusinessLogo from "../../../../Images/BusinessLogo.png";
-
+import BusinessLogo from "../../../../Assets/Images/BusinessLogo.png";
 const Logo = () => {
   return (
     <LogoContainer>

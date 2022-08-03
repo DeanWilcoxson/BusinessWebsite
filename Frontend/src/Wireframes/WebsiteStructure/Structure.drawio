@@ -1,0 +1,157 @@
+<mxfile host="65bd71144e">
+    <diagram id="bTCmwgdYC0q8DJAq4dnc" name="Home">
+        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Db Web Development LLC" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" width="530" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Landing Section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry y="80" width="850" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Info Section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry y="520" width="850" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="down arrow" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;labelBackgroundColor=none;labelBorderColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="385" y="440" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="950" width="850" height="150" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="ihBt8XRc2Rb9ajfsJttO" name="Packages">
+        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+            <root>
+                <mxCell id="ofmS-jYyCDlHkQRJSBBz-0"/>
+                <mxCell id="ofmS-jYyCDlHkQRJSBBz-1" parent="ofmS-jYyCDlHkQRJSBBz-0"/>
+                <mxCell id="ofmS-jYyCDlHkQRJSBBz-2" value="DB Web Development LLC" style="rounded=0;whiteSpace=wrap;html=1;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="j1UvrnblOAu1H-zXASGy-2" value="Packages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry y="80" width="850" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="j1UvrnblOAu1H-zXASGy-3" value="SPA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="20" y="100" width="250" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="j1UvrnblOAu1H-zXASGy-4" value="3-5 Pages" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="300" y="100" width="250" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="j1UvrnblOAu1H-zXASGy-5" value="5+ TBD" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="580" y="100" width="250" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="j1UvrnblOAu1H-zXASGy-6" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry y="950" width="850" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxqCLYQiNKpjZkhhvTrE-0" value="$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="20" y="350" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxqCLYQiNKpjZkhhvTrE-1" value="$$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="300" y="350" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxqCLYQiNKpjZkhhvTrE-2" value="$$$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="580" y="350" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxqCLYQiNKpjZkhhvTrE-3" value="Process Section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="20" y="620" width="810" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="1T92VImghQlUpBBoWLwZ-0" value="Contact Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry y="780" width="850" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="tsyh7-j1-siuvf-bjPWg-0" value="" style="edgeStyle=none;html=1;fontColor=#000000;" edge="1" parent="ofmS-jYyCDlHkQRJSBBz-1" source="2QWGDQsZiZwk_0B6qSkF-0" target="XxqCLYQiNKpjZkhhvTrE-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2QWGDQsZiZwk_0B6qSkF-0" value="Additrional Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
+                    <mxGeometry x="20" y="460" width="810" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="DcgDOmwqmVQPUiuOpHRL-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ofmS-jYyCDlHkQRJSBBz-1">
+                    <mxGeometry x="320" width="530" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="EUr-HinbY8WgnRbZaCOQ" name="Templates">
+        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-0"/>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-1" parent="Q09Gshm9JHI5dkoqLLsO-0"/>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-2" value="DB Web Development LLC" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry y="80" width="850" height="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-4" value="Templates" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="265" y="140" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="180" y="240" width="490" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-6" value="Template Header" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="180" y="240" width="490" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-7" value="Template Landing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="180" y="300" width="490" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-8" value="&amp;gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="730" y="380" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-9" value="&amp;lt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="50" y="380" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-10" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry y="950" width="850" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-11" value="Template Info Section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="180" y="480" width="490" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q09Gshm9JHI5dkoqLLsO-12" value="Template Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry x="180" y="670" width="490" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="lHSUeV27BXIw1-l1M0tu-0" value="Contact Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
+                    <mxGeometry y="800" width="850" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="Sx7QNP5Ox54JykJKcAlc-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Q09Gshm9JHI5dkoqLLsO-1">
+                    <mxGeometry x="280" width="570" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="zPeSjOxlUbzoeAJshlVq" name="About">
+        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-0"/>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-1" parent="b4_c9_ab1a4J8MrI3eN4-0"/>
+                <mxCell id="6P0yz8n4dhqF3qkIBiZr-0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" vertex="1" parent="b4_c9_ab1a4J8MrI3eN4-1">
+                    <mxGeometry y="80" width="850" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-2" value="DB Web Development LLC" style="rounded=0;whiteSpace=wrap;html=1;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
+                    <mxGeometry width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-3" value="Mission Statement" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontColor=#000000;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
+                    <mxGeometry x="45" y="160" width="760" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-4" value="Dean Personal Info" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontColor=#000000;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
+                    <mxGeometry x="40" y="440" width="360" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-5" value="Bryan Personal Info" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontColor=#000000;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
+                    <mxGeometry x="450" y="440" width="350" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-6" value="Contact Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontColor=#000000;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
+                    <mxGeometry y="780" width="850" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4_c9_ab1a4J8MrI3eN4-7" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
+                    <mxGeometry y="950" width="850" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="qhrma0W7-wbvQo9W3xyg-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="b4_c9_ab1a4J8MrI3eN4-1">
+                    <mxGeometry x="320" width="530" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
