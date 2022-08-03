@@ -17,6 +17,7 @@ export const TopbarBox = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  margin-top: .5rem;
 `;
 // export const TopbarHr = styled.hr`
 //   width: 100%;

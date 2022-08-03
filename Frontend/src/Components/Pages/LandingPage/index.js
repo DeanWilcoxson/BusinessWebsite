@@ -12,10 +12,11 @@ const Landing = () => {
     <LandingContainer>
       <LandingBox>
         <BodySection {...homeObjOne} />
-        <BodySection {...homeObjTwo} />
-        <BodySection {...homeObjThree} />
       </LandingBox>
     </LandingContainer>
   );
 };
 export default Landing;
+
+// <BodySection {...homeObjTwo} />
+// <BodySection {...homeObjThree} />

@@ -7,7 +7,8 @@ export const BodyContainer = styled.div`
   z-index: 100;
 `;
 export const BodyBox = styled.div`
-  padding: 5rem;
+  padding: 5rem 8rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,7 +34,7 @@ export const BodyDesc = styled.p`
   letter-spacing: 0.1em;
   z-index: 100;
   color: #f7f7ff;
-  text-shadow: .75px .75px 1.5px black;
+  text-shadow: 0.75px 0.75px 1.5px black;
   padding: 2rem;
   font-size: 1rem;
   width: 80%;
@@ -60,11 +61,11 @@ export const BodyButton = styled(LinkA)`
   color: #f7f7ff;
   &:hover {
     color: black;
-    background-color: #20FC8F;
+    background-color: #20fc8f;
   }
 `;
 export const BodyImage = styled.img`
-  width: 35%;
+  width: 40%;
   z-index: 100;
 `;
 
