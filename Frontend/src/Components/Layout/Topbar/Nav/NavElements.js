@@ -22,5 +22,6 @@ export const NavButton = styled(Link)`
   text-shadow: 1px 1px 2px black;
   &:hover {
     color: #20fc8f;
+    background-color: #88888855;
   }
 `;
