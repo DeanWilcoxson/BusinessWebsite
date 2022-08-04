@@ -5,7 +5,9 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaPhoneSquareAlt,
 } from "react-icons/fa";
+import { MdMessage, MdMail } from "react-icons/md";
 export const FooterContainer = styled.div`
   bottom: 0px;
   position: relative;
@@ -43,6 +45,9 @@ export const FooterLink = styled.a`
   z-index: 1000;
   color: #888;
   padding: 1rem;
+  &:hover {
+    color: #20fc8f;
+  }
 `;
 export const FooterCopyright = styled.p`
   z-index: 1000;
@@ -51,16 +56,49 @@ export const FooterCopyright = styled.p`
 `;
 export const TwitterIcon = styled(FaTwitter)`
   color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
 `;
 export const FacebookIcon = styled(FaFacebook)`
   color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
 `;
 export const GithubIcon = styled(FaGithub)`
   color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
 `;
 export const InstagramIcon = styled(FaInstagram)`
   color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
 `;
 export const LinkedInIcon = styled(FaLinkedin)`
   color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
+`;
+export const PhoneIcon = styled(FaPhoneSquareAlt)`
+  color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
+`;
+export const MessageIcon = styled(MdMessage)`
+  color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
+`;
+export const EmailIcon = styled(MdMail)`
+  color: #888;
+  &:hover {
+    color: #20fc8f;
+  }
 `;
