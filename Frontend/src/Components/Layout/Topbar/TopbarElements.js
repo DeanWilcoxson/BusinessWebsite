@@ -2,8 +2,12 @@ import styled from "styled-components";
 export const TopbarContainer = styled.div`
   position: fixed;
   margin-top: -10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   margin: 0;
   padding: 0;
+  transition: background-color 0.8s all ease;
   background: ${({ scrollNav }) =>
     scrollNav
       ? "linear-gradient(to right, #070600 0%, #070600 40%, #888 100%)"
@@ -17,12 +21,5 @@ export const TopbarBox = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 `;
-// export const TopbarHr = styled.hr`
-//   width: 100%;
-//   height: 2px;
-//   border: none;
-//   background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#43b1f8")};
-//   color: ${({ scrollNav }) => (scrollNav ? "transparent" : "#43b1f8")};
-// `;

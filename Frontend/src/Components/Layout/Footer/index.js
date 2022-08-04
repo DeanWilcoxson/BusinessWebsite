@@ -13,13 +13,34 @@ import {
   GithubIcon,
   InstagramIcon,
   LinkedInIcon,
+  GooglePlusIcon,
+  PhoneIcon,
+  MessageIcon,
+  EmailIcon,
+  DatabaseIcon,
+  WebpageIcon,
+  MobileIcon,
 } from "./FooterElements";
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterBox>
         <FooterInfoBox>
-          <FooterInfoListTitle>Connect</FooterInfoListTitle>
+          <FooterInfoListTitle>Contact Us</FooterInfoListTitle>
+          <FooterInfoList>
+            <FooterInfoItem href="">
+              <PhoneIcon></PhoneIcon>
+            </FooterInfoItem>
+            <FooterInfoItem href="">
+              <MessageIcon></MessageIcon>
+            </FooterInfoItem>
+            <FooterInfoItem href="">
+              <EmailIcon></EmailIcon>
+            </FooterInfoItem>
+          </FooterInfoList>
+        </FooterInfoBox>
+        <FooterInfoBox>
+          <FooterInfoListTitle>Connect With Us</FooterInfoListTitle>
           <FooterInfoList>
             <FooterInfoItem href="">
               <TwitterIcon></TwitterIcon>
@@ -36,15 +57,28 @@ const Footer = () => {
             <FooterInfoItem href="">
               <LinkedInIcon></LinkedInIcon>
             </FooterInfoItem>
-            <FooterInfoItem href=""></FooterInfoItem>
+            <FooterInfoItem href="">
+              <GooglePlusIcon></GooglePlusIcon>
+            </FooterInfoItem>
             <FooterInfoItem href=""></FooterInfoItem>
           </FooterInfoList>
         </FooterInfoBox>
-        <FooterLink>Contact Us</FooterLink>
-        <FooterLink></FooterLink>
-        <FooterLink>Our Process</FooterLink>
+        <FooterInfoBox>
+          <FooterInfoListTitle>Our Process</FooterInfoListTitle>
+          <FooterInfoList>
+            <FooterInfoItem>
+              <WebpageIcon></WebpageIcon>
+            </FooterInfoItem>
+            <FooterInfoItem>
+              <MobileIcon></MobileIcon>
+            </FooterInfoItem>
+            <FooterInfoItem>
+              <DatabaseIcon></DatabaseIcon>
+            </FooterInfoItem>
+          </FooterInfoList>
+        </FooterInfoBox>
       </FooterBox>
-      <FooterCopyright>&copy; DB Web Development LLC</FooterCopyright>
+      <FooterCopyright>&copy; DB Web Development LLC. All Rights Reserved.</FooterCopyright>
     </FooterContainer>
   );
 };

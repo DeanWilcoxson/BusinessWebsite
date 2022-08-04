@@ -7,8 +7,8 @@ export const BodyContainer = styled.div`
   z-index: 100;
 `;
 export const BodyBox = styled.div`
-  padding: 5rem 8rem;
-  margin-top: 5rem;
+  padding: 5rem 2rem;
+  /* margin-top: 5rem; */
   display: flex;
   flex-direction: row;
   justify-content: center;
