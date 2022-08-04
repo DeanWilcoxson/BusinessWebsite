@@ -17,17 +17,19 @@ export const FooterContainer = styled.div`
   width: 100%;
   background-color: #070600;
   padding: 2rem;
-  z-index: 1000;
+  z-index: 999;
 `;
 export const FooterBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  z-index: 1000;
+  z-index: 999;
 `;
+export const FooterLogoImg = styled.img``;
+export const FooterBusinessName = styled.h3``;
 export const FooterInfoBox = styled.div`
-  z-index: 1000;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   justify-content: justify;
@@ -38,7 +40,7 @@ export const FooterInfoList = styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  z-index: 1000;
+  z-index: 999;
   justify-content: space-between;
   align-items: center;
 `;
@@ -46,11 +48,11 @@ export const FooterInfoListTitle = styled.p`
   color: #888;
 `;
 export const FooterInfoItem = styled.a`
-  z-index: 1000;
+  z-index: 999;
   padding: 1rem;
 `;
 export const FooterLink = styled.a`
-  z-index: 1000;
+  z-index: 999;
   color: #888;
   padding: 1rem;
   &:hover {
@@ -58,7 +60,7 @@ export const FooterLink = styled.a`
   }
 `;
 export const FooterCopyright = styled.p`
-  z-index: 1000;
+  z-index: 999;
   text-align: center;
   color: #888;
 `;

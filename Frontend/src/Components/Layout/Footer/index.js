@@ -40,7 +40,7 @@ const Footer = () => {
           </FooterInfoList>
         </FooterInfoBox>
         <FooterInfoBox>
-          <FooterInfoListTitle>Connect</FooterInfoListTitle>
+          <FooterInfoListTitle>Connect With Us</FooterInfoListTitle>
           <FooterInfoList>
             <FooterInfoItem href="">
               <TwitterIcon></TwitterIcon>
@@ -78,7 +78,7 @@ const Footer = () => {
           </FooterInfoList>
         </FooterInfoBox>
       </FooterBox>
-      <FooterCopyright>&copy; DB Web Development LLC</FooterCopyright>
+      <FooterCopyright>&copy; DB Web Development LLC. All Rights Reserved.</FooterCopyright>
     </FooterContainer>
   );
 };

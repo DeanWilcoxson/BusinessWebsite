@@ -2,6 +2,9 @@ import styled from "styled-components";
 export const TopbarContainer = styled.div`
   position: fixed;
   margin-top: -10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   margin: 0;
   padding: 0;
   transition: background-color 0.8s all ease;
