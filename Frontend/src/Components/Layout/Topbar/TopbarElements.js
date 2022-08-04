@@ -18,12 +18,5 @@ export const TopbarBox = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 `;
-// export const TopbarHr = styled.hr`
-//   width: 100%;
-//   height: 2px;
-//   border: none;
-//   background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#43b1f8")};
-//   color: ${({ scrollNav }) => (scrollNav ? "transparent" : "#43b1f8")};
-// `;
