@@ -5,7 +5,7 @@ import { Link as LinkB } from "react-scroll";
 export const BodyContainer = styled.div`
   padding: 8rem;
   z-index: 100;
-  background-color: {({})=>{}};
+  /* background-color: {({})=>{}}; */
 `;
 export const BodyBox = styled.div`
   padding: 5rem 2rem;
