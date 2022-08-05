@@ -15,21 +15,21 @@ const Auth = () => {
     password: "",
   };
   const [inputs, setInputs] = React.useState(initInputs);
-  handleChange = (event) => {
+  function handleChange(event) {
     event.preventDefault();
     const { name, value } = event.target;
     setInputs((prev) => ({
       ...prev,
       [name]: value,
     }));
-  };
-  handleTokenAndStorage = (token, user) => {
+  }
+  function handleTokenAndStorage(token, user) {
     localStorage.setItem("dbweb_token", token);
     const userData = JSON.stringify(user);
     localStorage.setItem("dbweb_user", userData);
     //To gain access to userData on frontend as an object, JSON.parse()
-  };
-  handleSubmit = (event) => {
+  }
+  function handleSubmit(event) {
     event.preventDefault();
     axios
       .post("/auth/login", inputs)
@@ -38,7 +38,7 @@ const Auth = () => {
         handleTokenAndStorage(res.data.token, res.data.user);
       })
       .catch((err) => console.log(err));
-  };
+  }
   return (
     <AuthContainer>
       <AuthBox>

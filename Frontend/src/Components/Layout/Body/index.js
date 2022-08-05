@@ -20,6 +20,7 @@ const BodySection = ({
   img,
   button_text_one,
   button_text_two,
+  lightText,
 }) => {
   console.log(id);
   return (
@@ -29,8 +30,8 @@ const BodySection = ({
       </VideoContainer>
       <BodyBox>
         <BodyContentContainer>
-          <BodyHeading>{heading}</BodyHeading>
-          <BodyDesc>{description}</BodyDesc>
+          <BodyHeading lightText={lightText}>{heading}</BodyHeading>
+          <BodyDesc lightText={lightText}>{description}</BodyDesc>
           <ButtonBox>
             <BodyButton to="/packages">{button_text_one}</BodyButton>
             <BodyButton to="/contact">{button_text_two}</BodyButton>

@@ -5,6 +5,7 @@ import { Link as LinkB } from "react-scroll";
 export const BodyContainer = styled.div`
   padding: 8rem;
   z-index: 100;
+  background-color: {({})=>{}};
 `;
 export const BodyBox = styled.div`
   padding: 5rem 2rem;
@@ -25,18 +26,18 @@ export const BodyContentContainer = styled.div`
 export const BodyHeading = styled.h1`
   font-family: "Times New Roman", Times, serif;
   margin: 2rem;
-  color: #f7f7ff;
-  text-shadow: 1px 1px 2px black;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff" : " #000000")};
+  text-shadow: 1px 1px 2px #000;
   z-index: 100;
 `;
 export const BodyDesc = styled.p`
   /* font-family: Arial; */
   letter-spacing: 0.1em;
   z-index: 100;
-  color: #f7f7ff;
-  text-shadow: 0.75px 0.75px 1.5px black;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  text-shadow: 0.75px 0.75px 1.5px #000;
   padding: 2rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   width: 80%;
   text-align: left;
 `;
@@ -60,7 +61,7 @@ export const BodyButton = styled(LinkA)`
   background-color: #43b1f8;
   color: #f7f7ff;
   &:hover {
-    color: black;
+    color: #000;
     background-color: #20fc8f;
   }
 `;
@@ -68,7 +69,6 @@ export const BodyImage = styled.img`
   width: 40%;
   z-index: 100;
 `;
-
 // export const ArrowButton = styled(LinkB)`
 //   z-index: 100;
 //   border: none;
