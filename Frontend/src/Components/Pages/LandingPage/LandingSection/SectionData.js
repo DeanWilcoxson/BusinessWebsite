@@ -1,4 +1,5 @@
 import img1 from "../../../../Assets/Images/img1.png";
+import img2 from "../../../../Assets/Images/img2.png";
 import img3 from "../../../../Assets/Images/img3.png";
 export const homeObjOne = {
   id: "landing",
@@ -20,7 +21,7 @@ export const homeObjTwo = {
   description:
     "Our Professional Process takes advantage of Industry Leading Technologies. We Implement the Powerful Framework React.JS for a customers User Interface, as well as User Experience. We also Implement an Express.JS Framework for the Server and Routing. The Wildly Popular Node.JS Runtime Environment is Perfect for the needed Scalability of a customers ever changing needs in the Backend. All of this along with the Non-Relational Document Database known for its Flexibility, MongoDB makes for an ideal solution for any business that needs an online presence.",
   img: `${img3}`,
-  alt: "",
+  alt: "business-man",
   lightText: false,
   darkText: false,
   lightBg: false,
@@ -30,14 +31,15 @@ export const homeObjTwo = {
 };
 export const homeObjThree = {
   id: "extended_landing_two",
-  heading: "",
-  description: "",
-  img: `${img1}`,
-  alt: "",
+  heading: "Domain Hosting",
+  description:
+    "Get your Website Up and Running through us. We will provide you with a list of domain hosting services that will fit your specific website needs. For more information, please contact us.",
+  img: `${img2}`,
+  alt: "hosting-services",
   lightText: false,
   darkText: false,
   lightBg: false,
   darkBg: false,
-  button_text_one: "",
-  button_text_two: "",
+  button_text_one: "Hosting Services",
+  button_text_two: "Contact Us",
 };

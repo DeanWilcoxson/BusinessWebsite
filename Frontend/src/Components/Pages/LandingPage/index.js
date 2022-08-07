@@ -15,10 +15,9 @@ const Landing = () => {
         <LandingNav />
         <BodySection {...homeObjOne} />
         <BodySection {...homeObjTwo} />
+        <BodySection {...homeObjThree} />
       </LandingBox>
     </LandingContainer>
   );
 };
 export default Landing;
-
-// <BodySection {...homeObjThree} />

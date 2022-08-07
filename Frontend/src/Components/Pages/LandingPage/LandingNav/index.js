@@ -8,17 +8,15 @@ const LandingNav = () => {
   return (
     <LandingNavContainer>
       <LandingNavBox>
-        <LandingNavLink to="landing" spy={true} smooth={true}></LandingNavLink>
-        <LandingNavLink
-          to="extended_landing"
-          spy={true}
-          smooth={true}
-        ></LandingNavLink>
-        <LandingNavLink
-          to="extended_landing_two"
-          spy={true}
-          smooth={true}
-        ></LandingNavLink>
+        <LandingNavLink to="landing" spy={true} smooth={true}>
+          Top
+        </LandingNavLink>
+        <LandingNavLink to="extended_landing" spy={true} smooth={true}>
+          Mid
+        </LandingNavLink>
+        <LandingNavLink to="extended_landing_two" spy={true} smooth={true}>
+          End
+        </LandingNavLink>
       </LandingNavBox>
     </LandingNavContainer>
   );

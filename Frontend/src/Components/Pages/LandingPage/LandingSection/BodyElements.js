@@ -4,7 +4,6 @@ import { Link as LinkA } from "react-router-dom";
 import { Link as LinkB } from "react-scroll";
 export const BodyContainer = styled.div`
   padding: 8rem;
-  /* padding-top: 0px; */
   z-index: 100;
   width: 100%;
   height: 100%;
@@ -13,7 +12,8 @@ export const BodyContainer = styled.div`
 export const BodyBox = styled.div`
   padding: 5rem;
   padding-bottom: 0px;
-  /* margin-top: 5rem; */
+  margin-top: 3rem;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
