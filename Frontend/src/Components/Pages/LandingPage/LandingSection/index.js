@@ -8,11 +8,9 @@ import {
   BodyContentContainer,
   BodyDesc,
   BodyImage,
-  ArrowLogo,
-  ArrowButton,
 } from "./BodyElements";
-import { VideoBg, VideoContainer } from "../../../Assets/Videos/VideoElements";
-import video from "../../../Assets/Videos/video.mp4";
+import { VideoBg, VideoContainer } from "../../../../Assets/Videos/VideoElements";
+import video from "../../../../Assets/Videos/video.mp4";
 const BodySection = ({
   id,
   heading,
@@ -21,10 +19,11 @@ const BodySection = ({
   button_text_one,
   button_text_two,
   lightText,
+  darkBg,
 }) => {
   console.log(id);
   return (
-    <BodyContainer id={id}>
+    <BodyContainer id={id} darkBg={darkBg}>
       <VideoContainer>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </VideoContainer>

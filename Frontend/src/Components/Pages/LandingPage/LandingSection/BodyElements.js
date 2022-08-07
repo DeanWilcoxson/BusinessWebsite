@@ -4,11 +4,15 @@ import { Link as LinkA } from "react-router-dom";
 import { Link as LinkB } from "react-scroll";
 export const BodyContainer = styled.div`
   padding: 8rem;
+  /* padding-top: 0px; */
   z-index: 100;
-  /* background-color: {({})=>{}}; */
+  width: 100%;
+  height: 100%;
+  background-color: ${({ darkBg }) => (darkBg ? "#888" : " transparent")};
 `;
 export const BodyBox = styled.div`
-  padding: 5rem 2rem;
+  padding: 5rem;
+  padding-bottom: 0px;
   /* margin-top: 5rem; */
   display: flex;
   flex-direction: row;
@@ -27,15 +31,15 @@ export const BodyHeading = styled.h1`
   font-family: "Times New Roman", Times, serif;
   margin: 2rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff" : " #000000")};
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   z-index: 100;
 `;
 export const BodyDesc = styled.p`
-  /* font-family: Arial; */
   letter-spacing: 0.1em;
   z-index: 100;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
-  text-shadow: 0.75px 0.75px 1.5px #000;
+  text-shadow: ${({ lightText }) =>
+    lightText ? "0.75px 0.75px 1.5px #000" : "none"};
   padding: 2rem;
   font-size: 1.25rem;
   width: 80%;
@@ -69,14 +73,3 @@ export const BodyImage = styled.img`
   width: 40%;
   z-index: 100;
 `;
-// export const ArrowButton = styled(LinkB)`
-//   z-index: 100;
-//   border: none;
-//   background: transparent;
-// `;
-// export const ArrowLogo = styled(FaArrowCircleDown)`
-//   z-index: 100;
-//   color: grey;
-//   padding: 1rem;
-//   font-size: 3rem;
-// `;

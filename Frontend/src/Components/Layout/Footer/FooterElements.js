@@ -6,28 +6,33 @@ import {
   FaInstagram,
   FaLinkedin,
   FaPhoneSquareAlt,
-  FaGooglePlusSquare,
   FaDatabase,
   FaMobile,
 } from "react-icons/fa";
 import { MdMessage, MdMail, MdWeb } from "react-icons/md";
 export const FooterContainer = styled.div`
-  bottom: 0px;
+  padding: 2rem;
+  padding-bottom: 0px;
   position: relative;
   width: 100%;
   background-color: #070600;
-  padding: 2rem;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const FooterBox = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   z-index: 999;
+  width: 80%;
 `;
-export const FooterLogoImg = styled.img``;
-export const FooterBusinessName = styled.h3``;
+export const FooterLogoImg = styled.img`
+  width: 9%;
+`;
 export const FooterInfoBox = styled.div`
   z-index: 999;
   display: flex;
@@ -97,14 +102,6 @@ export const InstagramIcon = styled(FaInstagram)`
   }
 `;
 export const LinkedInIcon = styled(FaLinkedin)`
-  color: #888;
-  font-size: 25px;
-
-  &:hover {
-    color: #20fc8f;
-  }
-`;
-export const GooglePlusIcon = styled(FaGooglePlusSquare)`
   color: #888;
   font-size: 25px;
 

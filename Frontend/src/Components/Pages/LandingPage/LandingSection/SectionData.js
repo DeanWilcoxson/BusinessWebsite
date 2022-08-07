@@ -1,5 +1,5 @@
-import img1 from "../../../Assets/Images/img1.png";
-import img3 from "../../../Assets/Images/img3.png";
+import img1 from "../../../../Assets/Images/img1.png";
+import img3 from "../../../../Assets/Images/img3.png";
 export const homeObjOne = {
   id: "landing",
   heading: "Professional Web Design Services",

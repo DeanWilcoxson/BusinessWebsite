@@ -1,16 +1,18 @@
 import React from "react";
 import { LandingContainer, LandingBox } from "./LandingPageElements";
-import BodySection from "../../Layout/Body";
+import BodySection from "../LandingPage/LandingSection";
+import LandingNav from "./LandingNav";
 import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
-} from "../../Layout/Body/SectionData.js";
+} from "../LandingPage/LandingSection/SectionData.js";
 
 const Landing = () => {
   return (
     <LandingContainer>
       <LandingBox>
+        <LandingNav />
         <BodySection {...homeObjOne} />
         <BodySection {...homeObjTwo} />
       </LandingBox>
