@@ -11,6 +11,7 @@ const LandingNav = () => {
         <LandingNavLink></LandingNavLink>
       </LandingNavBox>
     </LandingNavContainer>
+    
   );
 };
 

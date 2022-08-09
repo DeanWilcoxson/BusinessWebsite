@@ -9,12 +9,16 @@ import {
   AuthFormLabel,
 } from "./AuthElements";
 import axios from "axios";
+
 const Auth = () => {
+  
   const initInputs = {
     username: "",
     password: "",
   };
+  
   const [inputs, setInputs] = React.useState(initInputs);
+
   handleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
@@ -23,12 +27,14 @@ const Auth = () => {
       [name]: value,
     }));
   };
+
   handleTokenAndStorage = (token, user) => {
     localStorage.setItem("dbweb_token", token);
     const userData = JSON.stringify(user);
     localStorage.setItem("dbweb_user", userData);
     //To gain access to userData on frontend as an object, JSON.parse()
   };
+
   handleSubmit = (event) => {
     event.preventDefault();
     axios
@@ -39,6 +45,7 @@ const Auth = () => {
       })
       .catch((err) => console.log(err));
   };
+
   return (
     <AuthContainer>
       <AuthBox>
