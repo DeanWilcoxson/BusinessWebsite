@@ -9,7 +9,10 @@ import {
   BodyDesc,
   BodyImage,
 } from "./BodyElements";
-import { VideoBg, VideoContainer } from "../../../../Assets/Videos/VideoElements";
+import {
+  VideoBg,
+  VideoContainer,
+} from "../../../../Assets/Videos/VideoElements";
 import video from "../../../../Assets/Videos/video.mp4";
 const BodySection = ({
   id,
@@ -20,10 +23,17 @@ const BodySection = ({
   button_text_two,
   lightText,
   darkBg,
+  lightBg,
+  darkText,
 }) => {
   console.log(id);
   return (
-    <BodyContainer id={id} darkBg={darkBg}>
+    <BodyContainer
+      id={id}
+      darkBg={darkBg}
+      lightText={lightText}
+      darkText={darkText}
+    >
       <VideoContainer>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </VideoContainer>

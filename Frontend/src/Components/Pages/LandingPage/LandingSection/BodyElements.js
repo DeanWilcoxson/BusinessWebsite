@@ -1,19 +1,18 @@
 import styled from "styled-components";
-import { FaArrowCircleDown } from "react-icons/fa";
-import { Link as LinkA } from "react-router-dom";
-import { Link as LinkB } from "react-scroll";
+import { Link } from "react-router-dom";
 export const BodyContainer = styled.div`
-  padding: 8rem;
+  padding: 10rem;
   z-index: 100;
   width: 100%;
   height: 100%;
-  background-color: ${({ darkBg }) => (darkBg ? "#888" : " transparent")};
+  background: ${({ darkBg }) =>
+    darkBg
+      ? "linear-gradient(90Deg,#473bf0, #ddb967)"
+      : "linear-gradient(-90Deg,#c6ebbe, #81a4cd)"};
 `;
 export const BodyBox = styled.div`
-  padding: 5rem;
-  padding-bottom: 0px;
+  padding: 4rem;
   margin-top: 3rem;
-  margin-bottom: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,7 +52,7 @@ export const ButtonBox = styled.div`
   margin: 1rem;
   z-index: 100;
 `;
-export const BodyButton = styled(LinkA)`
+export const BodyButton = styled(Link)`
   z-index: 100;
   margin: 1rem;
   padding: 0.5rem 1.5rem;

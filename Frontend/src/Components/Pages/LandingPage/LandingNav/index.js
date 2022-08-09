@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   LandingNavContainer,
   LandingNavBox,
   LandingNavLink,
 } from "./LandingNavElements";
 const LandingNav = () => {
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    window.scrollY >= 10 ? setScrollNav(true) : setScrollNav(false);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
-    <LandingNavContainer>
+    <LandingNavContainer scrollNav={scrollNav}>
       <LandingNavBox>
         <LandingNavLink to="landing" spy={true} smooth={true}>
           Top
