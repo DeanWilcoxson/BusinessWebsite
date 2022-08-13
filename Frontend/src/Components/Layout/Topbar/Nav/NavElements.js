@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { FaCaretDown } from "react-icons/fa";
 export const NavContainer = styled.div`
   margin-right: 5rem;
   z-index: 1000;
@@ -11,7 +13,22 @@ export const NavBox = styled.nav`
   align-items: center;
   z-index: 1000;
 `;
-export const NavButton = styled(Link)`
+export const NavDropDown = styled.div`
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  float: left;
+`;
+export const NavDropDownContainer = styled.div`
+  /* display: none; */
+  position: absolute;
+  min-width: 2rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const NavRouterButton = styled(RouterLink)`
   padding: 0.5rem 1rem;
   font-size: medium;
   /* font-family: Arial; */
@@ -23,5 +40,16 @@ export const NavButton = styled(Link)`
   &:hover {
     color: #20fc8f;
     background-color: #88888855;
+  }
+`;
+export const NavScrollButton = styled(ScrollLink)`
+  display: block;
+  float: none;
+  color: white;
+`;
+export const NavDropDownCaret = styled(FaCaretDown)`
+  color: #43b1f8;
+  &:hover {
+    color: #20fc8f;
   }
 `;
