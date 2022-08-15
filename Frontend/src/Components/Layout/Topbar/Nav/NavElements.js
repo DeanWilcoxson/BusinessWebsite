@@ -14,12 +14,14 @@ export const NavBox = styled.nav`
   z-index: 1000;
 `;
 export const NavDropDown = styled.div`
+  /* display: none; */
   padding: 0.5rem 1rem;
-  overflow: hidden;
   float: left;
+  z-index: 1000;
+  overflow: hidden;
 `;
 export const NavDropDownContainer = styled.div`
-  /* display: none; */
+  display: none;
   position: absolute;
   min-width: 2rem;
   z-index: 1000;
@@ -46,6 +48,7 @@ export const NavScrollButton = styled(ScrollLink)`
   display: block;
   float: none;
   color: white;
+  z-index: 1000;
 `;
 export const NavDropDownCaret = styled(FaCaretDown)`
   color: #43b1f8;
