@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavContainer,
   NavBox,
@@ -9,24 +9,49 @@ import {
   NavDropDownContainer,
 } from "./NavElements";
 const Nav = () => {
+  const [homeToggle, setHomeToggle] = useState(false);
+
+  function handleToggle() {
+    setHomeToggle(!homeToggle);
+  }
+
   return (
     <NavContainer>
       <NavBox>
         <NavDropDown>
-          <NavRouterButton to="/">
+          <NavRouterButton to="/" onClick={handleToggle}>
             Home<NavDropDownCaret></NavDropDownCaret>
           </NavRouterButton>
-          <NavDropDownContainer>
-            <NavScrollButton to="landing" spy={true} smooth={true}>
-              Top
-            </NavScrollButton>
-            <NavScrollButton to="landing" spy={true} smooth={true}>
-              Mid
-            </NavScrollButton>
-            <NavScrollButton to="landing" spy={true} smooth={true}>
-              End
-            </NavScrollButton>
-          </NavDropDownContainer>
+          {homeToggle ? (
+            <NavDropDownContainer>
+              <NavScrollButton
+                to="overview"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Overview
+              </NavScrollButton>
+              <NavScrollButton
+                to="technology"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Technology
+              </NavScrollButton>
+              <NavScrollButton
+                to="hosting"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Hosting
+              </NavScrollButton>
+            </NavDropDownContainer>
+          ) : (
+            ""
+          )}
         </NavDropDown>
         <NavRouterButton to="/packages">Packages</NavRouterButton>
         <NavRouterButton to="/templates">Templates</NavRouterButton>
