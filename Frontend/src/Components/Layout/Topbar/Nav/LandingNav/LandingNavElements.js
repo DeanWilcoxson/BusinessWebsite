@@ -4,25 +4,26 @@ export const LandingNavContainer = styled.div`
   z-index: 1000;
   background: ${({ scrollNav }) =>
     scrollNav
-      ? "linear-gradient(to right, #070600 0%, #888 100%)"
+      ? "linear-gradient(45deg, #070600 0%,#888 50%, #888 100%)"
       : "transparent"};
-  width: 30%;
+  width: 3%;
+  height: 100%;
   position: fixed;
-  top: 3rem;
+  top: 4.2rem;
   right: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 `;
 export const LandingNavBox = styled.nav`
   z-index: 1000;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   right: 0px;
-  width: 25%;
+  width: 100%;
 `;
 export const LandingNavLink = styled(Link)`
   color: #888;

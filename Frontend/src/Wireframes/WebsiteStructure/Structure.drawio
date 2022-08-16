@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="bTCmwgdYC0q8DJAq4dnc" name="Home">
-        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
+        <mxGraphModel dx="456" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -26,7 +26,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="ihBt8XRc2Rb9ajfsJttO" name="Packages">
-        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+        <mxGraphModel dx="456" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
             <root>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-0"/>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-1" parent="ofmS-jYyCDlHkQRJSBBz-0"/>
@@ -63,13 +63,13 @@
                 <mxCell id="1T92VImghQlUpBBoWLwZ-0" value="Contact Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
                     <mxGeometry y="780" width="850" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="tsyh7-j1-siuvf-bjPWg-0" value="" style="edgeStyle=none;html=1;fontColor=#000000;" edge="1" parent="ofmS-jYyCDlHkQRJSBBz-1" source="2QWGDQsZiZwk_0B6qSkF-0" target="XxqCLYQiNKpjZkhhvTrE-1">
+                <mxCell id="tsyh7-j1-siuvf-bjPWg-0" value="" style="edgeStyle=none;html=1;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" source="2QWGDQsZiZwk_0B6qSkF-0" target="XxqCLYQiNKpjZkhhvTrE-1" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2QWGDQsZiZwk_0B6qSkF-0" value="Additrional Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;fontColor=#000000;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
                     <mxGeometry x="20" y="460" width="810" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="DcgDOmwqmVQPUiuOpHRL-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ofmS-jYyCDlHkQRJSBBz-1">
+                <mxCell id="DcgDOmwqmVQPUiuOpHRL-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="ofmS-jYyCDlHkQRJSBBz-1" vertex="1">
                     <mxGeometry x="320" width="530" height="80" as="geometry"/>
                 </mxCell>
             </root>
