@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavContainer,
   NavBox,
@@ -11,26 +11,90 @@ import {
 
 
 const Nav = () => {
+  const [homeToggle, setHomeToggle] = useState(false);
+  const [packagesToggle, setPackagesToggle] = useState(false);
+
+  function handleHomeToggle() {
+    setHomeToggle(!homeToggle);
+  }
+  function handlePackagesToggle() {
+    setPackagesToggle(!packagesToggle);
+  }
+  function handleHomeToggle() {
+    setHomeToggle(!homeToggle);
+  }
+
   return (
     <NavContainer>
       <NavBox>
         <NavDropDown>
-          <NavRouterButton to="/">
+          <NavRouterButton to="/" onClick={handleHomeToggle}>
             Home<NavDropDownCaret></NavDropDownCaret>
           </NavRouterButton>
-          <NavDropDownContainer>
-            <NavScrollButton to="landing" spy={true} smooth={true}>
-              Top
-            </NavScrollButton>
-            <NavScrollButton to="landing" spy={true} smooth={true}>
-              Mid
-            </NavScrollButton>
-            <NavScrollButton to="landing" spy={true} smooth={true}>
-              End
-            </NavScrollButton>
-          </NavDropDownContainer>
+          {homeToggle ? (
+            <NavDropDownContainer>
+              <NavScrollButton
+                to="overview"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Overview
+              </NavScrollButton>
+              <NavScrollButton
+                to="technology"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Technology
+              </NavScrollButton>
+              <NavScrollButton
+                to="hosting"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Hosting
+              </NavScrollButton>
+            </NavDropDownContainer>
+          ) : (
+            ""
+          )}
         </NavDropDown>
-        <NavRouterButton to="/packages">Packages</NavRouterButton>
+        <NavDropDown>
+          <NavRouterButton to="/packages">Packages</NavRouterButton>
+          {packagesToggle ? (
+            <NavDropDownContainer>
+              <NavScrollButton
+                to="overview"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Overview
+              </NavScrollButton>
+              <NavScrollButton
+                to="technology"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Technology
+              </NavScrollButton>
+              <NavScrollButton
+                to="hosting"
+                spy={true}
+                smooth={true}
+                onClick={handleToggle}
+              >
+                Hosting
+              </NavScrollButton>
+            </NavDropDownContainer>
+          ) : (
+            ""
+          )}
+        </NavDropDown>
         <NavRouterButton to="/templates">Templates</NavRouterButton>
         <NavRouterButton to="/about">About</NavRouterButton>
       </NavBox>

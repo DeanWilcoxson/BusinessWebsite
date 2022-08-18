@@ -20,33 +20,33 @@ const Packages = () => {
       <PackagesBox>
         <PackageBox>
           <Package>
-            <PackageHeader>SPA (Single Page Application)</PackageHeader>
+            <PackageHeader>Single Page Application</PackageHeader>
             <PackageImg src={SinglePageApp2}></PackageImg>
             <PackageDescription>
-              Single Page Application: One page With multiple endpoints.
-              Applications like Youtube and Netflix use this format.
+              Great choice for a Blog or Personal Website for Entrepreneurs i.e.
+              Portfolio.
             </PackageDescription>
           </Package>
           <PackagePrice>Price: $1000</PackagePrice>
         </PackageBox>
         <PackageBox>
           <Package>
-            <PackageHeader>3-5 Pages (Multi Page Application)</PackageHeader>
+            <PackageHeader>Professional Package</PackageHeader>
             <PackageImg src={MultiPageApp2}></PackageImg>
             <PackageDescription>
-              Multi Page Application: Multiple Pages with multiple endpoints.
-              The majority of websites on the internet use this format.
+              The go to option for Small Businesses and LLCs that desire optimal
+              growth.
             </PackageDescription>
           </Package>
           <PackagePrice>Price: $1000 - $5000</PackagePrice>
         </PackageBox>
         <PackageBox>
           <Package>
-            <PackageHeader>5+ Pages (Multi Page Application)</PackageHeader>
+            <PackageHeader>Enterprise Package</PackageHeader>
             <PackageImg src={MultiPageApp2}></PackageImg>
             <PackageDescription>
-              Multi Page Application: Multiple Pages with multiple endpoints.
-              The majority of websites on the internet use this format.
+              This is the Premiere package for E-Commerce Sites, Large
+              Corporations, and Enterprises.
             </PackageDescription>
           </Package>
           <PackagePrice>Price: $5500+</PackagePrice>

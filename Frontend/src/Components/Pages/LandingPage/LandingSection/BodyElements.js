@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 export const BodyContainer = styled.div`
-  padding: 10rem;
+  padding: 7.8rem;
   z-index: 100;
   width: 100%;
   height: 100%;
   background: ${({ darkBg }) =>
     darkBg
-      ? "linear-gradient(90Deg,#473bf0, #ddb967)"
-      : "linear-gradient(-90Deg,#c6ebbe, #81a4cd)"};
+      ? "linear-gradient(180deg, rgba(67,177,248,1) 0%, rgba(57,151,212,1) 30%, rgba(36,96,135,1) 70%, rgba(0,0,0,1) 100%);"
+      : " linear-gradient(207deg, rgba(0,0,0,1) 0%, rgba(9,23,33,1) 20%, rgba(23,59,84,1) 40%, rgba(41,106,150,1) 60%, rgba(67,177,248,1) 100%);"};
 `;
 export const BodyBox = styled.div`
   padding: 4rem;

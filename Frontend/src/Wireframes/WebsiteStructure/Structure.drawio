@@ -1,6 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="bTCmwgdYC0q8DJAq4dnc" name="Home">
+<<<<<<< HEAD
         <mxGraphModel dx="1090" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
+=======
+        <mxGraphModel dx="902" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
+>>>>>>> 55c137b8f004453fa6d9952d26421fe4129a544b
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -26,7 +30,11 @@
         </mxGraphModel>
     </diagram>
     <diagram id="ihBt8XRc2Rb9ajfsJttO" name="Packages">
+<<<<<<< HEAD
         <mxGraphModel dx="1090" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+=======
+        <mxGraphModel dx="451" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+>>>>>>> 55c137b8f004453fa6d9952d26421fe4129a544b
             <root>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-0"/>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-1" parent="ofmS-jYyCDlHkQRJSBBz-0"/>
