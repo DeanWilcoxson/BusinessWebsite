@@ -50,7 +50,7 @@ const Footer = () => {
         <FooterInfoBox>
           <FooterInfoListTitle>Contact Us</FooterInfoListTitle>
           <FooterInfoList>
-            <FooterInfoItem href="">
+            <FooterInfoItem href="tel://+12098400950">
               <PhoneIcon></PhoneIcon>
             </FooterInfoItem>
             <FooterInfoItem href="">
