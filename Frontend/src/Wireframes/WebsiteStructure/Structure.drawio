@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="bTCmwgdYC0q8DJAq4dnc" name="Home">
-        <mxGraphModel dx="456" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
+        <mxGraphModel dx="1090" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#3333FF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -26,7 +26,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="ihBt8XRc2Rb9ajfsJttO" name="Packages">
-        <mxGraphModel dx="456" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+        <mxGraphModel dx="1090" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
             <root>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-0"/>
                 <mxCell id="ofmS-jYyCDlHkQRJSBBz-1" parent="ofmS-jYyCDlHkQRJSBBz-0"/>
@@ -76,7 +76,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="EUr-HinbY8WgnRbZaCOQ" name="Templates">
-        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1090" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="Q09Gshm9JHI5dkoqLLsO-0"/>
                 <mxCell id="Q09Gshm9JHI5dkoqLLsO-1" parent="Q09Gshm9JHI5dkoqLLsO-0"/>
@@ -116,18 +116,18 @@
                 <mxCell id="lHSUeV27BXIw1-l1M0tu-0" value="Contact Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontColor=#000000;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
                     <mxGeometry y="800" width="850" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="Sx7QNP5Ox54JykJKcAlc-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Q09Gshm9JHI5dkoqLLsO-1">
+                <mxCell id="Sx7QNP5Ox54JykJKcAlc-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q09Gshm9JHI5dkoqLLsO-1" vertex="1">
                     <mxGeometry x="280" width="570" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="zPeSjOxlUbzoeAJshlVq" name="About">
-        <mxGraphModel dx="873" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1090" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="b4_c9_ab1a4J8MrI3eN4-0"/>
                 <mxCell id="b4_c9_ab1a4J8MrI3eN4-1" parent="b4_c9_ab1a4J8MrI3eN4-0"/>
-                <mxCell id="6P0yz8n4dhqF3qkIBiZr-0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" vertex="1" parent="b4_c9_ab1a4J8MrI3eN4-1">
+                <mxCell id="6P0yz8n4dhqF3qkIBiZr-0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
                     <mxGeometry y="80" width="850" height="700" as="geometry"/>
                 </mxCell>
                 <mxCell id="b4_c9_ab1a4J8MrI3eN4-2" value="DB Web Development LLC" style="rounded=0;whiteSpace=wrap;html=1;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
@@ -148,7 +148,7 @@
                 <mxCell id="b4_c9_ab1a4J8MrI3eN4-7" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
                     <mxGeometry y="950" width="850" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="qhrma0W7-wbvQo9W3xyg-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="b4_c9_ab1a4J8MrI3eN4-1">
+                <mxCell id="qhrma0W7-wbvQo9W3xyg-0" value="&lt;span&gt;Home&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;About&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Packages&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Templates&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="b4_c9_ab1a4J8MrI3eN4-1" vertex="1">
                     <mxGeometry x="320" width="530" height="80" as="geometry"/>
                 </mxCell>
             </root>

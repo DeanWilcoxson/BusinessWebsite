@@ -33,7 +33,7 @@ export const NavDropDownContainer = styled.div`
 export const NavRouterButton = styled(RouterLink)`
   padding: 0.5rem 1rem;
   font-size: medium;
-  /* font-family: Arial; */
+  /* font-family: Arial; */ 
   color: #43b1f8;
   text-decoration: none;
   z-index: 1000;
