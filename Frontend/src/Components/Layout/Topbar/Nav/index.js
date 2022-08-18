@@ -37,7 +37,7 @@ const Nav = () => {
                 to="overview"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handleHomeToggle}
               >
                 Overview
               </NavScrollButton>
@@ -45,7 +45,7 @@ const Nav = () => {
                 to="technology"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handleHomeToggle}
               >
                 Technology
               </NavScrollButton>
@@ -53,7 +53,7 @@ const Nav = () => {
                 to="hosting"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handleHomeToggle}
               >
                 Hosting
               </NavScrollButton>
