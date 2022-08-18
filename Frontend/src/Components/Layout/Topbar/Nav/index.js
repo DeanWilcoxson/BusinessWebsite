@@ -8,6 +8,8 @@ import {
   NavDropDownCaret,
   NavDropDownContainer,
 } from "./NavElements";
+
+
 const Nav = () => {
   const [homeToggle, setHomeToggle] = useState(false);
   const [packagesToggle, setPackagesToggle] = useState(false);
@@ -35,7 +37,7 @@ const Nav = () => {
                 to="overview"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handleHomeToggle}
               >
                 Overview
               </NavScrollButton>
@@ -43,7 +45,7 @@ const Nav = () => {
                 to="technology"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handleHomeToggle}
               >
                 Technology
               </NavScrollButton>
@@ -51,7 +53,7 @@ const Nav = () => {
                 to="hosting"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handleHomeToggle}
               >
                 Hosting
               </NavScrollButton>
