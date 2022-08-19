@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { TopbarContainer, TopbarBox, TopbarHr } from "./TopbarElements";
+import { TopbarContainer, TopbarBox } from "./TopbarElements";
 import Nav from "./Nav/index";
 import Logo from "./Logo/index";
 const Topbar = () => {
@@ -10,6 +10,8 @@ const Topbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
+
+  // console.log(NavButtonData)
   return (
     <TopbarContainer scrollNav={scrollNav}>
       <TopbarBox>

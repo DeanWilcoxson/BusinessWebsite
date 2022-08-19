@@ -9,34 +9,36 @@ import {
   NavDropDownCaret,
   NavDropDownContainer,
 } from "./NavElements";
-
+import { NavButtonData } from "./NavData";
 const Nav = () => {
   const init = {
     home: false,
-    packages: false
-  }
-  const [toggle, setToggle] = useState(init)
+    packages: false,
+    templates: false,
+    about: false,
+  };
+  const [toggle, setToggle] = useState(init);
 
-  const [homeToggle, setHomeToggle] = useState(false);
-  const [packagesToggle, setPackagesToggle] = useState(false);
+  // const [homeToggle, setHomeToggle] = useState(false);
+  // const [packagesToggle, setPackagesToggle] = useState(false);
   const location = useLocation();
 
-  function handleHomeToggle() {
+  function handleToggle() {
     console.log(location);
     if (location.pathname == "/") {
-      setToggle(prev => ({
+      setToggle((prev) => ({
         home: !toggle.home,
-        packages: false
-      }))
+        packages: false,
+      }));
       console.log(location.pathname);
     }
   }
   function handlePackagesToggle() {
     if (location.pathname == "/packages") {
-      setToggle(prev => ({
+      setToggle((prev) => ({
         home: false,
-        packages: !toggle.packages
-      }))
+        packages: !toggle.packages,
+      }));
       console.log(location.pathname);
     }
   }
@@ -47,80 +49,90 @@ const Nav = () => {
   return (
     <NavContainer>
       <NavBox>
-        <NavDropDown>
-          <NavRouterButton to="/" onClick={handleHomeToggle}>
-            Home<NavDropDownCaret></NavDropDownCaret>
-          </NavRouterButton>
-          {toggle.home ? (
-            <NavDropDownContainer>
-              <NavScrollButton
-                to="overview"
-                spy={true}
-                smooth={true}
-                onClick={handleHomeToggle}
-              >
-                Overview
-              </NavScrollButton>
-              <NavScrollButton
-                to="technology"
-                spy={true}
-                smooth={true}
-                onClick={handleHomeToggle}
-              >
-                Technology
-              </NavScrollButton>
-              <NavScrollButton
-                to="hosting"
-                spy={true}
-                smooth={true}
-                onClick={handleHomeToggle}
-              >
-                Hosting
-              </NavScrollButton>
-            </NavDropDownContainer>
-          ) : (
-            ""
-          )}
-        </NavDropDown>
-        <NavDropDown>
-          <NavRouterButton to="/packages" onClick={handlePackagesToggle}>
-            Packages<NavDropDownCaret></NavDropDownCaret>
-          </NavRouterButton>
-          {toggle.packages ? (
-            <NavDropDownContainer>
-              <NavScrollButton
-                to="packages"
-                spy={true}
-                smooth={true}
-                onClick={handlePackagesToggle}
-              >
-                Packages
-              </NavScrollButton>
-              <NavScrollButton
-                to="Services"
-                spy={true}
-                smooth={true}
-                onClick={handlePackagesToggle}
-              >
-                Services
-              </NavScrollButton>
-              <NavScrollButton
-                to="hosting"
-                spy={true}
-                smooth={true}
-                onClick={handlePackagesToggle}
-              >
-                Processes
-              </NavScrollButton>
-            </NavDropDownContainer>
-          ) : (
-            ""
-          )}
-        </NavDropDown>
-        <NavRouterButton to="/templates">Templates</NavRouterButton>
-        <NavRouterButton to="/about">About</NavRouterButton>
+        {NavButtonData.map((item) => {
+          return (
+            <NavDropDown>
+              <NavRouterButton to={item.endpoint} onClick={handleToggle}>
+                {item.text}
+                <NavDropDownCaret></NavDropDownCaret>
+              </NavRouterButton>
+              {toggle.home ? (
+                <NavDropDownContainer>
+                  {item.subNav.map((subItem) => {
+                    return (
+                      <NavScrollButton
+                        to={subItem.endpoint}
+                        spy={true}
+                        smooth={true}
+                        onClick={handleToggle}
+                      >
+                        {subItem.text}
+                      </NavScrollButton>
+                    );
+                  })}
+                </NavDropDownContainer>
+              ) : (
+                ""
+              )}
+            </NavDropDown>
+          );
+        })}
       </NavBox>
     </NavContainer>
   );
 };
 export default Nav;
+// <NavScrollButton
+//                     to="technology"
+//                     spy={true}
+//                     smooth={true}
+//                     onClick={handleHomeToggle}
+//                   >
+//                     Technology
+//                   </NavScrollButton>
+//                   <NavScrollButton
+//                     to="hosting"
+//                     spy={true}
+//                     smooth={true}
+//                     onClick={handleHomeToggle}
+//                   >
+//                     Hosting
+//                   </NavScrollButton>
+
+// <NavDropDown>
+//           <NavRouterButton to="/packages" onClick={handlePackagesToggle}>
+//             Packages<NavDropDownCaret></NavDropDownCaret>
+//           </NavRouterButton>
+//           {toggle.packages ? (
+//             <NavDropDownContainer>
+//               <NavScrollButton
+//                 to="packages"
+//                 spy={true}
+//                 smooth={true}
+//                 onClick={handlePackagesToggle}
+//               >
+//                 Packages
+//               </NavScrollButton>
+//               <NavScrollButton
+//                 to="Services"
+//                 spy={true}
+//                 smooth={true}
+//                 onClick={handlePackagesToggle}
+//               >
+//                 Services
+//               </NavScrollButton>
+//               <NavScrollButton
+//                 to="hosting"
+//                 spy={true}
+//                 smooth={true}
+//                 onClick={handlePackagesToggle}
+//               >
+//                 Processes
+//               </NavScrollButton>
+//             </NavDropDownContainer>
+//           ) : (
+//             ""
+//           )}
+//         </NavDropDown>
+//         <NavRouterButton to="/templates">Templates</NavRouterButton>
+//         <NavRouterButton to="/about">About</NavRouterButton>
