@@ -11,6 +11,12 @@ import {
 } from "./NavElements";
 
 const Nav = () => {
+  const init = {
+    home: false,
+    packages: false
+  }
+  const [toggle, setToggle] = useState(init)
+
   const [homeToggle, setHomeToggle] = useState(false);
   const [packagesToggle, setPackagesToggle] = useState(false);
   const location = useLocation();
@@ -18,19 +24,25 @@ const Nav = () => {
   function handleHomeToggle() {
     console.log(location);
     if (location.pathname == "/") {
-      setHomeToggle(!homeToggle);
+      setToggle(prev => ({
+        home: !toggle.home,
+        packages: false
+      }))
       console.log(location.pathname);
     }
   }
   function handlePackagesToggle() {
     if (location.pathname == "/packages") {
-      setPackagesToggle(!packagesToggle);
+      setToggle(prev => ({
+        home: false,
+        packages: !toggle.packages
+      }))
       console.log(location.pathname);
     }
   }
-  function handleTemplatesToggle() {
-    setTemplatesToggle(!homeToggle);
-  }
+  // function handleTemplatesToggle() {
+  //   setTemplatesToggle(!homeToggle);
+  // }
 
   return (
     <NavContainer>
@@ -39,7 +51,7 @@ const Nav = () => {
           <NavRouterButton to="/" onClick={handleHomeToggle}>
             Home<NavDropDownCaret></NavDropDownCaret>
           </NavRouterButton>
-          {homeToggle ? (
+          {toggle.home ? (
             <NavDropDownContainer>
               <NavScrollButton
                 to="overview"
@@ -74,7 +86,7 @@ const Nav = () => {
           <NavRouterButton to="/packages" onClick={handlePackagesToggle}>
             Packages<NavDropDownCaret></NavDropDownCaret>
           </NavRouterButton>
-          {packagesToggle ? (
+          {toggle.packages ? (
             <NavDropDownContainer>
               <NavScrollButton
                 to="packages"
