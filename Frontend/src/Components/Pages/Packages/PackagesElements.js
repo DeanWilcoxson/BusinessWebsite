@@ -3,11 +3,12 @@ export const PackagesContainer = styled.div`
   margin: 0;
   padding: 0;
 `;
+
 export const PackagesBox = styled.div`
   margin: 2rem;
   padding: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
@@ -17,6 +18,17 @@ export const PackageBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 33.3%;
+`;
+export const PackageBoxContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+export const PackagesTitle = styled.h1`
+  display: block;
+  color: black;
+  z-index: 1000;
+  padding: 1.15rem;
+  margin: 1.15rem;
 `;
 export const Package = styled.div`
   display: flex;

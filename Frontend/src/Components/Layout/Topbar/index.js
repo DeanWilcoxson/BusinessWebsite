@@ -20,5 +20,3 @@ const Topbar = () => {
       );
 };
 export default Topbar;
-
-// <TopbarHr />

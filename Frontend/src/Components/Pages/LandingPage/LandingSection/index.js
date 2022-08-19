@@ -23,10 +23,9 @@ const BodySection = ({
   button_text_two,
   lightText,
   darkBg,
-  lightBg,
   darkText,
 }) => {
-  console.log(id);
+  // console.log(id);
   return (
     <BodyContainer
       id={id}

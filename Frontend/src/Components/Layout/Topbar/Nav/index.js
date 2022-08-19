@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import {
   NavContainer,
   NavBox,
@@ -9,19 +10,26 @@ import {
   NavDropDownContainer,
 } from "./NavElements";
 
-
 const Nav = () => {
   const [homeToggle, setHomeToggle] = useState(false);
   const [packagesToggle, setPackagesToggle] = useState(false);
+  const location = useLocation();
 
   function handleHomeToggle() {
-    setHomeToggle(!homeToggle);
+    console.log(location);
+    if (location.pathname == "/") {
+      setHomeToggle(!homeToggle);
+      console.log(location.pathname);
+    }
   }
   function handlePackagesToggle() {
-    setPackagesToggle(!packagesToggle);
+    if (location.pathname == "/packages") {
+      setPackagesToggle(!packagesToggle);
+      console.log(location.pathname);
+    }
   }
-  function handleHomeToggle() {
-    setHomeToggle(!homeToggle);
+  function handleTemplatesToggle() {
+    setTemplatesToggle(!homeToggle);
   }
 
   return (
@@ -63,32 +71,34 @@ const Nav = () => {
           )}
         </NavDropDown>
         <NavDropDown>
-          <NavRouterButton to="/packages">Packages</NavRouterButton>
+          <NavRouterButton to="/packages" onClick={handlePackagesToggle}>
+            Packages<NavDropDownCaret></NavDropDownCaret>
+          </NavRouterButton>
           {packagesToggle ? (
             <NavDropDownContainer>
               <NavScrollButton
-                to="overview"
+                to="packages"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handlePackagesToggle}
               >
-                Overview
+                Packages
               </NavScrollButton>
               <NavScrollButton
-                to="technology"
+                to="Services"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handlePackagesToggle}
               >
-                Technology
+                Services
               </NavScrollButton>
               <NavScrollButton
                 to="hosting"
                 spy={true}
                 smooth={true}
-                onClick={handleToggle}
+                onClick={handlePackagesToggle}
               >
-                Hosting
+                Processes
               </NavScrollButton>
             </NavDropDownContainer>
           ) : (
