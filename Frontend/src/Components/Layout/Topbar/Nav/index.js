@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import {
   NavContainer,
@@ -10,7 +10,7 @@ import {
   NavDropDownContainer,
 } from "./NavElements";
 import { NavButtonData } from "./NavData";
-const Nav = () => {
+function Nav() {
   const init = {
     home: false,
     packages: false,
@@ -18,41 +18,53 @@ const Nav = () => {
     about: false,
   };
   const [toggle, setToggle] = useState(init);
-
-  // const [homeToggle, setHomeToggle] = useState(false);
-  // const [packagesToggle, setPackagesToggle] = useState(false);
   const location = useLocation();
-
   function handleToggle() {
-    console.log(location);
-    if (location.pathname == "/") {
-      setToggle((prev) => ({
-        home: !toggle.home,
-        packages: false,
-      }));
-      console.log(location.pathname);
+    switch (location.pathname) {
+      case "/":
+        setToggle((prev) => ({
+          home: !toggle.home,
+          packages: false,
+          templates: false,
+          about: false,
+        }));
+        break;
+      case "/packages":
+        setToggle((prev) => ({
+          home: false,
+          packages: !toggle.packages,
+          templates: false,
+          about: false,
+        }));
+        break;
+      case "/templates":
+        setToggle((prev) => ({
+          home: false,
+          packages: false,
+          templates: !toggle.templates,
+          about: false,
+        }));
+        break;
+      case "/about":
+        setToggle((prev) => ({
+          home: false,
+          packages: false,
+          templates: false,
+          about: !toggle.about,
+        }));
+        break;
     }
+    console.log(location.pathname);
+    console.log(toggle);
   }
-  function handlePackagesToggle() {
-    if (location.pathname == "/packages") {
-      setToggle((prev) => ({
-        home: false,
-        packages: !toggle.packages,
-      }));
-      console.log(location.pathname);
-    }
-  }
-  // function handleTemplatesToggle() {
-  //   setTemplatesToggle(!homeToggle);
-  // }
 
   return (
     <NavContainer>
       <NavBox>
         {NavButtonData.map((item) => {
           return (
-            <NavDropDown>
-              <NavRouterButton to={item.endpoint} onClick={handleToggle}>
+            <NavDropDown key={NavButtonData.indexOf(item)}>
+              <NavRouterButton to={item.endpoint} onMouseEnter={handleToggle}>
                 {item.text}
                 <NavDropDownCaret></NavDropDownCaret>
               </NavRouterButton>
@@ -61,6 +73,7 @@ const Nav = () => {
                   {item.subNav.map((subItem) => {
                     return (
                       <NavScrollButton
+                        key={item.subNav.indexOf(subItem)}
                         to={subItem.endpoint}
                         spy={true}
                         smooth={true}
@@ -80,59 +93,5 @@ const Nav = () => {
       </NavBox>
     </NavContainer>
   );
-};
+}
 export default Nav;
-// <NavScrollButton
-//                     to="technology"
-//                     spy={true}
-//                     smooth={true}
-//                     onClick={handleHomeToggle}
-//                   >
-//                     Technology
-//                   </NavScrollButton>
-//                   <NavScrollButton
-//                     to="hosting"
-//                     spy={true}
-//                     smooth={true}
-//                     onClick={handleHomeToggle}
-//                   >
-//                     Hosting
-//                   </NavScrollButton>
-
-// <NavDropDown>
-//           <NavRouterButton to="/packages" onClick={handlePackagesToggle}>
-//             Packages<NavDropDownCaret></NavDropDownCaret>
-//           </NavRouterButton>
-//           {toggle.packages ? (
-//             <NavDropDownContainer>
-//               <NavScrollButton
-//                 to="packages"
-//                 spy={true}
-//                 smooth={true}
-//                 onClick={handlePackagesToggle}
-//               >
-//                 Packages
-//               </NavScrollButton>
-//               <NavScrollButton
-//                 to="Services"
-//                 spy={true}
-//                 smooth={true}
-//                 onClick={handlePackagesToggle}
-//               >
-//                 Services
-//               </NavScrollButton>
-//               <NavScrollButton
-//                 to="hosting"
-//                 spy={true}
-//                 smooth={true}
-//                 onClick={handlePackagesToggle}
-//               >
-//                 Processes
-//               </NavScrollButton>
-//             </NavDropDownContainer>
-//           ) : (
-//             ""
-//           )}
-//         </NavDropDown>
-//         <NavRouterButton to="/templates">Templates</NavRouterButton>
-//         <NavRouterButton to="/about">About</NavRouterButton>
