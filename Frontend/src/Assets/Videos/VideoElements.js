@@ -11,8 +11,9 @@ export const VideoContainer = styled.div`
   z-index: 0;
 `;
 export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  width: inherit;
+  height: max-content;
   object-fit: cover;
   -o-object-fit: cover;
   z-index: 0;

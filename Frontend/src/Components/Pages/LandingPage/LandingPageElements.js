@@ -6,4 +6,8 @@ export const LandingContainer = styled.div`
   bottom: 0px;
   width: 100%;
 `;
-export const LandingBox = styled.div``;
+export const LandingBox = styled.div`
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+`;
