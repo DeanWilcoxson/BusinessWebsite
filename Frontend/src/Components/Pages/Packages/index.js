@@ -14,7 +14,6 @@ import {
   PackageBoxContainer,
 } from "./PackagesElements";
 const Packages = ({ id, heading, packages }) => {
-  // console.log(packages);
   return (
     <PackagesContainer>
       <PackagesBox id={id}>

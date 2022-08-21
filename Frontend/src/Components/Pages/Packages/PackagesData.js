@@ -29,5 +29,5 @@ export const PackagesSection = {
 };
 export const AdditionalServicesSection = {
   id: "AdditionalServices",
-  heading: "",
+  heading: "Services",
 };

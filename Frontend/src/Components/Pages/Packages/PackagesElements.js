@@ -3,7 +3,6 @@ export const PackagesContainer = styled.div`
   margin: 0;
   padding: 0;
 `;
-
 export const PackagesBox = styled.div`
   margin: 2rem;
   padding: 2rem;

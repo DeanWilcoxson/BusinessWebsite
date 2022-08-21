@@ -11,12 +11,12 @@ import {
   FooterLogoImg,
   TwitterIcon,
   FacebookIcon,
-  GithubIcon,
-  InstagramIcon,
   LinkedInIcon,
   PhoneIcon,
   MessageIcon,
   EmailIcon,
+  // GithubIcon,
+  // InstagramIcon,
   // DatabaseIcon,
   // WebpageIcon,
   // MobileIcon,
@@ -35,12 +35,6 @@ const Footer = () => {
             <FooterInfoItem href="https://www.facebook.com/">
               <FacebookIcon></FacebookIcon>
             </FooterInfoItem>
-            <FooterInfoItem href="https://github.com/">
-              <GithubIcon></GithubIcon>
-            </FooterInfoItem>
-            <FooterInfoItem href="https://www.instagram.com/?hl=en">
-              <InstagramIcon></InstagramIcon>
-            </FooterInfoItem>
             <FooterInfoItem href="https://www.linkedin.com/">
               <LinkedInIcon></LinkedInIcon>
             </FooterInfoItem>
@@ -53,10 +47,10 @@ const Footer = () => {
             <FooterInfoItem href="tel://+12098400950">
               <PhoneIcon></PhoneIcon>
             </FooterInfoItem>
-            <FooterInfoItem href="">
+            <FooterInfoItem href="sms://+12098400950">
               <MessageIcon></MessageIcon>
             </FooterInfoItem>
-            <FooterInfoItem href="">
+            <FooterInfoItem href="mailto:dmwhswsmw919216@gmail.com">
               <EmailIcon></EmailIcon>
             </FooterInfoItem>
           </FooterInfoList>
@@ -84,3 +78,9 @@ export default Footer;
 //     </FooterInfoItem>
 //   </FooterInfoList>
 // </FooterInfoBox>
+// <FooterInfoItem href="https://github.com/">
+//   <GithubIcon></GithubIcon>
+// </FooterInfoItem>
+// <FooterInfoItem href="https://www.instagram.com/?hl=en">
+//   <InstagramIcon></InstagramIcon>
+// </FooterInfoItem>

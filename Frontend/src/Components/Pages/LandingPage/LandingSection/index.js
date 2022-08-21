@@ -23,15 +23,12 @@ const BodySection = ({
   button_text_two,
   lightText,
   darkBg,
-  darkText,
 }) => {
-  // console.log(id);
   return (
     <BodyContainer
       id={id}
       darkBg={darkBg}
       lightText={lightText}
-      darkText={darkText}
     >
       <VideoContainer>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />

@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 export const BodyContainer = styled.div`
-  padding: 0 7.8rem;
-  padding-top: 7.8rem;
+  padding: 4rem 3rem;
   z-index: 100;
   width: 100%;
   height: 100%;
   background: ${({ darkBg }) =>
     darkBg
       ? "linear-gradient(180deg, rgba(67,177,248,1) 0%, rgba(57,151,212,1) 30%, rgba(36,96,135,1) 70%, rgba(0,0,0,1) 100%);"
-      : " linear-gradient(207deg, rgba(0,0,0,1) 0%, rgba(9,23,33,1) 20%, rgba(23,59,84,1) 40%, rgba(41,106,150,1) 60%, rgba(67,177,248,1) 100%);"};
+      : "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,50,69,1) 15%, rgba(43,114,159,1) 32%, rgba(53,139,195,1) 41%, rgba(67,177,248,1) 50%, rgba(50,131,184,1) 68%, rgba(28,74,104,1) 85%, rgba(0,0,0,1) 100%);"};
 `;
 export const BodyBox = styled.div`
-  padding: 0 4rem;
-  margin-top: 3rem;
+  padding: 4rem;
+  /* margin-top: 3rem; */
   display: flex;
   flex-direction: row;
   justify-content: center;
