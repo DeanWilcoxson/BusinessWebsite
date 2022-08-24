@@ -13,23 +13,27 @@ import {
   PackagesTitle,
   PackageBoxContainer,
 } from "./PackagesElements";
-const Packages = ({ id, heading, packages }) => {
+const Packages = ({ id, heading, lightText, packages }) => {
   return (
     <PackagesContainer>
       <PackagesBox id={id}>
-        <PackagesTitle>{heading}</PackagesTitle>
+        <PackagesTitle lightText={lightText}>{heading}</PackagesTitle>
         <PackageBoxContainer>
           {packages.map((packaged) => {
             console.log(packaged);
             return (
               <PackageBox key={packages.indexOf(packaged)}>
                 <Package>
-                  <PackageHeader>{packaged.packageHeading}</PackageHeader>
+                  <PackageHeader lightText={lightText}>
+                    {packaged.packageHeading}
+                  </PackageHeader>
                   <PackageImg src={packaged.image} alt="image"></PackageImg>
-                  <PackageDescription>
+                  <PackageDescription lightText={lightText}>
                     {packaged.description}
                   </PackageDescription>
-                  <PackagePrice>{packaged.price}</PackagePrice>
+                  <PackagePrice lightText={lightText}>
+                    {packaged.price}
+                  </PackagePrice>
                 </Package>
               </PackageBox>
             );
