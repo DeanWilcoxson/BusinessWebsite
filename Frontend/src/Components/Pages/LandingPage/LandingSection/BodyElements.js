@@ -11,7 +11,7 @@ export const BodyContainer = styled.div`
       : "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,50,69,1) 15%, rgba(43,114,159,1) 32%, rgba(53,139,195,1) 41%, rgba(67,177,248,1) 50%, rgba(50,131,184,1) 68%, rgba(28,74,104,1) 85%, rgba(0,0,0,1) 100%);"};
 `;
 export const BodyBox = styled.div`
-  padding: 4rem;
+  padding: 3.5rem;
   /* margin-top: 3rem; */
   display: flex;
   flex-direction: row;
@@ -49,7 +49,7 @@ export const ButtonBox = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 1rem;
+  /* margin: 1rem; */
   z-index: 100;
 `;
 export const BodyButton = styled(Link)`

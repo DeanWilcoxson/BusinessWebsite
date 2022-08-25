@@ -8,7 +8,10 @@ import NotFound from "./Components/Pages/Error";
 import Topbar from "./Components/Layout/Topbar";
 import Footer from "./Components/Layout/Footer";
 import Templates from "./Components/Pages/Templates";
-import { PackagesSection } from "./Components/Pages/Packages/PackagesData";
+import {
+  PackagesSection,
+  AdditionalServicesSection,
+} from "./Components/Pages/Packages/PackagesData";
 const App = () => {
   return (
     <div>
@@ -21,7 +24,12 @@ const App = () => {
           <Route path="/about" element={<About />}>
             About
           </Route>
-          <Route path="/packages" element={<Packages {...PackagesSection} />}>
+          <Route
+            path="/packages"
+            element={
+              <Packages {...PackagesSection} {...AdditionalServicesSection} />
+            }
+          >
             Packages
           </Route>
           <Route path="/templates" element={<Templates />}>

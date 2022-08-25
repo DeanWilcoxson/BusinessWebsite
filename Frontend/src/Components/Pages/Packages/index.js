@@ -2,26 +2,40 @@ import React from "react";
 import {
   PackagesContainer,
   PackagesBox,
-  PackageBox,
-  Package,
-  PackagePrice,
-  AdditionalServicesBox,
-  ProcessesBox,
-  PackageImg,
-  PackageDescription,
-  PackageHeader,
   PackagesTitle,
   PackageBoxContainer,
+  PackageBox,
+  Package,
+  PackageHeader,
+  PackageImg,
+  PackageDescription,
   PackageLink,
+  PackagePrice,
+  AdditionalServicesBox,
+  AdditionalServicesTitle,
+  ServicesList,
+  ProcessesBox,
+  ServiceItem,
+  ServiceTitle,
+  ServiceDescription,
+  ServiceOptions,
+  ServiceOptionItem,
 } from "./PackagesElements";
-const Packages = ({ id, heading, lightText, packages }) => {
+const Packages = ({
+  packageId,
+  packageHeading,
+  lightText,
+  packages,
+  servicesId,
+  servicesHeading,
+  services,
+}) => {
   return (
     <PackagesContainer>
-      <PackagesBox id={id}>
-        <PackagesTitle lightText={lightText}>{heading}</PackagesTitle>
+      <PackagesBox id={packageId}>
+        <PackagesTitle lightText={lightText}>{packageHeading}</PackagesTitle>
         <PackageBoxContainer>
           {packages.map((packaged) => {
-            console.log(packaged);
             return (
               <PackageBox key={packages.indexOf(packaged)}>
                 <Package>
@@ -44,7 +58,28 @@ const Packages = ({ id, heading, lightText, packages }) => {
           })}
         </PackageBoxContainer>
       </PackagesBox>
-      <AdditionalServicesBox></AdditionalServicesBox>
+      <AdditionalServicesBox id={servicesId}>
+        <AdditionalServicesTitle>{servicesHeading}</AdditionalServicesTitle>
+        <ServicesList>
+          {services.map((service) => {
+            return (
+              <ServiceItem key={services.indexOf(service)}>
+                <ServiceTitle>{service.title}</ServiceTitle>
+                <ServiceDescription>{service.desc}</ServiceDescription>
+                <ServiceOptions>
+                  {service.languages.map((item) => {
+                    return (
+                      <ServiceOptionItem key={service.languages.indexOf(item)}>
+                        {item.title}
+                      </ServiceOptionItem>
+                    );
+                  })}
+                </ServiceOptions>
+              </ServiceItem>
+            );
+          })}
+        </ServicesList>
+      </AdditionalServicesBox>
       <ProcessesBox></ProcessesBox>
     </PackagesContainer>
   );

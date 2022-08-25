@@ -18,7 +18,7 @@ export const homeObjTwo = {
   id: "technology",
   heading: "Drive Customers To Your Business",
   description:
-    "Our Professional Process takes advantage of Industry Leading Technologies. We Implement the Powerful Framework React.JS for a customers User Interface, as well as User Experience. We also Implement an Express.JS Framework for the Server and Routing. The Wildly Popular Node.JS Runtime Environment is Perfect for the needed Scalability of a customers ever changing needs in the Backend. All of this along with the Non-Relational Document Database known for its Flexibility, MongoDB makes for an ideal solution for any business that needs an online presence.",
+    "Our Professional Process takes advantage of Industry Leading Technologies. We Implement the Powerful Framework React.JS for User Interface, as well as User Experience. We also Implement an Express.JS Framework for the Server and Routing. The Node.JS Runtime Environment is Perfect for the needed Scalability of a customers Backend. All of this along with the Non-Relational Document Database known for its Flexibility, MongoDB makes for an ideal solution for any business that needs an online presence.",
   img: `${img3}`,
   alt: "business-man",
   lightText: true,

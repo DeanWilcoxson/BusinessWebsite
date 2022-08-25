@@ -2,8 +2,8 @@ import SPA from "../../../Assets/Images/SPA.png";
 import MPA from "../../../Assets/Images/MPA.png";
 
 export const PackagesSection = {
-  id: "packages",
-  heading: "Packages",
+  packageId: "packages",
+  packageHeading: "Packages",
   lightText: true,
   packages: [
     {
@@ -39,26 +39,33 @@ export const PackagesSection = {
   ],
 };
 export const AdditionalServicesSection = {
-  id: "AdditionalServices",
-  heading: "Services",
+  servicesId: "AdditionalServices",
+  servicesHeading: "Services",
+  lightText: true,
   services: [
     {
       title: "Database Creation",
       desc:
         "Create a database connection to your application, to store all relevant data, and for ease of use managing data.",
-      languages: ["MySQL", "MongoDB + Mongoose"],
+      languages: [{ title: "MySQL" }, { title: "MongoDB + Mongoose" }],
     },
     {
       title: "User Interface",
       desc: "Everything the user sees when visiting your website.",
-      languages: ["React.JS", "HTML5", "CSS3", "Javascript", "Typescript"],
+      languages: [
+        { title: "React.JS" },
+        { title: "HTML5" },
+        { title: "CSS3" },
+        { title: "Javascript" },
+        { title: "Typescript" },
+      ],
     },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
-    { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    // { title: "", desc: "", languages: ["", "", "", "", ""] },
   ],
 };

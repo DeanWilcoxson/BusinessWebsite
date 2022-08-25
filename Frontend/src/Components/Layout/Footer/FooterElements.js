@@ -11,9 +11,10 @@ import {
 } from "react-icons/fa";
 import { MdMessage, MdMail, MdWeb } from "react-icons/md";
 export const FooterContainer = styled.div`
-  padding: 2rem;
+  bottom: 0;
+  padding: 1rem;
   padding-bottom: 0px;
-  position: relative;
+  position: fixed;
   width: 100%;
   background-color: #070600;
   z-index: 999;
@@ -54,12 +55,12 @@ export const FooterInfoListTitle = styled.p`
 `;
 export const FooterInfoItem = styled.a`
   z-index: 999;
-  padding: 1rem;
+  padding: 0.5rem;
 `;
 export const FooterLink = styled.a`
   z-index: 999;
   color: #888;
-  padding: 1rem;
+  padding: 0.5rem;
   &:hover {
     color: #20fc8f;
   }

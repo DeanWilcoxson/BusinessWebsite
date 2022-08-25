@@ -96,5 +96,39 @@ export const PackagePrice = styled.div`
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
-export const AdditionalServicesBox = styled.div``;
+export const AdditionalServicesBox = styled.div`
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const AdditionalServicesTitle = styled.h1`
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  z-index: 100;
+  padding: 1.15rem;
+  margin: 1.15rem;
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
+`;
+export const ServicesList = styled.ul`
+  padding: 1.15rem;
+`;
+export const ServiceItem = styled.li`
+  padding: 1.15rem;
+`;
+export const ServiceTitle = styled.h3`
+  padding: 1.15rem;
+`;
+export const ServiceDescription = styled.p`
+  padding: 1.15rem;
+`;
+export const ServiceOptions = styled.ul`
+  padding: 1.15rem;
+`;
+export const ServiceOptionItem = styled.li`
+  padding: 1.15rem;
+`;
 export const ProcessesBox = styled.div``;
