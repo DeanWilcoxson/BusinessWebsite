@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const PackagesContainer = styled.div`
-  margin: -2rem 0;
-  padding: 0;
+  margin: 0;
+  padding: 3rem;
   top: 0;
   right: 0;
   left: 0;
@@ -20,8 +20,8 @@ export const PackagesContainer = styled.div`
   );
 `;
 export const PackagesBox = styled.div`
-  margin: 2rem;
-  padding: 2rem;
+  margin: 0;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +33,7 @@ export const PackageBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 33.3%;
+  height: 50%;
 `;
 export const PackageBoxContainer = styled.div`
   display: flex;
@@ -75,8 +76,20 @@ export const PackageDescription = styled.p`
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
+export const PackageLink = styled.a`
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
+  color: #f7f7ff;
+  &:hover {
+    color: #20fc8f;
+    background-color: #88888855;
+  }
+`;
 export const PackagePrice = styled.div`
-  border: 1px grey solid;
+  /* border: 1px grey solid; */
   padding: 1rem 5rem;
   width: 75%;
   text-align: center;

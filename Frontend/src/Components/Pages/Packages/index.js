@@ -12,6 +12,7 @@ import {
   PackageHeader,
   PackagesTitle,
   PackageBoxContainer,
+  PackageLink,
 } from "./PackagesElements";
 const Packages = ({ id, heading, lightText, packages }) => {
   return (
@@ -31,6 +32,9 @@ const Packages = ({ id, heading, lightText, packages }) => {
                   <PackageDescription lightText={lightText}>
                     {packaged.description}
                   </PackageDescription>
+                  <PackageLink href={packaged.url} lightText={lightText}>
+                    {packaged.buttonText}
+                  </PackageLink>
                   <PackagePrice lightText={lightText}>
                     {packaged.price}
                   </PackagePrice>
