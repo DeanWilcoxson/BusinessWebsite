@@ -1,6 +1,7 @@
 import SPA from "../../../Assets/Images/SPA.png";
 import MPA from "../../../Assets/Images/MPA.png";
-
+import database from "../../../Assets/Images/database.png";
+import interfaceImg from "../../../Assets/Images/interfaceImg.png";
 export const PackagesSection = {
   packageId: "packages",
   packageHeading: "Packages",
@@ -45,12 +46,14 @@ export const AdditionalServicesSection = {
   services: [
     {
       title: "User Interface",
+      img: `${interfaceImg}`,
       desc:
         "Everything the user sees and interacts with when visiting and traversing your website pages and endpoints.",
       languages: [{ title: "React.JS" }, { title: "Styled-Components" }],
     },
     {
       title: "Database Creation",
+      img: `${database}`,
       desc:
         "Create a database connection to your application, to store all relevant data, and for ease of use managing data.",
       languages: [{ title: "MongoDB" }, { title: "Mongoose" }],

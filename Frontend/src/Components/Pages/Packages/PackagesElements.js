@@ -166,6 +166,10 @@ export const ServiceDescription = styled.p`
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
+export const ServiceOptionImage = styled.img`
+  width: 15%;
+  max-height: 40px;
+`;
 export const ServiceOptions = styled.ul`
   /* padding: 1rem; */
   display: flex;

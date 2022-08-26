@@ -23,6 +23,7 @@ import {
   ServiceOptionsTitle,
   ServicesContainer,
   ProcessesContainer,
+  ServiceOptionImage,
 } from "./PackagesElements";
 const Packages = ({
   packageId,
@@ -78,6 +79,7 @@ const Packages = ({
                   <ServiceDescription lightText={lightText}>
                     {service.desc}
                   </ServiceDescription>
+                  <ServiceOptionImage src={service.img}></ServiceOptionImage>
                   <ServiceOptionsTitle lightText={lightText}>
                     Languages Used:
                   </ServiceOptionsTitle>
