@@ -11,8 +11,10 @@ export const homeObjOne = {
   lightText: true,
   darkText: false,
   darkBg: false,
-  button_text_one: "Packages",
-  button_text_two: "Contact Us",
+  buttons: [
+    { url: "/packages", button_text: "Packages" },
+    { url: "/contact", button_text: "Contact Us" },
+  ],
 };
 export const homeObjTwo = {
   id: "technology",
@@ -24,8 +26,10 @@ export const homeObjTwo = {
   lightText: true,
   darkText: false,
   darkBg: false,
-  button_text_one: "Our Process",
-  button_text_two: "Templates",
+  buttons: [
+    { url: "/templates", button_text: "Templates" },
+    { url: "/process", button_text: "Process" },
+  ],
 };
 export const homeObjThree = {
   id: "hosting",
@@ -37,6 +41,8 @@ export const homeObjThree = {
   lightText: true,
   darkText: false,
   darkBg: false,
-  button_text_one: "Hosting Services",
-  button_text_two: "Prices",
+  buttons: [
+    { url: "/hosting", button_text: "Hosting" },
+    { url: "/prices", button_text: "Prices" },
+  ],
 };

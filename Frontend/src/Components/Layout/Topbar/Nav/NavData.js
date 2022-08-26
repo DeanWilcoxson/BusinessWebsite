@@ -22,17 +22,17 @@ export const NavButtonData = [
     text: "Templates",
     subNav: [
       { endpoint: "templates", text: "Templates" },
-      { endpoint: "", text: "" },
-      { endpoint: "", text: "" },
+      { endpoint: "inquires", text: "Inquires" },
+      { endpoint: "pricing", text: "Prices" },
     ],
   },
   {
     endpoint: "/about",
     text: "About",
     subNav: [
-      { endpoint: "", text: "" },
-      { endpoint: "", text: "" },
-      { endpoint: "", text: "" },
+      { endpoint: "contact", text: "Contact" },
+      { endpoint: "mission", text: "Mission" },
+      { endpoint: "values", text: "Values" },
     ],
   },
 ];

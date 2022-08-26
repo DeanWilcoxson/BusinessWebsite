@@ -19,17 +19,12 @@ const BodySection = ({
   heading,
   description,
   img,
-  button_text_one,
-  button_text_two,
+  buttons,
   lightText,
   darkBg,
 }) => {
   return (
-    <BodyContainer
-      id={id}
-      darkBg={darkBg}
-      lightText={lightText}
-    >
+    <BodyContainer id={id} darkBg={darkBg} lightText={lightText}>
       <VideoContainer>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </VideoContainer>
@@ -38,8 +33,9 @@ const BodySection = ({
           <BodyHeading lightText={lightText}>{heading}</BodyHeading>
           <BodyDesc lightText={lightText}>{description}</BodyDesc>
           <ButtonBox>
-            <BodyButton to="/packages">{button_text_one}</BodyButton>
-            <BodyButton to="/contact">{button_text_two}</BodyButton>
+            {buttons.map((button) => {
+              return <BodyButton to={button.url}>{button.button_text}</BodyButton>;
+            })}
           </ButtonBox>
         </BodyContentContainer>
         <BodyImage src={img}></BodyImage>

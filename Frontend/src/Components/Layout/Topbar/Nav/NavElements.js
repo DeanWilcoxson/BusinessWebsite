@@ -14,21 +14,20 @@ export const NavBox = styled.nav`
   z-index: 1000;
 `;
 export const NavDropDown = styled.div`
-  padding: 0.5rem 1rem;
-  float: left;
-  z-index: 1000;
-  overflow: hidden;
-`;
-export const NavDropDownContainer = styled.div`
-  position: absolute;
-  min-width: 2rem;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1.15rem;
-  padding: 0.5rem 0.25rem;
+`;
+export const NavDropDownContainer = styled.div`
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
   background: linear-gradient(45deg, #000, #888);
 `;
 export const NavRouterButton = styled(RouterLink)`

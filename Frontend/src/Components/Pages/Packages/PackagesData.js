@@ -47,18 +47,13 @@ export const AdditionalServicesSection = {
       title: "Database Creation",
       desc:
         "Create a database connection to your application, to store all relevant data, and for ease of use managing data.",
-      languages: [{ title: "MySQL" }, { title: "MongoDB + Mongoose" }],
+      languages: [{ title: "MongoDB" }, { title: "Mongoose" }],
     },
     {
-      title: "User Interface",
-      desc: "Everything the user sees when visiting your website.",
-      languages: [
-        { title: "React.JS" },
-        { title: "HTML5" },
-        { title: "CSS3" },
-        { title: "Javascript" },
-        { title: "Typescript" },
-      ],
+      title: "User Interface/ User Experience",
+      desc:
+        "Everything the user sees and interacts with when visiting your website.",
+      languages: [{ title: "React.JS" }, { title: "Styled-Components" }],
     },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },

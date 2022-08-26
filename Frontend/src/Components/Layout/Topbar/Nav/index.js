@@ -68,7 +68,10 @@ function Nav() {
                 {item.text}
                 <NavDropDownCaret></NavDropDownCaret>
               </NavRouterButton>
-              {toggle.home ? (
+              {toggle.home ||
+              toggle.about ||
+              toggle.packages ||
+              toggle.templates ? (
                 <NavDropDownContainer>
                   {item.subNav.map((subItem) => {
                     return (
