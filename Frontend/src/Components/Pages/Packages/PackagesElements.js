@@ -152,29 +152,34 @@ export const ServiceItem = styled.li`
 export const ServiceTitle = styled.h3`
   text-align: center;
   padding: 1rem;
+  font-family: Arial;
+  letter-spacing: 0.2em;
+  font-weight: 200;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ServiceDescription = styled.p`
   text-align: center;
+  width: 80%;
   padding: 0.25rem;
   letter-spacing: 1px;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ServiceOptions = styled.ul`
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 `;
 export const ServiceOptionsTitle = styled.b`
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
+  padding-top: 1rem;
 `;
 export const ServiceOptionItem = styled.li`
-  padding: 0.25rem;
+  padding: 0.5rem;
   list-style-type: none;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};

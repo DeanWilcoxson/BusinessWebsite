@@ -29,7 +29,7 @@ export const PackagesSection = {
     {
       packageHeading: " Enterprise Package",
       description:
-        "The Premiere package for Large Corporations and Enterprises.",
+        "The Premiere package for E-Commerce Sites, Large Corporations and Enterprises.",
       image: `${MPA}`,
       price: "$5500+",
       lightText: true,
@@ -39,22 +39,23 @@ export const PackagesSection = {
   ],
 };
 export const AdditionalServicesSection = {
-  servicesId: "AdditionalServices",
+  servicesId: "services",
   servicesHeading: "Services",
   lightText: true,
   services: [
-    {
-      title: "Database Creation",
-      desc:
-        "Create a database connection to your application, to store all relevant data, and for ease of use managing data.",
-      languages: [{ title: "MongoDB" }, { title: "Mongoose" }],
-    },
     {
       title: "User Interface",
       desc:
         "Everything the user sees and interacts with when visiting and traversing your website pages and endpoints.",
       languages: [{ title: "React.JS" }, { title: "Styled-Components" }],
     },
+    {
+      title: "Database Creation",
+      desc:
+        "Create a database connection to your application, to store all relevant data, and for ease of use managing data.",
+      languages: [{ title: "MongoDB" }, { title: "Mongoose" }],
+    },
+
     // { title: "", desc: "", languages: ["", "", "", "", ""] },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },

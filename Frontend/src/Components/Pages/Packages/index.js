@@ -50,12 +50,12 @@ const Packages = ({
                     <PackageDescription lightText={lightText}>
                       {packaged.description}
                     </PackageDescription>
-                    <PackageLink href={packaged.url} lightText={lightText}>
-                      {packaged.buttonText}
-                    </PackageLink>
                     <PackagePrice lightText={lightText}>
                       {packaged.price}
                     </PackagePrice>
+                    <PackageLink href={packaged.url} lightText={lightText}>
+                      {packaged.buttonText}
+                    </PackageLink>
                   </Package>
                 </PackageBox>
               );
@@ -78,10 +78,10 @@ const Packages = ({
                   <ServiceDescription lightText={lightText}>
                     {service.desc}
                   </ServiceDescription>
+                  <ServiceOptionsTitle lightText={lightText}>
+                    Languages Used:
+                  </ServiceOptionsTitle>
                   <ServiceOptions>
-                    <ServiceOptionsTitle lightText={lightText}>
-                      Languages Used:
-                    </ServiceOptionsTitle>
                     {service.languages.map((item) => {
                       return (
                         <ServiceOptionItem

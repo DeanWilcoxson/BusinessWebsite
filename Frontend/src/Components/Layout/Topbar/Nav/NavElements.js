@@ -27,7 +27,7 @@ export const NavDropDownContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   background: linear-gradient(45deg, #000, #888);
 `;
 export const NavRouterButton = styled(RouterLink)`

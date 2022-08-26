@@ -8,6 +8,7 @@ import NotFound from "./Components/Pages/Error";
 import Topbar from "./Components/Layout/Topbar";
 import Footer from "./Components/Layout/Footer";
 import Templates from "./Components/Pages/Templates";
+import Hosting from "./Components/Pages/Hosting";
 import {
   PackagesSection,
   AdditionalServicesSection,
@@ -34,6 +35,9 @@ const App = () => {
           </Route>
           <Route path="/templates" element={<Templates />}>
             Templates
+          </Route>
+          <Route path="/hosting" element={<Hosting />}>
+            Hosting
           </Route>
           <Route path="/auth" element={<Auth />}></Route>
           <Route path="*" element={<NotFound />}></Route>
