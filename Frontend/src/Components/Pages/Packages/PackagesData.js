@@ -50,9 +50,9 @@ export const AdditionalServicesSection = {
       languages: [{ title: "MongoDB" }, { title: "Mongoose" }],
     },
     {
-      title: "User Interface/ User Experience",
+      title: "User Interface",
       desc:
-        "Everything the user sees and interacts with when visiting your website.",
+        "Everything the user sees and interacts with when visiting and traversing your website pages and endpoints.",
       languages: [{ title: "React.JS" }, { title: "Styled-Components" }],
     },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },

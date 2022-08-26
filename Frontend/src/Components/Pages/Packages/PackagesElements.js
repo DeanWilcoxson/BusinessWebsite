@@ -71,7 +71,7 @@ export const PackageImg = styled.img`
 `;
 export const PackageDescription = styled.p`
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 75%;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -99,8 +99,7 @@ export const PackagePrice = styled.div`
 
 export const ServicesContainer = styled.div`
   margin: 0;
-  padding: 3rem;
-  top: 0;
+  padding: 4rem;
   right: 0;
   left: 0;
   width: 100%;
@@ -137,7 +136,7 @@ export const AdditionalServicesTitle = styled.h1`
 export const ServicesList = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 `;
 export const ServiceItem = styled.li`
@@ -145,9 +144,10 @@ export const ServiceItem = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 25%;
   border: 1px grey solid;
   border-radius: 20px;
+  margin: 1rem;
 `;
 export const ServiceTitle = styled.h3`
   text-align: center;
@@ -157,14 +157,15 @@ export const ServiceTitle = styled.h3`
 `;
 export const ServiceDescription = styled.p`
   text-align: center;
-  padding: 1rem;
+  padding: 0.25rem;
+  letter-spacing: 1px;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ServiceOptions = styled.ul`
   padding: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -173,7 +174,7 @@ export const ServiceOptionsTitle = styled.b`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ServiceOptionItem = styled.li`
-  padding: 1rem;
+  padding: 0.25rem;
   list-style-type: none;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
