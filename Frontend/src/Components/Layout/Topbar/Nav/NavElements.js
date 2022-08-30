@@ -39,7 +39,7 @@ export const NavRouterButton = styled(RouterLink)`
   z-index: 1000;
   letter-spacing: 0.2em;
   text-shadow: 1px 1px 2px black;
-  &:hover {
+  &:hover, &.active{
     color: #20fc8f;
     background-color: #88888855;
   }
