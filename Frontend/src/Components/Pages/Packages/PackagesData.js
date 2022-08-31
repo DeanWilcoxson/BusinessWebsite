@@ -59,7 +59,12 @@ export const AdditionalServicesSection = {
       languages: [{ title: "MongoDB" }, { title: "Mongoose" }],
     },
 
-    // { title: "", desc: "", languages: ["", "", "", "", ""] },
+    {
+      title: "SEO Optimization",
+      img: `${database}`,
+      desc: "Bring attention to your company by optimizing your search results. When a potential customer searches for your service, your website will be one of the top results on all search engines.",
+      languages: [{ title: "" }, { title: "" }],
+    },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },
     // { title: "", desc: "", languages: ["", "", "", "", ""] },

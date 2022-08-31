@@ -15,23 +15,21 @@ export const NavBox = styled.nav`
 `;
 export const NavDropDown = styled.div`
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  margin-top: 1rem;
 `;
 export const NavDropDownContainer = styled.ul`
+  margin-top: 0.5rem;
   position: absolute;
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  /* margin-top: 3rem; */
   background: linear-gradient(45deg, #000, #888);
 `;
 export const NavScrollContainer = styled.li`
   list-style-type: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const NavRouterButton = styled(RouterLink)`
   padding: 0.5rem 1rem;
