@@ -14,7 +14,6 @@ import {
   AdditionalServicesBox,
   AdditionalServicesTitle,
   ServicesList,
-  ProcessesBox,
   ServiceItem,
   ServiceTitle,
   ServiceDescription,
@@ -22,8 +21,15 @@ import {
   ServiceOptionItem,
   ServiceOptionsTitle,
   ServicesContainer,
-  ProcessesContainer,
   ServiceOptionImage,
+  ProcessesContainer,
+  ProcessesBox,
+  ProcessesTitle,
+  Process,
+  ProcessDescription,
+  ProcessDuration,
+  ProcessTitle,
+  ProcessesList,
 } from "./PackagesElements";
 const Packages = ({
   packageId,
@@ -33,6 +39,9 @@ const Packages = ({
   servicesId,
   servicesHeading,
   services,
+  processId,
+  processesHeading,
+  processes,
 }) => {
   return (
     <>
@@ -101,10 +110,31 @@ const Packages = ({
           </ServicesList>
         </AdditionalServicesBox>
       </ServicesContainer>
+      <ProcessesContainer>
+        <ProcessesBox id={processId}>
+          <ProcessesTitle lightText={lightText}>
+            {processesHeading}
+          </ProcessesTitle>
+          <ProcessesList>
+            {processes.map((process) => {
+              return (
+                <Process>
+                  <ProcessTitle lightText={lightText}>
+                    {process.title}
+                  </ProcessTitle>
+                  <ProcessDescription lightText={lightText}>
+                    {process.description}
+                  </ProcessDescription>
+                  <ProcessDuration lightText={lightText}>
+                    {process.duration}
+                  </ProcessDuration>
+                </Process>
+              );
+            })}
+          </ProcessesList>
+        </ProcessesBox>
+      </ProcessesContainer>
     </>
   );
 };
 export default Packages;
-// <ProcessesContainer>
-//   <ProcessesBox></ProcessesBox>
-// </ProcessesContainer>

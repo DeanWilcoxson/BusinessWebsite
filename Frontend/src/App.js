@@ -12,6 +12,7 @@ import Hosting from "./Components/Pages/Hosting";
 import {
   PackagesSection,
   AdditionalServicesSection,
+  ProcessesSection,
 } from "./Components/Pages/Packages/PackagesData";
 const App = () => {
   return (
@@ -28,7 +29,11 @@ const App = () => {
           <Route
             path="/packages"
             element={
-              <Packages {...PackagesSection} {...AdditionalServicesSection} />
+              <Packages
+                {...PackagesSection}
+                {...AdditionalServicesSection}
+                {...ProcessesSection}
+              />
             }
           >
             Packages
