@@ -20,15 +20,18 @@ export const NavDropDown = styled.div`
   justify-content: flex-start;
   align-items: center;
 `;
-export const NavDropDownContainer = styled.div`
+export const NavDropDownContainer = styled.ul`
   position: absolute;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   background: linear-gradient(45deg, #000, #888);
+`;
+export const NavScrollContainer = styled.li`
+  list-style-type: none;
 `;
 export const NavRouterButton = styled(RouterLink)`
   padding: 0.5rem 1rem;
@@ -39,13 +42,12 @@ export const NavRouterButton = styled(RouterLink)`
   z-index: 1000;
   letter-spacing: 0.2em;
   text-shadow: 1px 1px 2px black;
-  &:hover, &.active{
+  &:hover {
     color: #20fc8f;
     background-color: #88888855;
   }
 `;
 export const NavScrollButton = styled(ScrollLink)`
-  padding: 1rem;
   color: white;
   z-index: 1000;
   color: #43b1f8;

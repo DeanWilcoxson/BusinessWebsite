@@ -1,8 +1,10 @@
-import { ErrorContainer, ErrorText } from "./NotFoundElements";
+import { ErrorContainer, ErrorBox, ErrorText } from "./NotFoundElements";
 const NotFound = () => {
   return (
     <ErrorContainer>
-      <ErrorText>Page Not Found</ErrorText>
+      <ErrorBox>
+        <ErrorText>Page Not Found</ErrorText>
+      </ErrorBox>
     </ErrorContainer>
   );
 };

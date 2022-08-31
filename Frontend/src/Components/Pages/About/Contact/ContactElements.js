@@ -1,0 +1,11 @@
+import styled from "styled-components";
+export const ContactsContainer = styled.div``;
+export const ContactsBox = styled.div``;
+export const Contact = styled.div``;
+export const ContactName = styled.h3``;
+export const ContactImg = styled.img``;
+export const ContactQualifications = styled.p``;
+export const ContactCity = styled.p``;
+export const ContactState = styled.p``;
+export const ContactZipCode = styled.p``;
+export const ContactYrsExp = styled.p``;

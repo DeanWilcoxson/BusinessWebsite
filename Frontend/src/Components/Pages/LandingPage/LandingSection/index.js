@@ -34,7 +34,11 @@ const BodySection = ({
           <BodyDesc lightText={lightText}>{description}</BodyDesc>
           <ButtonBox>
             {buttons.map((button) => {
-              return <BodyButton to={button.url}>{button.button_text}</BodyButton>;
+              return (
+                <BodyButton to={button.url} key={buttons.indexOf(button)}>
+                  {button.button_text}
+                </BodyButton>
+              );
             })}
           </ButtonBox>
         </BodyContentContainer>
