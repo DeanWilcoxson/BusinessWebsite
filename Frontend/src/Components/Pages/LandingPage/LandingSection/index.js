@@ -25,6 +25,9 @@ const BodySection = ({
 }) => {
   return (
     <BodyContainer id={id} darkBg={darkBg} lightText={lightText}>
+      <VideoContainer>
+        <VideoBg autoPlay loop muted src={video} type="video/mp4" />
+      </VideoContainer>
       <BodyBox>
         <BodyContentContainer>
           <BodyHeading lightText={lightText}>{heading}</BodyHeading>
@@ -45,6 +48,3 @@ const BodySection = ({
   );
 };
 export default BodySection;
-// <VideoContainer>
-//   <VideoBg autoPlay loop muted src={video} type="video/mp4" />
-// </VideoContainer>

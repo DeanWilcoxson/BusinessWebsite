@@ -3,6 +3,7 @@ import MPA from "../../../Assets/Images/MPA.png";
 import database from "../../../Assets/Images/database.png";
 import interfaceImg from "../../../Assets/Images/interfaceImg.png";
 import SeoMagnifyingGlass from "../../../Assets/Images/SeoMagnifyingGlass.png";
+import domain from "../../../Assets/Images/domain.png";
 export const PackagesSection = {
   packageId: "packages",
   packageHeading: "Packages",
@@ -60,16 +61,18 @@ export const AdditionalServicesSection = {
       languages: [{ title: "MongoDB" }, { title: "Mongoose" }],
     },
     {
-      title: "SEO Optimization",
+      title: "Search Optimization",
       img: `${SeoMagnifyingGlass}`,
       desc:
-        "When a potential customer searches for your service, your website will be the top results on all search engines.",
+        "Search Engine Optimization ensures that a customers website will be one the top results on all search engines.",
       languages: [{ title: "JavaScript" }, { title: "Html5" }],
     },
     {
-      title: "",
-      desc: "",
-      languages: [{ title: "" }, { title: "" }],
+      title: "Domain Hosting",
+      img: `${domain}`,
+      desc:
+        "We help you get your website hosted with instructions and hands on help during the process of choosing a hosting service.",
+      languages: [{ title: "Npm Build" }, { title: "Control Panel" }],
     },
   ],
 };

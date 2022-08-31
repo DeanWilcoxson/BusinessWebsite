@@ -53,11 +53,18 @@ export const Package = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px grey solid;
+  border: 3px #888 outset;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
+
   border-radius: 20px;
   width: 75%;
 `;
 export const PackageHeader = styled.h3`
+  border-bottom: 1px inset #f7f7ff;
   padding: 0.75rem;
   font-family: Arial;
   letter-spacing: 0.2em;
@@ -79,6 +86,7 @@ export const PackageDescription = styled.p`
 export const PackageLink = styled.a`
   text-decoration: none;
   text-align: center;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -86,6 +94,7 @@ export const PackageLink = styled.a`
   &:hover {
     color: #20fc8f;
     background-color: #88888855;
+    border: 2px #88888855 outset;
   }
 `;
 export const PackagePrice = styled.div`
@@ -99,7 +108,7 @@ export const PackagePrice = styled.div`
 
 export const ServicesContainer = styled.div`
   margin: 0;
-  padding: 4rem;
+  padding: 5rem;
   right: 0;
   left: 0;
   width: 100%;
@@ -118,7 +127,7 @@ export const ServicesContainer = styled.div`
 `;
 export const AdditionalServicesBox = styled.div`
   margin: 0;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,14 +155,20 @@ export const ServiceItem = styled.li`
   align-items: center;
   width: 25%;
   min-height: 50vh;
-  border: 1px grey solid;
+  border: 3px #888 outset;
   border-radius: 20px;
   margin: 0.5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
 `;
 export const ServiceTitle = styled.h3`
   text-align: center;
   padding: 1rem;
   font-family: Arial;
+  border-bottom: 1px inset #f7f7ff;
   letter-spacing: 0.2em;
   font-weight: 200;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
@@ -162,7 +177,7 @@ export const ServiceTitle = styled.h3`
 export const ServiceDescription = styled.p`
   text-align: center;
   width: 80%;
-  padding: 0.25rem;
+  padding: 0.5rem;
   letter-spacing: 1px;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -170,10 +185,11 @@ export const ServiceDescription = styled.p`
 export const ServiceOptionImage = styled.img`
   width: 15%;
   max-height: 40px;
+  margin: 0.75rem;
 `;
 export const ServiceOptions = styled.ul`
   /* margin: 2rem; */
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,10 +198,10 @@ export const ServiceOptions = styled.ul`
 export const ServiceOptionsTitle = styled.b`
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
-  padding-top: 1rem;
+  padding: 0.5rem;
 `;
 export const ServiceOptionItem = styled.li`
-  padding: 0.5rem;
+  /* padding: 0.25rem; */
   list-style-type: none;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -213,7 +229,7 @@ export const ProcessesContainer = styled.div`
 `;
 export const ProcessesBox = styled.div`
   margin: 0;
-  padding: 3rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,23 +250,29 @@ export const ProcessesList = styled.ul`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  /* margin-bottom: 5rem; */
 `;
 export const Process = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 20%;
-  min-height: 30vh;
-  border: 1px grey solid;
+  min-height: 25vh;
+  border: 3px #888 outset;
   border-radius: 20px;
-  margin: 0.5rem;
+  margin: 0.25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
 `;
 export const ProcessTitle = styled.h3`
   text-align: center;
-  padding: .25rem;
+  padding: 0.25rem;
   font-family: Arial;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   font-weight: 200;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -258,16 +280,12 @@ export const ProcessTitle = styled.h3`
 export const ProcessDescription = styled.p`
   text-align: center;
   width: 80%;
-  /* padding: 0.25rem; */
-  /* letter-spacing: 1px; */
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ProcessDuration = styled.p`
   text-align: center;
   width: 80%;
-  /* padding: 0.25rem; */
-  /* letter-spacing: 1px; */
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
