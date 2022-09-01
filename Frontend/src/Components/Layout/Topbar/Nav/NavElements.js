@@ -16,6 +16,9 @@ export const NavBox = styled.nav`
 export const NavDropDown = styled.div`
   z-index: 1000;
   margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
 `;
 export const NavDropDownContainer = styled.ul`
   margin-top: 0.75rem;
@@ -29,6 +32,7 @@ export const NavScrollContainer = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 export const NavRouterButton = styled(RouterLink)`
   display: inline-block;
@@ -61,3 +65,4 @@ export const NavScrollButton = styled(ScrollLink)`
     transition: all 0.5s ease;
   }
 `;
+
