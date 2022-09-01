@@ -40,6 +40,7 @@ export const NavRouterButton = styled(RouterLink)`
   letter-spacing: 0.2em;
   text-shadow: 1px 1px 2px black;
   &.active {
+    transition: 1s ease;
     border-bottom: 3px solid #20fc8f;
   }
   &:hover {
@@ -56,6 +57,7 @@ export const NavScrollButton = styled(ScrollLink)`
   &:hover {
     color: #20fc8f;
     background-color: #88888855;
+    transition: all .5s ease;
   }
 `;
 export const NavDropDownCaret = styled(FaCaretDown)`

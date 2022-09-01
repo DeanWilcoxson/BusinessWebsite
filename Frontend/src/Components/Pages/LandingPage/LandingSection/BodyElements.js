@@ -69,6 +69,7 @@ export const BodyButton = styled(Link)`
   &:hover {
     color: #f7f7ff;
     background-color: #da344d;
+    transition: all .5s ease;
   }
 `;
 export const BodyImage = styled.img`
