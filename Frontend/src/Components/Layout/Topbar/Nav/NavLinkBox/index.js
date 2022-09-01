@@ -6,7 +6,6 @@ import {
   NavRouterButton,
   NavDropDown,
   NavScrollButton,
-  NavDropDownCaret,
   NavDropDownContainer,
   NavScrollContainer,
 } from "../NavElements";
@@ -26,7 +25,7 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
         to={endpoint}
         onMouseEnter={handleToggle}
         onMouseLeave={handleToggle}
-        activeStyle
+        activestyle="true"
       >
         {text}
         {toggle && (
@@ -48,7 +47,6 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
             })}
           </NavDropDownContainer>
         )}
-        <NavDropDownCaret></NavDropDownCaret>
       </NavRouterButton>
     </NavDropDown>
   );

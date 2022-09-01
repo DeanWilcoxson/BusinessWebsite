@@ -18,7 +18,7 @@ export const NavDropDown = styled.div`
   margin-top: 1rem;
 `;
 export const NavDropDownContainer = styled.ul`
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   position: absolute;
   z-index: 1000;
   background: linear-gradient(45deg, #000, #888);
@@ -41,7 +41,8 @@ export const NavRouterButton = styled(RouterLink)`
   text-shadow: 1px 1px 2px black;
   &.active {
     transition: 1s ease;
-    border-bottom: 3px solid #20fc8f;
+    border-bottom: 5px solid #20fc8f;
+    color: #20fc8f;
   }
   &:hover {
     color: #20fc8f;
@@ -57,12 +58,6 @@ export const NavScrollButton = styled(ScrollLink)`
   &:hover {
     color: #20fc8f;
     background-color: #88888855;
-    transition: all .5s ease;
-  }
-`;
-export const NavDropDownCaret = styled(FaCaretDown)`
-  color: #43b1f8;
-  &:hover {
-    color: #20fc8f;
+    transition: all 0.5s ease;
   }
 `;

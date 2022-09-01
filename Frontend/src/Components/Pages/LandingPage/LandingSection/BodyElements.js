@@ -33,7 +33,7 @@ export const BodyHeading = styled.h1`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   z-index: 100;
   width: 60%;
-  text-align: center;
+  text-align: justify;
   /* border-bottom: 1px inset #f7f7ff; */
 `;
 export const BodyDesc = styled.p`
