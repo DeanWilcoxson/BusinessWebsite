@@ -32,6 +32,9 @@ export const BodyHeading = styled.h1`
   color: ${({ lightText }) => (lightText ? "#f7f7ff" : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   z-index: 100;
+  width: 60%;
+  text-align: center;
+  /* border-bottom: 1px inset #f7f7ff; */
 `;
 export const BodyDesc = styled.p`
   letter-spacing: 0.1em;
@@ -49,7 +52,7 @@ export const ButtonBox = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  /* margin: 1rem; */
+  margin-left: 1rem;
   z-index: 100;
 `;
 export const BodyButton = styled(Link)`
@@ -61,11 +64,11 @@ export const BodyButton = styled(Link)`
   font-size: medium;
   cursor: hand;
   text-decoration: none;
-  background-color: #43b1f8;
-  color: #f7f7ff;
+  background-color: #20fc8f;
+  color: #000;
   &:hover {
-    color: #000;
-    background-color: #20fc8f;
+    color: #f7f7ff;
+    background-color: #da344d;
   }
 `;
 export const BodyImage = styled.img`

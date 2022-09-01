@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaThList } from "react-icons/fa";
 // import { useLocation, useHistory } from "react-router-dom";
 // import * as Scroll from "react-scroll";
 import {
@@ -14,17 +15,18 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
   // const location = path.split("/")[1];
   // const history = useHistory();
   // const scroller = Scroll.scroller;
-
   const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(() => !toggle);
   }
+
   return (
     <NavDropDown>
       <NavRouterButton
         to={endpoint}
         onMouseEnter={handleToggle}
         onMouseLeave={handleToggle}
+        activeStyle
       >
         {text}
         {toggle && (

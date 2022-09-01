@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const PackagesContainer = styled.div`
   margin: 0;
-  padding: 3rem;
+  padding: 2rem;
   top: 0;
   right: 0;
   left: 0;
@@ -73,7 +73,7 @@ export const PackageHeader = styled.h3`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const PackageImg = styled.img`
-  width: 75%;
+  width: 65%;
   padding: 1rem;
 `;
 export const PackageDescription = styled.p`
@@ -91,10 +91,10 @@ export const PackageLink = styled.a`
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   color: #f7f7ff;
+  border: 2px #88888855 outset;
   &:hover {
     color: #20fc8f;
     background-color: #88888855;
-    border: 2px #88888855 outset;
   }
 `;
 export const PackagePrice = styled.div`
@@ -108,7 +108,7 @@ export const PackagePrice = styled.div`
 
 export const ServicesContainer = styled.div`
   margin: 0;
-  padding: 5rem;
+  padding-top: 2rem;
   right: 0;
   left: 0;
   width: 100%;
@@ -209,8 +209,7 @@ export const ServiceOptionItem = styled.li`
 
 export const ProcessesContainer = styled.div`
   margin: 0;
-  margin-bottom: 5rem;
-  padding: 4rem;
+  padding: 2rem;
   right: 0;
   left: 0;
   width: 100%;

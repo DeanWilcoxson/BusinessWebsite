@@ -14,7 +14,7 @@ export const PackagesSection = {
       description:
         "Great choice for a Blog or Personal Website for Entrepreneurs i.e. Portfolio.",
       image: `${SPA}`,
-      price: "$1000",
+      price: "$",
       lightText: true,
       buttonText: "View Package",
       url: "/packages/singlepageapp",
@@ -24,7 +24,7 @@ export const PackagesSection = {
       description:
         "The go to option for Small Businesses and LLCs that desire optimal growth.",
       image: `${MPA}`,
-      price: "$3000",
+      price: "$$",
       lightText: true,
       buttonText: "View Package",
       url: "/packages/professional",
@@ -34,7 +34,7 @@ export const PackagesSection = {
       description:
         "The Premiere package for E-Commerce Sites, Large Corporations and Enterprises.",
       image: `${MPA}`,
-      price: "$5500+",
+      price: "$$$",
       lightText: true,
       buttonText: "View Package",
       url: "/packages/enterprise",

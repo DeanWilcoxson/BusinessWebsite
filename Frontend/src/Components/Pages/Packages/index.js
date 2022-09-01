@@ -45,8 +45,8 @@ const Packages = ({
 }) => {
   return (
     <>
-      <PackagesContainer>
-        <PackagesBox id={packageId}>
+      <PackagesContainer id={packageId}>
+        <PackagesBox>
           <PackagesTitle lightText={lightText}>{packageHeading}</PackagesTitle>
           <PackageBoxContainer>
             {packages.map((packaged) => {
@@ -73,8 +73,8 @@ const Packages = ({
           </PackageBoxContainer>
         </PackagesBox>
       </PackagesContainer>
-      <ServicesContainer>
-        <AdditionalServicesBox id={servicesId}>
+      <ServicesContainer id={servicesId}>
+        <AdditionalServicesBox>
           <AdditionalServicesTitle lightText={lightText}>
             {servicesHeading}
           </AdditionalServicesTitle>
@@ -110,8 +110,8 @@ const Packages = ({
           </ServicesList>
         </AdditionalServicesBox>
       </ServicesContainer>
-      <ProcessesContainer>
-        <ProcessesBox id={processId}>
+      <ProcessesContainer id={processId}>
+        <ProcessesBox>
           <ProcessesTitle lightText={lightText}>
             {processesHeading}
           </ProcessesTitle>

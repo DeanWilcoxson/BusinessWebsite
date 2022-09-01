@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { FaCaretDown } from "react-icons/fa";
 export const NavContainer = styled.div`
@@ -25,32 +25,37 @@ export const NavDropDownContainer = styled.ul`
 `;
 export const NavScrollContainer = styled.li`
   list-style-type: none;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 export const NavRouterButton = styled(RouterLink)`
+  display: inline-block;
   padding: 0.5rem 1rem;
   font-size: medium;
-  /* font-family: Arial; */
   color: #43b1f8;
   text-decoration: none;
   z-index: 1000;
   letter-spacing: 0.2em;
   text-shadow: 1px 1px 2px black;
+  &.active {
+    border-bottom: 3px solid #20fc8f;
+  }
   &:hover {
     color: #20fc8f;
     background-color: #88888855;
   }
 `;
 export const NavScrollButton = styled(ScrollLink)`
+  padding: 1rem;
+  width: 100%;
   color: white;
   z-index: 1000;
   color: #43b1f8;
   &:hover {
     color: #20fc8f;
+    background-color: #88888855;
   }
 `;
 export const NavDropDownCaret = styled(FaCaretDown)`

@@ -18,7 +18,7 @@ export const homeObjOne = {
 };
 export const homeObjTwo = {
   id: "technology",
-  heading: "Technologies",
+  heading: "Technologies Used In Build",
   description:
     "Our Process takes advantage of Industry Leading Technologies. We Implement React.JS for User Interface, as well as User Experience. We also Implement an Express.JS Framework for the Server and Routing. The Node.JS Runtime Environment is Perfect for the needed Scalability of a customers Backend. The Non-Relational Document Database known for its Flexibility, MongoDB makes for an ideal solution for any business that needs an online presence.",
   img: `${img3}`,
@@ -33,7 +33,7 @@ export const homeObjTwo = {
 };
 export const homeObjThree = {
   id: "hosting",
-  heading: "Domain Hosting",
+  heading: "Setup Live Domain Hosting",
   description:
     "Get your Website up and running through us. We will provide you with a list of domain hosting services and instructions to manage your website through the respective hosting service that will fit your specific website needs. For more information, please contact us.",
   img: `${img2}`,
