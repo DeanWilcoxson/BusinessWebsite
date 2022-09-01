@@ -1,11 +1,13 @@
 import React from "react";
-import { AboutContainer, AboutHeader } from "./AboutElements";
+import { AboutBox, AboutContainer, AboutHeader } from "./AboutElements";
 import Mission from "./MissionStatement";
 import { MissionData } from "./MissionStatement/MissionData";
-const About = () => {
+const About = ({title, lightText}) => {
   return (
     <AboutContainer>
-      <AboutHeader>About</AboutHeader>
+      <AboutBox>
+        <AboutHeader lightText={lightText}>{title}</AboutHeader>
+      </AboutBox>
       <Mission {...MissionData} />
     </AboutContainer>
   );

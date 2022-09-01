@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// import { useLocation, useHistory } from "react-router-dom";
+// import * as Scroll from "react-scroll";
 import {
   NavRouterButton,
   NavDropDown,
@@ -8,6 +10,11 @@ import {
   NavScrollContainer,
 } from "../NavElements";
 const NavLinkBox = ({ endpoint, text, subNav }) => {
+  // const path = useLocation().pathname;
+  // const location = path.split("/")[1];
+  // const history = useHistory();
+  // const scroller = Scroll.scroller;
+
   const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(() => !toggle);

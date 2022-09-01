@@ -13,6 +13,8 @@ import {
   AdditionalServicesSection,
   ProcessesSection,
 } from "./Components/Pages/Packages/PackagesData";
+import { TemplatesSection } from "./Components/Pages/Templates/TemplateData";
+import { AboutSection } from "./Components/Pages/About/AboutData";
 const App = () => {
   return (
     <div>
@@ -22,7 +24,7 @@ const App = () => {
           <Route path="/" element={<Landing />}>
             Home
           </Route>
-          <Route path="/about" element={<About />}>
+          <Route path="/about" element={<About {...AboutSection} />}>
             About
           </Route>
           <Route
@@ -37,7 +39,10 @@ const App = () => {
           >
             Packages
           </Route>
-          <Route path="/templates" element={<Templates />}>
+          <Route
+            path="/templates"
+            element={<Templates {...TemplatesSection} />}
+          >
             Templates
           </Route>
 
