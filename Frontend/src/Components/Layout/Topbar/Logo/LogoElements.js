@@ -5,7 +5,7 @@ export const LogoContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  /* margin-top: 1rem; */
   z-index: 1000;
 `;
 export const LogoImg = styled.img`
@@ -19,5 +19,6 @@ export const BusinessName = styled.h1`
   z-index: 1000;
   letter-spacing: 0.1em;
   font-size: large;
+  margin-top:1rem;
   font-family: "Times New Roman", Times, serif;
 `;

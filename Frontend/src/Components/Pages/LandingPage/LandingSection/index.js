@@ -24,7 +24,7 @@ const BodySection = ({
   darkBg,
 }) => {
   return (
-    <BodyContainer id={id} darkBg={darkBg} lightText={lightText}>
+    <BodyContainer id={id} name={id} darkbg="false" lighttext="true">
       <BodyBox>
         <BodyContentContainer>
           <BodyHeading lightText={lightText}>{heading}</BodyHeading>

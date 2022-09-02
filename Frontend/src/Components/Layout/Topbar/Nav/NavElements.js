@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { FaCaretDown } from "react-icons/fa";
 export const NavContainer = styled.div`
   margin-right: 5rem;
   z-index: 1000;
@@ -21,7 +20,7 @@ export const NavDropDown = styled.div`
   align-items: left;
 `;
 export const NavDropDownContainer = styled.ul`
-  margin-top: 0.75rem;
+  margin-top: .5rem;
   position: absolute;
   z-index: 1000;
   background: linear-gradient(45deg, #000, #888);
@@ -44,11 +43,12 @@ export const NavRouterButton = styled(RouterLink)`
   letter-spacing: 0.2em;
   text-shadow: 1px 1px 2px black;
   &.active {
-    transition: 1s ease;
-    border-bottom: 5px solid #20fc8f;
+    transition: 0.5s ease;
+    border-bottom: 1px solid #20fc8f;
     color: #20fc8f;
   }
   &:hover {
+    transition: 0.5s ease;
     color: #20fc8f;
     background-color: #88888855;
   }
@@ -65,4 +65,3 @@ export const NavScrollButton = styled(ScrollLink)`
     transition: all 0.5s ease;
   }
 `;
-

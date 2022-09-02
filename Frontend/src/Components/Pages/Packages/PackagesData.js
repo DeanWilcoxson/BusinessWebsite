@@ -4,6 +4,7 @@ import database from "../../../Assets/Images/database.png";
 import interfaceImg from "../../../Assets/Images/interfaceImg.png";
 import SeoMagnifyingGlass from "../../../Assets/Images/SeoMagnifyingGlass.png";
 import domain from "../../../Assets/Images/domain.png";
+import json from "../../../Assets/Images/json.png";
 export const PackagesSection = {
   packageId: "packages",
   packageHeading: "Packages",
@@ -73,6 +74,13 @@ export const AdditionalServicesSection = {
       desc:
         "We help you get your website hosted with instructions and hands on help during the process of choosing a hosting service.",
       languages: [{ title: "Npm Build" }, { title: "Control Panel" }],
+    },
+    {
+      title: "RESTful Design",
+      img: `${json}`,
+      desc:
+        "An API that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services.",
+      languages: [{ title: "XML" }, { title: "JSON" }],
     },
   ],
 };

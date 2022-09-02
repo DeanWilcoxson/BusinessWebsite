@@ -64,10 +64,10 @@ export const Package = styled.div`
   width: 75%;
 `;
 export const PackageHeader = styled.h3`
-  border-bottom: 1px inset #f7f7ff;
+  /* border-bottom: 1px inset #f7f7ff; */
   padding: 0.75rem;
   font-family: Arial;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   font-weight: 200;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -168,8 +168,8 @@ export const ServiceTitle = styled.h3`
   text-align: center;
   padding: 1rem;
   font-family: Arial;
-  border-bottom: 1px inset #f7f7ff;
-  letter-spacing: 0.2em;
+  /* border-bottom: 1px inset #f7f7ff; */
+  letter-spacing: 0.1em;
   font-weight: 200;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};

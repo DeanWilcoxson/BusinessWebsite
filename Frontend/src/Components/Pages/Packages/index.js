@@ -118,7 +118,7 @@ const Packages = ({
           <ProcessesList>
             {processes.map((process) => {
               return (
-                <Process>
+                <Process key={processes.indexOf(process)}>
                   <ProcessTitle lightText={lightText}>
                     {process.title}
                   </ProcessTitle>

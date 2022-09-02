@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FaThList } from "react-icons/fa";
-// import { useLocation, useHistory } from "react-router-dom";
-// import * as Scroll from "react-scroll";
+import { useLocation, useNavigate } from "react-router-dom";
+import * as Scroll from "react-scroll";
 import {
   NavRouterButton,
   NavDropDown,
@@ -10,14 +9,26 @@ import {
   NavScrollContainer,
 } from "../NavElements";
 const NavLinkBox = ({ endpoint, text, subNav }) => {
-  // const path = useLocation().pathname;
-  // const location = path.split("/")[1];
-  // const history = useHistory();
-  // const scroller = Scroll.scroller;
   const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(() => !toggle);
   }
+
+  const path = useLocation().pathname;
+  const location = path.split("/")[1];
+  const history = useNavigate();
+  const scroller = Scroll.scroller;
+
+  const goToPageAndScrollToSection = async (endpoint, scroll) => {
+    console.log(scroll)
+    await history(endpoint);
+    await scroller.scrollTo(scroll, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 50,
+    });
+  };
 
   return (
     <NavDropDown>
@@ -32,13 +43,18 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
           <NavDropDownContainer>
             {subNav.map((subItem) => {
               return (
-                <NavScrollContainer>
+                <NavScrollContainer key={subNav.indexOf(subItem)}>
                   <NavScrollButton
                     spy={true}
                     smooth={true}
-                    key={subNav.indexOf(subItem)}
                     to={subItem.endpoint}
-                    onClick={handleToggle}
+                    onClick={() => {
+                      handleToggle,
+                        goToPageAndScrollToSection(
+                          endpoint,
+                          subNav.subitem.endpoint
+                        );
+                    }}
                   >
                     {subItem.text}
                   </NavScrollButton>

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-export const BodyContainer = styled.div`
+import * as Scroll from "react-scroll";
+const BodyElement = Scroll.Element;
+export const BodyContainer = styled(BodyElement)`
   padding: 4rem 3rem;
   z-index: 100;
   width: 100%;
