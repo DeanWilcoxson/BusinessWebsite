@@ -1,1 +1,1 @@
-export const MissionData = { header: "Mission Statement", paragraph: "" };
+export const MissionData = { header: "", paragraph: "" };

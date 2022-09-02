@@ -8,7 +8,7 @@ import {
 const Mission = ({ header, paragraph }) => {
   return (
     <MissionContainer>
-      <MissionHeader>{header}</MissionHeader>
+      <MissionHeader>{}</MissionHeader>
       <MissionBox>
         <MissionParagraph>{paragraph}</MissionParagraph>
       </MissionBox>

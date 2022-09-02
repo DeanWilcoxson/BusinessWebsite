@@ -1,1 +1,4 @@
-export const AboutSection = { title: "About", lightText: true };
+export const AboutSection = {
+  titles: ["Contact", "Mission Statement", "Values"],
+  lightText: true,
+};

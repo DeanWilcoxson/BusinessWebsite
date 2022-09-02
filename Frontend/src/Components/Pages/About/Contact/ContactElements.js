@@ -6,6 +6,7 @@ export const ContactsBox = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 export const Contact = styled.div`
   display: flex;
   flex-direction: column;
@@ -27,11 +28,11 @@ export const ContactLanguagesList = styled.ul`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width:50%;
+  width: 50%;
 `;
 export const ContactLanguageItem = styled.li`
   list-style-type: none;
-  padding: .25rem;
+  padding: 0.25rem;
 `;
 export const ContactQualifications = styled.p``;
 export const ContactCity = styled.p``;
