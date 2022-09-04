@@ -9,11 +9,11 @@ import {
   BodyDesc,
   BodyImage,
 } from "./BodyElements";
-import {
-  VideoBg,
-  VideoContainer,
-} from "../../../../Assets/Videos/VideoElements";
-import video from "../../../../Assets/Videos/video.mp4";
+// import {
+//   VideoBg,
+//   VideoContainer,
+// } from "../../../../Assets/Videos/VideoElements";
+// import video from "../../../../Assets/Videos/video.mp4";
 const BodySection = ({
   id,
   heading,
