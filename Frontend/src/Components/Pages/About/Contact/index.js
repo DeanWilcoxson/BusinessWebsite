@@ -17,6 +17,7 @@ import {
   ContactHeader,
   ContactLanguagesTitle,
   ContactNumber,
+  ContactLanguagesBox,
 } from "./ContactElements";
 const ContactSection = ({ title, contacts, lightText }) => {
   return (
@@ -30,25 +31,27 @@ const ContactSection = ({ title, contacts, lightText }) => {
               <ContactNumber lightText={lightText}>
                 {contact.phoneNumber}
               </ContactNumber>
-              <ContactImg>{contact.image}</ContactImg>
+              <ContactImg src={contact.image}></ContactImg>
               <ContactQualifications lightText={lightText}>
                 {contact.qualifications}
               </ContactQualifications>
-              <ContactLanguagesTitle lightText={lightText}>
-                Languages:
-              </ContactLanguagesTitle>
-              <ContactLanguagesList>
-                {contact.languages.map((language) => {
-                  return (
-                    <ContactLanguageItem
-                      lightText={lightText}
-                      key={contact.languages.indexOf(language)}
-                    >
-                      {language}
-                    </ContactLanguageItem>
-                  );
-                })}
-              </ContactLanguagesList>
+              <ContactLanguagesBox>
+                <ContactLanguagesTitle lightText={lightText}>
+                  Languages:
+                </ContactLanguagesTitle>
+                <ContactLanguagesList>
+                  {contact.languages.map((language) => {
+                    return (
+                      <ContactLanguageItem
+                        lightText={lightText}
+                        key={contact.languages.indexOf(language)}
+                      >
+                        {language}
+                      </ContactLanguageItem>
+                    );
+                  })}
+                </ContactLanguagesList>
+              </ContactLanguagesBox>
               <ContactAddressBox>
                 <ContactCity lightText={lightText}>{contact.city}</ContactCity>
                 <ContactState lightText={lightText}>

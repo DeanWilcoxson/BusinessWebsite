@@ -1,5 +1,5 @@
-// import {} from '../../../../Assets/Images/'
-// import {} from '../../../../Assets/Images/'
+import DeanWilcoxsonTempImage from "../../../../Assets/Images/DeanWilcoxsonTempImage.jpg";
+import BryanHuffstutlerTempImage from "../../../../Assets/Images/BryanHuffstutlerTempImage.jpg";
 
 export const ContactData = {
   title: "Contacts",
@@ -7,7 +7,7 @@ export const ContactData = {
   contacts: [
     {
       name: "Dean Wilcoxson",
-      // image:`${}`,
+      image: `${DeanWilcoxsonTempImage}`,
       qualifications: "Associates Degree in FullStack Web Development",
       languages: [
         "HTML5,",
@@ -20,8 +20,8 @@ export const ContactData = {
         "MySQL,",
         "MongoDB,",
         "JSON,",
-        "Object-Oriented Programming,",
-        "Test-Driven Development,",
+        "OOP,",
+        "TDD,",
         "REST Design,",
         "Python",
       ],
@@ -33,7 +33,7 @@ export const ContactData = {
     },
     {
       name: "Bryan Huffstutler",
-      // image:`${}`,
+      image: `${BryanHuffstutlerTempImage}`,
       qualifications: "Associates Degree in FullStack Web Development",
       languages: [
         "HTML5,",
@@ -49,8 +49,8 @@ export const ContactData = {
         "MySQL,",
         "MongoDB,",
         "JSON,",
-        "Object-Oriented Programming,",
-        "Test-Driven Development,",
+        "OOP,",
+        "TDD,",
         "REST Design,",
         "Python",
       ],

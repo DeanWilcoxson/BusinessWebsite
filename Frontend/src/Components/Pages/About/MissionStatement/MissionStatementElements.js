@@ -38,13 +38,13 @@ export const MissionHeader = styled.h1`
 `;
 export const MissionParagraph = styled.p`
   padding: 3rem;
+  width: 60%;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
-  width: 60%;
-  letter-spacing: 0.125em;
-  line-height: 2rem;
-  font-size: larger;
-  font-weight: 400;
   text-indent: 5rem;
   text-align: justify;
+  letter-spacing: 0.05em;
+  line-height: 2rem;
+  font-size: x-large;
+  font-weight: 200;
 `;
