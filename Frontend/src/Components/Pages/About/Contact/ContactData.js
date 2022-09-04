@@ -37,10 +37,10 @@ export const ContactData = {
       qualifications: "Associates Degree in FullStack Web Development",
       languages: [
         "HTML5,",
+        "Javascript,",
         "CSS3,",
         "Tailwind.CSS,",
         "Material-UI,",
-        "Javascript,",
         "Typescript,",
         "React.JS,",
         "Next.JS,",

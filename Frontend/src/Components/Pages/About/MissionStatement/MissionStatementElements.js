@@ -37,8 +37,10 @@ export const MissionHeader = styled.h1`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const MissionParagraph = styled.p`
+  border: 3px #888 outset;
+  border-radius: 25px;
   padding: 3rem;
-  width: 60%;
+  width: 50%;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   text-indent: 5rem;
@@ -47,4 +49,9 @@ export const MissionParagraph = styled.p`
   line-height: 2rem;
   font-size: x-large;
   font-weight: 200;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
 `;
