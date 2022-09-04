@@ -5,12 +5,12 @@ import {
   MissionHeader,
   MissionParagraph,
 } from "./MissionStatementElements";
-const Mission = ({ header, paragraph }) => {
+const Mission = ({ header, paragraph, lightText }) => {
   return (
     <MissionContainer>
-      <MissionHeader>{}</MissionHeader>
+      <MissionHeader lightText={lightText}>{header}</MissionHeader>
       <MissionBox>
-        <MissionParagraph>{paragraph}</MissionParagraph>
+        <MissionParagraph lightText={lightText}>{paragraph}</MissionParagraph>
       </MissionBox>
     </MissionContainer>
   );

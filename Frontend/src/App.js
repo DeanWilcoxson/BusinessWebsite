@@ -14,7 +14,6 @@ import {
   ProcessesSection,
 } from "./Components/Pages/Packages/PackagesData";
 import { TemplatesSection } from "./Components/Pages/Templates/TemplateData";
-import { AboutSection } from "./Components/Pages/About/AboutData";
 const App = () => {
   return (
     <div>
@@ -24,7 +23,7 @@ const App = () => {
           <Route path="/" element={<Landing />}>
             Home
           </Route>
-          <Route path="/about" element={<About {...AboutSection} />}>
+          <Route path="/about" element={<About />}>
             About
           </Route>
           <Route

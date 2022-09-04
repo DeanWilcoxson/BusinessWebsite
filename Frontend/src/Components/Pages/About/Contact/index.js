@@ -1,5 +1,4 @@
 import React from "react";
-import { ContactData } from "./ContactData";
 
 import {
   ContactsContainer,
@@ -10,32 +9,58 @@ import {
   ContactLanguagesList,
   ContactLanguageItem,
   ContactQualifications,
+  ContactAddressBox,
   ContactCity,
   ContactState,
   ContactZipCode,
   ContactYrsExp,
+  ContactHeader,
+  ContactLanguagesTitle,
+  ContactNumber,
 } from "./ContactElements";
-const ContactSection = () => {
+const ContactSection = ({ title, contacts, lightText }) => {
   return (
     <ContactsContainer>
+      <ContactHeader lightText={lightText}>{title}</ContactHeader>
       <ContactsBox>
-        {ContactData.map((contact) => {
+        {contacts.map((contact) => {
           return (
-            <Contact>
-              <ContactName>{contact.name}</ContactName>
+            <Contact key={contacts.indexOf(contact)}>
+              <ContactName lightText={lightText}>{contact.name}</ContactName>
+              <ContactNumber lightText={lightText}>
+                {contact.phoneNumber}
+              </ContactNumber>
               <ContactImg>{contact.image}</ContactImg>
-              <ContactQualifications>
+              <ContactQualifications lightText={lightText}>
                 {contact.qualifications}
               </ContactQualifications>
+              <ContactLanguagesTitle lightText={lightText}>
+                Languages:
+              </ContactLanguagesTitle>
               <ContactLanguagesList>
                 {contact.languages.map((language) => {
-                  return <ContactLanguageItem>{language}</ContactLanguageItem>;
+                  return (
+                    <ContactLanguageItem
+                      lightText={lightText}
+                      key={contact.languages.indexOf(language)}
+                    >
+                      {language}
+                    </ContactLanguageItem>
+                  );
                 })}
               </ContactLanguagesList>
-              <ContactCity>{contact.city}</ContactCity>
-              <ContactState>{contact.state}</ContactState>
-              <ContactZipCode>{contact.zipCode}</ContactZipCode>
-              <ContactYrsExp>{contact.yearsExp}</ContactYrsExp>
+              <ContactAddressBox>
+                <ContactCity lightText={lightText}>{contact.city}</ContactCity>
+                <ContactState lightText={lightText}>
+                  {contact.state}
+                </ContactState>
+                <ContactZipCode lightText={lightText}>
+                  {contact.zipCode}
+                </ContactZipCode>
+              </ContactAddressBox>
+              <ContactYrsExp lightText={lightText}>
+                {contact.yearsExp}
+              </ContactYrsExp>
             </Contact>
           );
         })}
