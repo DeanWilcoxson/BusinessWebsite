@@ -6,7 +6,7 @@ import {
   NavDropDown,
   NavScrollButton,
   NavDropDownContainer,
-  NavScrollContainer,
+  // NavScrollContainer,
 } from "../NavElements";
 const NavLinkBox = ({ endpoint, text, subNav }) => {
   const [toggle, setToggle] = useState(false);
@@ -20,7 +20,7 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
   const scroller = Scroll.scroller;
 
   const goToPageAndScrollToSection = async (endpoint, scroll) => {
-    console.log(scroll)
+    console.log(endpoint, scroll);
     await history(endpoint);
     await scroller.scrollTo(scroll, {
       duration: 1500,
@@ -43,22 +43,20 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
           <NavDropDownContainer>
             {subNav.map((subItem) => {
               return (
-                <NavScrollContainer key={subNav.indexOf(subItem)}>
-                  <NavScrollButton
-                    spy={true}
-                    smooth={true}
-                    to={subItem.endpoint}
-                    onClick={() => {
-                      handleToggle,
-                        goToPageAndScrollToSection(
-                          endpoint,
-                          subNav.subitem.endpoint
-                        );
-                    }}
-                  >
-                    {subItem.text}
-                  </NavScrollButton>
-                </NavScrollContainer>
+                <NavScrollButton
+                  key={subNav.indexOf(subItem)}
+                  spy={true}
+                  smooth={true}
+                  to={subItem.endpoint}
+                  onClick={() => {
+                    goToPageAndScrollToSection(
+                      endpoint,
+                      subNav.subitem.endpoint
+                    );
+                  }}
+                >
+                  {subItem.text}
+                </NavScrollButton>
               );
             })}
           </NavDropDownContainer>
@@ -69,3 +67,4 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
 };
 
 export default NavLinkBox;
+// <NavScrollContainer> </NavScrollContainer>;

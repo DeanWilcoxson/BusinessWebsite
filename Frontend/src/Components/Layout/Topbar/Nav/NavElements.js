@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
 export const NavContainer = styled.div`
   margin-right: 5rem;
   z-index: 1000;
@@ -20,19 +20,19 @@ export const NavDropDown = styled.div`
   align-items: left;
 `;
 export const NavDropDownContainer = styled.ul`
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   position: absolute;
   z-index: 1000;
   background: linear-gradient(45deg, #000, #888);
 `;
-export const NavScrollContainer = styled.li`
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-`;
+// export const NavScrollContainer = styled.li`
+//   list-style-type: none;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+// `;
 export const NavRouterButton = styled(RouterLink)`
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -53,8 +53,9 @@ export const NavRouterButton = styled(RouterLink)`
     background-color: #88888855;
   }
 `;
-export const NavScrollButton = styled(ScrollLink)`
+export const NavScrollButton = styled.li`
   padding: 1rem;
+  list-style-type: none;
   width: 100%;
   color: white;
   z-index: 1000;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as Scroll from "react-scroll";
 const BodyElement = Scroll.Element;
-export const BodyContainer = styled(BodyElement)`
+export const BodyContainer = styled.div`
   padding: 4rem 3rem;
   z-index: 100;
   width: 100%;
@@ -21,7 +21,7 @@ export const BodyBox = styled.div`
   align-items: center;
   z-index: 100;
 `;
-export const BodyContentContainer = styled.div`
+export const BodyContentContainer = styled(BodyElement)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,7 +71,7 @@ export const BodyButton = styled(Link)`
   &:hover {
     color: #f7f7ff;
     background-color: #da344d;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 `;
 export const BodyImage = styled.img`

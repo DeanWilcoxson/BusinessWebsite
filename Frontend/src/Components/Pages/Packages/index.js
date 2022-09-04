@@ -45,7 +45,7 @@ const Packages = ({
 }) => {
   return (
     <>
-      <PackagesContainer id={packageId}>
+      <PackagesContainer id={packageId} name={packageId}>
         <PackagesBox>
           <PackagesTitle lightText={lightText}>{packageHeading}</PackagesTitle>
           <PackageBoxContainer>
@@ -73,7 +73,7 @@ const Packages = ({
           </PackageBoxContainer>
         </PackagesBox>
       </PackagesContainer>
-      <ServicesContainer id={servicesId}>
+      <ServicesContainer id={servicesId} name={servicesId}>
         <AdditionalServicesBox>
           <AdditionalServicesTitle lightText={lightText}>
             {servicesHeading}
@@ -110,7 +110,7 @@ const Packages = ({
           </ServicesList>
         </AdditionalServicesBox>
       </ServicesContainer>
-      <ProcessesContainer id={processId}>
+      <ProcessesContainer id={processId} name={processId}>
         <ProcessesBox>
           <ProcessesTitle lightText={lightText}>
             {processesHeading}
