@@ -8,6 +8,10 @@ import NotFound from "./Components/Pages/Error";
 import Topbar from "./Components/Layout/Topbar";
 import Footer from "./Components/Layout/Footer";
 import Templates from "./Components/Pages/Templates";
+import SinglePagePackage from "./Components/Pages/Packages/SPA";
+import SinglePageData from "./Components/Pages/Packages/SPA/SPA_Data.js";
+import ProfessionalPackage from "./Components/Pages/Packages/Professional";
+import EnterprisePackage from "./Components/Pages/Packages/Enterprise";
 import {
   PackagesSection,
   AdditionalServicesSection,
@@ -39,12 +43,23 @@ const App = () => {
             Packages
           </Route>
           <Route
+            path="/packages/singlepageapp"
+            element={<SinglePagePackage {...SinglePageData} />}
+          ></Route>
+          <Route
+            path="/packages/enterprise"
+            element={<EnterprisePackage />}
+          ></Route>
+          <Route
+            path="/packages/professional"
+            element={<ProfessionalPackage />}
+          ></Route>
+          <Route
             path="/templates"
             element={<Templates {...TemplatesSection} />}
           >
             Templates
           </Route>
-
           <Route path="/auth" element={<Auth />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>

@@ -10,15 +10,13 @@ const Topbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
-
-  // console.log(NavButtonData)
   return (
     <TopbarContainer scrollNav={scrollNav}>
       <TopbarBox>
         <Logo />
         <Nav />
       </TopbarBox>
-      </TopbarContainer>
-      );
+    </TopbarContainer>
+  );
 };
 export default Topbar;

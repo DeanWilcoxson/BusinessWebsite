@@ -21,7 +21,7 @@ export const BodyBox = styled.div`
   align-items: center;
   z-index: 100;
 `;
-export const BodyContentContainer = styled(BodyElement)`
+export const BodyContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,7 +71,7 @@ export const BodyButton = styled(Link)`
   &:hover {
     color: #f7f7ff;
     background-color: #da344d;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
   }
 `;
 export const BodyImage = styled.img`

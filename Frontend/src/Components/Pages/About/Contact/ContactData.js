@@ -2,6 +2,7 @@ import DeanWilcoxsonTempImage from "../../../../Assets/Images/DeanWilcoxsonTempI
 import BryanHuffstutlerTempImage from "../../../../Assets/Images/BryanHuffstutlerTempImage.jpg";
 
 export const ContactData = {
+  id:"contact",
   title: "Contacts",
   lightText: true,
   contacts: [

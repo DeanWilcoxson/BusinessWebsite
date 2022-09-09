@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as Scroll from "react-scroll";
 const Element = Scroll.Element;
-export const PackagesContainer = styled(Element)`
+export const PackagesContainer = styled.div`
   margin: 0;
   padding: 2rem;
   top: 0;
@@ -108,7 +108,7 @@ export const PackagePrice = styled.div`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 
-export const ServicesContainer = styled(Element)`
+export const ServicesContainer = styled.div`
   margin: 0;
   padding-top: 2rem;
   right: 0;
@@ -209,7 +209,7 @@ export const ServiceOptionItem = styled.li`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 
-export const ProcessesContainer = styled(Element)`
+export const ProcessesContainer = styled.div`
   margin: 0;
   padding: 2rem;
   right: 0;

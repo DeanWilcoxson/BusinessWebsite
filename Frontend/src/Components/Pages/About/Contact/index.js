@@ -19,9 +19,9 @@ import {
   ContactNumber,
   ContactLanguagesBox,
 } from "./ContactElements";
-const ContactSection = ({ title, contacts, lightText }) => {
+const ContactSection = ({ id, title, contacts, lightText }) => {
   return (
-    <ContactsContainer>
+    <ContactsContainer id={id}>
       <ContactHeader lightText={lightText}>{title}</ContactHeader>
       <ContactsBox>
         {contacts.map((contact) => {

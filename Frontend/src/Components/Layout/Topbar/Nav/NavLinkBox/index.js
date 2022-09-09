@@ -1,35 +1,19 @@
 import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import * as Scroll from "react-scroll";
 import {
   NavRouterButton,
   NavDropDown,
   NavScrollButton,
   NavDropDownContainer,
-  // NavScrollContainer,
 } from "../NavElements";
-const NavLinkBox = ({ endpoint, text, subNav }) => {
+const NavLinkBox = ({
+  endpoint,
+  text,
+  subNav,
+}) => {
   const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(() => !toggle);
   }
-
-  const path = useLocation().pathname;
-  const location = path.split("/")[1];
-  const history = useNavigate();
-  const scroller = Scroll.scroller;
-
-  const goToPageAndScrollToSection = async (endpoint, scroll) => {
-    console.log(endpoint, scroll);
-    await history(endpoint);
-    await scroller.scrollTo(scroll, {
-      duration: 1500,
-      delay: 100,
-      smooth: true,
-      offset: 50,
-    });
-  };
-
   return (
     <NavDropDown>
       <NavRouterButton
@@ -48,12 +32,7 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
                   spy={true}
                   smooth={true}
                   to={subItem.endpoint}
-                  onClick={() => {
-                    goToPageAndScrollToSection(
-                      endpoint,
-                      subNav.subitem.endpoint
-                    );
-                  }}
+                  // onClick={}
                 >
                   {subItem.text}
                 </NavScrollButton>
@@ -67,4 +46,3 @@ const NavLinkBox = ({ endpoint, text, subNav }) => {
 };
 
 export default NavLinkBox;
-// <NavScrollContainer> </NavScrollContainer>;

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
-// import { Link as ScrollLink } from "react-scroll";
 export const NavContainer = styled.div`
   margin-right: 5rem;
   z-index: 1000;
@@ -25,14 +24,6 @@ export const NavDropDownContainer = styled.ul`
   z-index: 1000;
   background: linear-gradient(45deg, #000, #888);
 `;
-// export const NavScrollContainer = styled.li`
-//   list-style-type: none;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   position: relative;
-// `;
 export const NavRouterButton = styled(RouterLink)`
   display: inline-block;
   padding: 0.5rem 1rem;
