@@ -38,15 +38,25 @@ export const SinglePageHeader = styled.h1`
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const SinglePageBodyContent = styled.div`
+  border: 3px outset #888;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
 `;
 export const SinglePageDescription = styled.p`
   text-align: center;
   padding: 2rem;
-  width: 30%;
+  width: 40%;
+  letter-spacing: 0.2em;
+  line-height: 2em;
   font-size: large;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -65,8 +75,11 @@ export const SinglePageListsBox = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 `;
 export const SinglePageListTitle = styled.h3``;
 export const SinglePageProsList = styled.ul``;
 export const SinglePageConsList = styled.ul``;
-export const SinglePageListItem = styled.li``;
+export const SinglePageListItem = styled.li`
+  list-style-type: none;
+`;
