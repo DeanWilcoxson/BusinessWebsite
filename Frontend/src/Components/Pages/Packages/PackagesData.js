@@ -1,5 +1,6 @@
 import SPA from "../../../Assets/Images/SPA.png";
 import MPA from "../../../Assets/Images/MPA.png";
+import EnterpriseImg from "../../../Assets/Images/EnterpriseImg.png";
 import database from "../../../Assets/Images/database.png";
 import interfaceImg from "../../../Assets/Images/interfaceImg.png";
 import SeoMagnifyingGlass from "../../../Assets/Images/SeoMagnifyingGlass.png";
@@ -13,7 +14,7 @@ export const PackagesSection = {
     {
       packageHeading: "Single Page Application",
       description:
-        "Great choice for a Blog or Personal Website for Entrepreneurs i.e. Portfolio.",
+        "Great choice for a Blog or Personal Website for Entrepreneurs i.e. Portfolio Websites.",
       image: `${SPA}`,
       price: "$",
       lightText: true,
@@ -100,18 +101,18 @@ export const ProcessesSection = {
       duration: "5-6 Weeks",
     },
     {
-      title: "Step 3: Redesign/ Redevelopment",
+      title: "Step 3: Redesign",
       description:
-        "Customer Input Phase, Client decides what changes to make, Second Draft",
+        "Customer Input Phase, Second Draft",
       duration: "3-4 Weeks",
     },
     {
-      title: "Step 4: Redesign Sprint",
+      title: "Step 4: Sprint",
       description: "Implementation Phase, Coding the Second Draft",
       duration: "1-2 Weeks",
     },
     {
-      title: "Step 5: Finalization of Design",
+      title: "Step 5: Finalization",
       description: "Modifying Design Phase, Final Draft",
       duration: "1-2 Weeks",
     },
@@ -121,8 +122,8 @@ export const ProcessesSection = {
       duration: "1-2 Weeks",
     },
     {
-      title: "Final Step: Product Delivery",
-      description: "Product Delivery Phase, Customer Receives Live Website.",
+      title: "Final Step: Delivery",
+      description: "Delivery Phase, Customer Receives Live Website.",
       duration: "1 Week",
     },
   ],

@@ -66,45 +66,52 @@ export const Package = styled.div`
   width: 75%;
 `;
 export const PackageHeader = styled.h3`
-  /* border-bottom: 1px inset #f7f7ff; */
+  border-bottom: 1px inset #f7f7ff;
   padding: 0.75rem;
-  font-family: Arial;
   letter-spacing: 0.1em;
-  font-weight: 200;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const PackageImg = styled.img`
-  width: 65%;
+  width: 70%;
+  /* max-height: 150px; */
   padding: 1rem;
+  /* border: 3px outset #888; */
+  border-radius: 20px;
 `;
 export const PackageDescription = styled.p`
-  text-align: center;
+  text-align: left;
+  letter-spacing: 0.1em;
+  /* line-height: 1rem; */
   padding: 0.5rem;
-  width: 75%;
+  width: 70%;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const PackageLink = styled.a`
   text-decoration: none;
   text-align: center;
-  margin-bottom: 0.5rem;
+  width: 100%;
+  /* margin-bottom: 0.5rem; */
   padding: 0.5rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   color: #f7f7ff;
-  border: 2px #88888855 outset;
+  border: 2px #88888855 inset;
+  border-radius: 20px;
   &:hover {
-    color: #20fc8f;
-    background-color: #88888855;
+    border: 2px #88888855 outset;
+    color: #000;
+    text-shadow: none;
+    background-color: #20fc8f;
+    transition: all 0.5s ease;
   }
 `;
 export const PackagePrice = styled.div`
-  /* border: 1px grey solid; */
   padding: 1rem 5rem;
   width: 75%;
   text-align: center;
-  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  color: ${({ lightText }) => (lightText ? "#20fc8f " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 
@@ -156,7 +163,7 @@ export const ServiceItem = styled.li`
   justify-content: center;
   align-items: center;
   width: 25%;
-  min-height: 50vh;
+  min-height: 40vh;
   border: 3px #888 outset;
   border-radius: 20px;
   margin: 0.5rem;
@@ -170,28 +177,28 @@ export const ServiceTitle = styled.h3`
   text-align: center;
   padding: 1rem;
   font-family: Arial;
-  /* border-bottom: 1px inset #f7f7ff; */
+  border-bottom: 1px inset #f7f7ff;
   letter-spacing: 0.1em;
-  font-weight: 200;
+  font-weight: bold;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ServiceDescription = styled.p`
-  text-align: center;
+  text-align: left;
   width: 80%;
   padding: 0.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ServiceOptionImage = styled.img`
-  width: 15%;
+  width: 20%;
   max-height: 40px;
   margin: 0.75rem;
 `;
 export const ServiceOptions = styled.ul`
-  /* margin: 2rem; */
   padding: 0.5rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,7 +210,6 @@ export const ServiceOptionsTitle = styled.b`
   padding: 0.5rem;
 `;
 export const ServiceOptionItem = styled.li`
-  /* padding: 0.25rem; */
   list-style-type: none;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -251,18 +257,17 @@ export const ProcessesList = styled.ul`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* margin-bottom: 5rem; */
 `;
 export const Process = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   width: 20%;
-  min-height: 25vh;
+  /* min-height: 25vh; */
   border: 3px #888 outset;
   border-radius: 20px;
-  margin: 0.25rem;
+  margin: 0.5rem;
   background: linear-gradient(
     180deg,
     rgba(189, 189, 189, 0.5049370089832808) 0%,
@@ -271,22 +276,26 @@ export const Process = styled.div`
 `;
 export const ProcessTitle = styled.h3`
   text-align: center;
-  padding: 0.25rem;
-  font-family: Arial;
+  padding: 1rem;
   letter-spacing: 0.1em;
-  font-weight: 200;
+  font-weight: bold;
+  border-bottom: 1px inset #f7f7ff;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ProcessDescription = styled.p`
   text-align: center;
-  width: 80%;
+  padding: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  width: 100%;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ProcessDuration = styled.p`
   text-align: center;
   width: 80%;
+  padding-bottom: 1rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;

@@ -61,7 +61,7 @@ const Packages = ({
                       {packaged.description}
                     </PackageDescription>
                     <PackagePrice lightText={lightText}>
-                      {packaged.price}
+                     <b style={{color: "#f7f7ff", fontWeight: "100"}}>Price:</b> {packaged.price}
                     </PackagePrice>
                     <PackageLink href={packaged.url} lightText={lightText}>
                       {packaged.buttonText}

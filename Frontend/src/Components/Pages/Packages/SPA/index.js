@@ -16,7 +16,6 @@ import {
   SinglePageProsList,
   SinglePageListItem,
 } from "./SPA_Elements";
-
 const SinglePagePackage = ({
   header,
   description,
@@ -47,6 +46,7 @@ const SinglePagePackage = ({
                   lightText={lightText}
                   key={pros.indexOf(item)}
                 >
+                  <b style={{ color: "green", padding: ".75rem" }}>&#x2714;</b>
                   {item}
                 </SinglePageListItem>
               );
@@ -62,6 +62,7 @@ const SinglePagePackage = ({
                   lightText={lightText}
                   key={cons.indexOf(item)}
                 >
+                  <b style={{ color: "red", padding: ".75rem" }}>&#x2718;</b>
                   {item}
                 </SinglePageListItem>
               );
@@ -69,7 +70,9 @@ const SinglePagePackage = ({
           </SinglePageConsList>
         </SinglePageListsBox>
         <SinglePagePackageItemsList>
-          <SinglePageListsBox>Whats Included:</SinglePageListsBox>
+          <SinglePageListTitle lightText={lightText}>
+            What's Included:
+          </SinglePageListTitle>
           {whatsIncluded.map((item) => {
             return (
               <SinglePagePackageItem key={whatsIncluded.indexOf(item)}>
@@ -87,5 +90,4 @@ const SinglePagePackage = ({
     </SinglePageContainer>
   );
 };
-
 export default SinglePagePackage;

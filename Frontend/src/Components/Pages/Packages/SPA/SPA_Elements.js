@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const SinglePageContainer = styled.div`
   margin: 0;
   padding: 2rem;
@@ -52,7 +51,7 @@ export const SinglePageBodyContent = styled.div`
   );
 `;
 export const SinglePageDescription = styled.p`
-  text-align: center;
+  text-align: justify;
   padding: 2rem;
   width: 40%;
   letter-spacing: 0.2em;
@@ -66,20 +65,73 @@ export const SinglePageImg = styled.img`
 `;
 export const SinglePagePackageItemsList = styled.ul`
   padding: 3rem;
+  border: 3px outset #888;
+  border-radius: 20px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
 `;
-export const SinglePagePackageItem = styled.div``;
-export const SinglePagePackageItemTitle = styled.h5``;
-export const SinglePagePackageItemDesc = styled.p``;
+export const SinglePagePackageItem = styled.div`
+  padding: 1rem;
+`;
+export const SinglePagePackageItemTitle = styled.h5`
+  text-decoration: underline;
+  font-size: larger;
+  padding: 0.5rem;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
+`;
+export const SinglePagePackageItemDesc = styled.p`
+  padding: 0 1rem;
+  padding-left: 2rem;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
+`;
 export const SinglePageListsBox = styled.div`
+  margin: 3rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  border: 3px outset #888;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(189, 189, 189, 0.5049370089832808) 0%,
+    rgba(65, 190, 248, 0.49933476808692223) 100%
+  );
 `;
-export const SinglePageListTitle = styled.h3``;
-export const SinglePageProsList = styled.ul``;
-export const SinglePageConsList = styled.ul``;
+export const SinglePageListTitle = styled.h3`
+  font-size: x-large;
+  text-align: center;
+  padding: 1rem;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
+`;
+export const SinglePageProsList = styled.ul`
+  /* li::before {
+    padding: 0.75rem;
+    color: green;
+    content: "+";
+  } */
+`;
+export const SinglePageConsList = styled.ul`
+  /* li::before {
+    padding: 0.75rem;
+    color: red;
+    content: "-";
+  } */
+`;
 export const SinglePageListItem = styled.li`
+  font-style: italic;
+  font-size: large;
+  padding: 0.2rem;
   list-style-type: none;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;

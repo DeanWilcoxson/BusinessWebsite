@@ -19,9 +19,7 @@ const SinglePageData = {
     "Uses a Lot of Browser Resources",
     "Security Issues",
     "Slowness under some circumstances",
-    "Compromised search engine optimization",
     "Website stats",
-    "No way back",
   ],
   whatsIncluded: [
     {
@@ -29,8 +27,16 @@ const SinglePageData = {
       description:
         "A Web user interface or Web app allows the user to interact with content or software running on a remote server through a Web browser.",
     },
-    { title: "", description: "" },
-    { title: "", description: "" },
+    {
+      title: "Database Creation",
+      description:
+        "Database integration is designed to provide the best performance and ease of development.",
+    },
+    {
+      title: "Domain Hosting",
+      description:
+        "We will handle all the ins ans outs of hosting your website, making sure its accessible to all of your customers.",
+    },
   ],
 };
 export default SinglePageData;
