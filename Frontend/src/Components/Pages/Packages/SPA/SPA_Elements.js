@@ -53,18 +53,19 @@ export const SinglePageBodyContent = styled.div`
 export const SinglePageDescription = styled.p`
   text-align: justify;
   padding: 2rem;
-  width: 40%;
-  letter-spacing: 0.2em;
-  line-height: 2em;
-  font-size: large;
+  width: 45%;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-size: x-large;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const SinglePageImg = styled.img`
-  width: 35%;
+  width: 45%;
 `;
 export const SinglePagePackageItemsList = styled.ul`
   padding: 3rem;
+  margin-bottom: 3rem;
   border: 3px outset #888;
   border-radius: 20px;
   width: 100%;
@@ -75,18 +76,28 @@ export const SinglePagePackageItemsList = styled.ul`
   );
 `;
 export const SinglePagePackageItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
   padding: 1rem;
 `;
-export const SinglePagePackageItemTitle = styled.h5`
+export const SinglePagePackageItemTitle = styled.h3`
+  text-align: left;
   text-decoration: underline;
   font-size: larger;
-  padding: 0.5rem;
+  padding-top: 0.65rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const SinglePagePackageItemDesc = styled.p`
-  padding: 0 1rem;
-  padding-left: 2rem;
+  width: 75%;
+  text-align: left;
+  font-size: larger;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  /* padding: 0.5rem 1rem; */
+  padding-left: 10rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
@@ -129,7 +140,8 @@ export const SinglePageConsList = styled.ul`
 `;
 export const SinglePageListItem = styled.li`
   font-style: italic;
-  font-size: large;
+  font-size: larger;
+  line-height: 2em;
   padding: 0.2rem;
   list-style-type: none;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};

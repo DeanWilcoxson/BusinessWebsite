@@ -52,7 +52,7 @@ export const Contact = styled.div`
   border: 3px #888 outset;
   border-radius: 20px;
   width: 50%;
-  min-height: 40vh;
+  min-height: 58vh;
   background: linear-gradient(
     180deg,
     rgba(189, 189, 189, 0.5049370089832808) 0%,
@@ -64,6 +64,8 @@ export const ContactName = styled.h3`
   text-align: center;
   letter-spacing: 0.1em;
   font-style: italic;
+  font-size: x-large;
+  font-weight: bold;
   padding: 0.5rem;
   text-decoration: underline;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
@@ -74,7 +76,9 @@ export const ContactNumber = styled.p`
   grid-row: 3/4;
   padding: 0.5rem;
   text-align: center;
-  color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
+  font-size: large;
+  font-weight: bold;
+  color: ${({ lightText }) => (lightText ? "#f7f7ff" : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;
 export const ContactQualifications = styled.p`
@@ -82,6 +86,7 @@ export const ContactQualifications = styled.p`
   grid-row: 2/3;
   text-align: center;
   padding: 0.5rem;
+  font-size: large;
   font-weight: bold;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -93,7 +98,7 @@ export const ContactImg = styled.img`
   grid-column: 2/4;
   grid-row: 4/6;
   border-radius: 20px;
-  border: 2px outset grey;
+  border: 3px inset #888;
 `;
 export const ContactLanguagesBox = styled.div`
   display: flex;
@@ -103,8 +108,11 @@ export const ContactLanguagesBox = styled.div`
   grid-column: 1/2;
   grid-row: 4/6;
   width: 100%;
+  padding-left: 2rem;
 `;
 export const ContactLanguagesTitle = styled.p`
+  font-size: large;
+  font-weight: bold;
   padding-top: 0.5rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
@@ -115,10 +123,11 @@ export const ContactLanguagesList = styled.ul`
   justify-content: justify;
   align-items: center;
   flex-wrap: wrap;
-  width: 95%;
+  width: 100%;
   padding: 0.5rem;
 `;
 export const ContactLanguageItem = styled.li`
+  font-size: 1rem;
   list-style-type: none;
   padding: 0.25rem;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
@@ -132,6 +141,8 @@ export const ContactAddressBox = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0.25rem;
+  font-size: large;
+  font-weight: bold;
 `;
 export const ContactCity = styled.p`
   padding: 0.25rem;
@@ -151,8 +162,10 @@ export const ContactZipCode = styled.p`
 export const ContactYrsExp = styled.p`
   grid-column: 3/4;
   grid-row: 3/4;
+  text-align: center;
   padding: 0.5rem;
-  /* font-weight: bold; */
+  font-size: large;
+  font-weight: bold;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
 `;

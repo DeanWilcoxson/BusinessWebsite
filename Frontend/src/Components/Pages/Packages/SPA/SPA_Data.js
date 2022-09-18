@@ -1,8 +1,9 @@
 import SinglePageAppImage from "../../../../Assets/Images/SinglePageAppImage.png";
+import SpaImage from "../../../../Assets/Images/SpaImage.png"
 const SinglePageData = {
   lightText: true,
   header: "Single Page Application",
-  image: `${SinglePageAppImage}`,
+  image: `${SpaImage}`,
   description:
     "A Single-page application is a web app implementation that loads only a single web document, and then updates the body content of that single document via JavaScript APIs. On demand, a Single-page app reloads only the data necessary for the user.",
   pros: [
@@ -23,17 +24,17 @@ const SinglePageData = {
   ],
   whatsIncluded: [
     {
-      title: "User Interface",
+      title: "User Web Interface",
       description:
         "A Web user interface or Web app allows the user to interact with content or software running on a remote server through a Web browser.",
     },
     {
-      title: "Database Creation",
+      title: "Connected Database",
       description:
         "Database integration is designed to provide the best performance and ease of development.",
     },
     {
-      title: "Domain Hosting",
+      title: "Live Domain Hosting",
       description:
         "We will handle all the ins ans outs of hosting your website, making sure its accessible to all of your customers.",
     },

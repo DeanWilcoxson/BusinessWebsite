@@ -40,13 +40,13 @@ export const MissionParagraph = styled.p`
   border: 3px #888 outset;
   border-radius: 25px;
   padding: 3rem;
-  width: 50%;
+  width: 60%;
   color: ${({ lightText }) => (lightText ? "#f7f7ff " : " #000000")};
   text-shadow: ${({ lightText }) => (lightText ? "1px 1px 2px #000" : "none")};
   text-indent: 5rem;
   text-align: justify;
-  letter-spacing: 0.05em;
-  line-height: 2rem;
+  letter-spacing: 0.1em;
+  line-height: 2em;
   font-size: x-large;
   font-weight: 200;
   background: linear-gradient(
