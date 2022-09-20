@@ -11,7 +11,9 @@ import Templates from "./Components/Pages/Templates";
 import SinglePagePackage from "./Components/Pages/Packages/SPA";
 import SinglePageData from "./Components/Pages/Packages/SPA/SPA_Data.js";
 import ProfessionalPackage from "./Components/Pages/Packages/Professional";
+import ProfessionalData from "./Components/Pages/Packages/Professional/ProfessionalData.js";
 import EnterprisePackage from "./Components/Pages/Packages/Enterprise";
+import EnterpriseData from "./Components/Pages/Packages/Enterprise/EnterpriseData";
 import {
   PackagesSection,
   AdditionalServicesSection,
@@ -47,12 +49,12 @@ const App = () => {
             element={<SinglePagePackage {...SinglePageData} />}
           ></Route>
           <Route
-            path="/packages/enterprise"
-            element={<EnterprisePackage />}
+            path="/packages/professional"
+            element={<ProfessionalPackage {...ProfessionalData} />}
           ></Route>
           <Route
-            path="/packages/professional"
-            element={<ProfessionalPackage />}
+            path="/packages/enterprise"
+            element={<EnterprisePackage {...EnterpriseData} />}
           ></Route>
           <Route
             path="/templates"

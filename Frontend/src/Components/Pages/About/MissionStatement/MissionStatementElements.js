@@ -49,6 +49,7 @@ export const MissionParagraph = styled.p`
   line-height: 2em;
   font-size: x-large;
   font-weight: 200;
+  font-style: italic;
   background: linear-gradient(
     180deg,
     rgba(189, 189, 189, 0.5049370089832808) 0%,

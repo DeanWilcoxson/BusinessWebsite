@@ -16,20 +16,62 @@ import {
   ProfessionalConsList,
   ProfessionalListItem,
 } from "./ProfessionalElements";
-const ProfessionalPackage = () => {
+const ProfessionalPackage = ({
+  lightText,
+  header,
+  image,
+  description,
+  pros,
+  cons,
+  whatsIncluded,
+}) => {
   return (
     <ProfessionalContainer>
       <ProfessionalBox>
-        <ProfessionalHeader></ProfessionalHeader>
+        <ProfessionalHeader>{header}</ProfessionalHeader>
         <ProfessionalBodyContent>
-          <ProfessionalDescription></ProfessionalDescription>
-          <ProfessionalImg></ProfessionalImg>
+          <ProfessionalDescription>{description}</ProfessionalDescription>
+          <ProfessionalImg src={image}></ProfessionalImg>
         </ProfessionalBodyContent>
         <ProfessionalListsBox>
-          <ProfessionalProsList></ProfessionalProsList>
-          <ProfessionalConsList></ProfessionalConsList>
+          <ProfessionalProsList>
+            <ProfessionalListTitle>Pros:</ProfessionalListTitle>
+            {pros.map((item) => {
+              return (
+                <ProfessionalListItem>
+                  <b style={{ color: "green", padding: ".75rem" }}>&#x2714;</b>
+                  {item}
+                </ProfessionalListItem>
+              );
+            })}
+          </ProfessionalProsList>
+          <ProfessionalConsList>
+            <ProfessionalListTitle>Cons:</ProfessionalListTitle>
+            {cons.map((item) => {
+              return (
+                <ProfessionalListItem>
+                  <b style={{ color: "red", padding: ".75rem" }}>&#x2718;</b>
+                  {item}
+                </ProfessionalListItem>
+              );
+            })}
+          </ProfessionalConsList>
         </ProfessionalListsBox>
-        <ProfessionalPackageItemsList></ProfessionalPackageItemsList>
+        <ProfessionalPackageItemsList>
+          <ProfessionalListTitle>Whats Included:</ProfessionalListTitle>
+          {whatsIncluded.map(() => {
+            return (
+              <ProfessionalPackageItem>
+                <ProfessionalPackageItemTitle>
+                  {item.title}
+                </ProfessionalPackageItemTitle>
+                <ProfessionalPackageItemDesc>
+                  {item.description}
+                </ProfessionalPackageItemDesc>
+              </ProfessionalPackageItem>
+            );
+          })}
+        </ProfessionalPackageItemsList>
       </ProfessionalBox>
     </ProfessionalContainer>
   );
