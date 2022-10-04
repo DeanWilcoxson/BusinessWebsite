@@ -28,17 +28,21 @@ const ProfessionalPackage = ({
   return (
     <ProfessionalContainer>
       <ProfessionalBox>
-        <ProfessionalHeader>{header}</ProfessionalHeader>
+        <ProfessionalHeader lightText={lightText}>{header}</ProfessionalHeader>
         <ProfessionalBodyContent>
-          <ProfessionalDescription>{description}</ProfessionalDescription>
+          <ProfessionalDescription lightText={lightText}>
+            {description}
+          </ProfessionalDescription>
           <ProfessionalImg src={image}></ProfessionalImg>
         </ProfessionalBodyContent>
         <ProfessionalListsBox>
           <ProfessionalProsList>
-            <ProfessionalListTitle>Pros:</ProfessionalListTitle>
+            <ProfessionalListTitle lightText={lightText}>
+              Pros:
+            </ProfessionalListTitle>
             {pros.map((item) => {
               return (
-                <ProfessionalListItem>
+                <ProfessionalListItem lightText={lightText}>
                   <b style={{ color: "green", padding: ".75rem" }}>&#x2714;</b>
                   {item}
                 </ProfessionalListItem>
@@ -46,10 +50,12 @@ const ProfessionalPackage = ({
             })}
           </ProfessionalProsList>
           <ProfessionalConsList>
-            <ProfessionalListTitle>Cons:</ProfessionalListTitle>
+            <ProfessionalListTitle lightText={lightText}>
+              Cons:
+            </ProfessionalListTitle>
             {cons.map((item) => {
               return (
-                <ProfessionalListItem>
+                <ProfessionalListItem lightText={lightText}>
                   <b style={{ color: "red", padding: ".75rem" }}>&#x2718;</b>
                   {item}
                 </ProfessionalListItem>
@@ -58,10 +64,12 @@ const ProfessionalPackage = ({
           </ProfessionalConsList>
         </ProfessionalListsBox>
         <ProfessionalPackageItemsList>
-          <ProfessionalListTitle>Whats Included:</ProfessionalListTitle>
+          <ProfessionalListTitle lightText={lightText}>
+            Whats Included:
+          </ProfessionalListTitle>
           {whatsIncluded.map(() => {
             return (
-              <ProfessionalPackageItem>
+              <ProfessionalPackageItem lightText={lightText}>
                 <ProfessionalPackageItemTitle>
                   {item.title}
                 </ProfessionalPackageItemTitle>

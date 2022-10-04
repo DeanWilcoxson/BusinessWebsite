@@ -1,4 +1,4 @@
-import SinglePageAppImage from "../../../../Assets/Images/SinglePageAppImage.png";
+// import SinglePageAppImage from "../../../../Assets/Images/SinglePageAppImage.png";
 import SpaImage from "../../../../Assets/Images/SpaImage.png"
 const SinglePageData = {
   lightText: true,
@@ -16,7 +16,7 @@ const SinglePageData = {
     "Can be converted to iOS and Android applications",
   ],
   cons: [
-    "Doesn’t Perform Well With SEO",
+    "Does not Perform Well With SEO",
     "Uses a Lot of Browser Resources",
     "Security Issues",
     "Slowness under some circumstances",
@@ -24,7 +24,7 @@ const SinglePageData = {
   ],
   whatsIncluded: [
     {
-      title: "User Web Interface",
+      title: "Single Page Interface",
       description:
         "A Web user interface or Web app allows the user to interact with content or software running on a remote server through a Web browser.",
     },
