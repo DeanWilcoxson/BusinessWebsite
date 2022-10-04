@@ -9,11 +9,11 @@ import {
   BodyDesc,
   BodyImage,
 } from "./BodyElements";
-// import {
-//   VideoBg,
-//   VideoContainer,
-// } from "../../../../Assets/Videos/VideoElements";
-// import video from "../../../../Assets/Videos/video.mp4";
+import {
+  VideoBg,
+  VideoContainer,
+} from "../../../../Assets/Videos/VideoElements";
+import video from "../../../../Assets/Videos/video.mp4";
 const BodySection = ({
   id,
   heading,
@@ -25,6 +25,9 @@ const BodySection = ({
 }) => {
   return (
     <BodyContainer id={id} darkbg="false" lighttext="true">
+      <VideoContainer>
+        <VideoBg autoPlay loop muted src={video} type="video/mp4" />
+      </VideoContainer>
       <BodyBox>
         <BodyContentContainer>
           <BodyHeading lightText={lightText}>{heading}</BodyHeading>
@@ -45,7 +48,3 @@ const BodySection = ({
   );
 };
 export default BodySection;
-
-// <VideoContainer>
-//   <VideoBg autoPlay loop muted src={video} type="video/mp4" />
-// </VideoContainer>

@@ -16,14 +16,22 @@ import {
   EnterpriseConsList,
   EnterpriseListItem,
 } from "./EnterpriseElements";
-const EnterprisePackage = () => {
+const EnterprisePackage = ({
+  header,
+  description,
+  image,
+  pros,
+  cons,
+  whatsIncluded,
+  lightText,
+}) => {
   return (
     <EnterpriseContainer>
       <EnterpriseBox>
-        <EnterpriseHeader></EnterpriseHeader>
+        <EnterpriseHeader>{header}</EnterpriseHeader>
         <EnterpriseBodyContent>
-          <EnterpriseDescription></EnterpriseDescription>
-          <EnterpriseImg></EnterpriseImg>
+          <EnterpriseDescription>{description}</EnterpriseDescription>
+          <EnterpriseImg src={image}></EnterpriseImg>
         </EnterpriseBodyContent>
         <EnterpriseListsBox>
           <EnterpriseProsList></EnterpriseProsList>

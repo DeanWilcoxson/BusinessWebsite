@@ -18,36 +18,36 @@ const Auth = () => {
 
   const [inputs, setInputs] = React.useState(initInputs);
 
-  handleChange = (event) => {
-    function handleChange(event) {
-      event.preventDefault();
-      const { name, value } = event.target;
-      setInputs((prev) => ({
-        ...prev,
-        [name]: value,
-      }));
-    }
+  // handleChange = (event) => {
+  //   function handleChange(event) {
+  //     event.preventDefault();
+  //     const { name, value } = event.target;
+  //     setInputs((prev) => ({
+  //       ...prev,
+  //       [name]: value,
+  //     }));
+  //   }
 
-    handleTokenAndStorage = (token, user) => {};
-    function handleTokenAndStorage(token, user) {
-      localStorage.setItem("dbweb_token", token);
-      const userData = JSON.stringify(user);
-      localStorage.setItem("dbweb_user", userData);
-      //To gain access to userData on frontend as an object, JSON.parse()
-    }
+  //   handleTokenAndStorage = (token, user) => {};
+  //   function handleTokenAndStorage(token, user) {
+  //     localStorage.setItem("dbweb_token", token);
+  //     const userData = JSON.stringify(user);
+  //     localStorage.setItem("dbweb_user", userData);
+  //     //To gain access to userData on frontend as an object, JSON.parse()
+  //   }
 
-    handleSubmit = (event) => {};
-    function handleSubmit(event) {
-      event.preventDefault();
-      axios
-        .post("/auth/login", inputs)
-        .then((res) => {
-          console.log(res);
-          handleTokenAndStorage(res.data.token, res.data.user);
-        })
-        .catch((err) => console.log(err));
-    }
-  };
+  //   handleSubmit = (event) => {};
+  //   function handleSubmit(event) {
+  //     event.preventDefault();
+  //     axios
+  //       .post("/auth/login", inputs)
+  //       .then((res) => {
+  //         console.log(res);
+  //         handleTokenAndStorage(res.data.token, res.data.user);
+  //       })
+  //       .catch((err) => console.log(err));
+  //   }
+  // };
 
   return (
     <AuthContainer>
@@ -60,7 +60,7 @@ const Auth = () => {
               type="username"
               name="username"
               value={inputs.username}
-              onChange={handleChange}
+              // onChange={handleChange}
             ></AuthInput>
           </AuthInputLabel>
 
@@ -70,11 +70,13 @@ const Auth = () => {
               type="password"
               name="password"
               value={inputs.password}
-              onChange={handleChange}
+              // onChange={handleChange}
             ></AuthInput>
           </AuthInputLabel>
 
-          <AuthButton onClick={handleSubmit}>Submit</AuthButton>
+          <AuthButton
+          //  onClick={handleSubmit}
+           >Submit</AuthButton>
         </AuthForm>
       </AuthBox>
     </AuthContainer>
